@@ -1,0 +1,457 @@
+﻿@model Transaction
+@using ShaligramBuildcon_MVC.Models
+@{
+    ViewBag.Title = "Transaction";
+}
+
+@{
+    var culture = "en-GB";
+}
+
+<script src="@Url.Content("~/Scripts/kendo/cultures/kendo.culture." + @culture + ".min.js")"></script>
+
+<script>  kendo.culture("@culture"); </script>
+
+<style>
+    .Wrap {
+        white-space: pre-wrap !important;
+        overflow: unset;
+        /*text-overflow: ellipsis;*/
+    }
+
+    textarea#Note {
+        overflow: auto;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="panel panel-white">
+            <div class="panel-heading">
+                <div class="row">
+
+
+
+
+                    <h4 class="col-sm-6 panel-title">
+                        <i class="icon-info22 position-left"></i>
+                        Transaction
+
+                    </h4>
+
+                    @*<div class="col-sm-6 text-right multi-btns">
+
+
+                            <input type="submit" class="btn btn-info btn-xs legitRipple" value="Save" name="submit" onclick="return checkValidOrNot()">
+
+
+                            <a href="@Url.Action("Index", "Booking")" class="btn btn-info btn-xs legitRipple">Cancel</a>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                <div class="panel panel-white">
+                    <div class="panel-body">
+
+
+
+                        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6">
+
+
+
+                            @Html.Label("Member Number")
+
+
+                            @(Html.Kendo().ComboBoxFor(m=>m.Member_id)
+
+                                      .DataTextField("Contact_no")
+                                      .DataValueField("Member_id")
+                                      .DataSource(source => source.Read(read => read.Action("GetMemberNo", "Transaction")))
+                                      .Suggest(true)
+                                      .Filter(FilterType.Contains)
+                                      .Events(e => e.Change("onCheckDDValue"))
+                                      .Placeholder(CommonHelper.PleaseSelect))
+                            @*.HtmlAttributes(new { @style = "width: 100% !important;" })*@
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6">
+                            @Html.Label("Member Name")
+                            @(Html.Kendo().TextBox().Name("MemberName").HtmlAttributes(new { @style = "width:100%;", @TabIndex = 3, @readonly = "readonly" }))
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6">
+                            @Html.Label("Product")
+                            @(Html.Kendo().ComboBoxFor(m=>m.Product_id)
+
+                                      .DataTextField("Name")
+                                      .DataValueField("Product_Id")
+                                      .DataSource(source => source.Read(read => read.Action("GetProductList", "Transaction")))
+
+                                      .Events(e => e.Change("onCheckDDValue"))
+                                      .Placeholder(CommonHelper.PleaseSelect))
+                            @*.HtmlAttributes(new { @style = "width: 100% !important;" }))*@
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6">
+                            @Html.Label("SubProduct")
+                            @(Html.Kendo().ComboBoxFor(m=>m.subproduct_id)
+
+                                      .DataTextField("Name")
+                                      .DataValueField("SubProduct_Id")
+                                      .DataSource(source => source.Read(read => read.Action("GetSubProductList", "Transaction")))
+
+                                      .Events(e => e.Change("onCheckDDValue"))
+                                      .Placeholder(CommonHelper.PleaseSelect))
+                            @*.HtmlAttributes(new { @style = "width: 100% !important;" }))*@
+                        </div>
+                        @*<div class="col-lg-3 col-md-2 col-xs-12 col-sm-6 form-group mt-5">
+                                <label></label><br>
+                                <input type="button" value="Search" id="btnSearch" class="btn btn-info btn-xs legitRipple" onclick="searchClick()">
+                                <input type="button" value="Reset" class="btn btn-info btn-xs legitRipple" onclick="resetClick()">
+                            </div>*@
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="panel panel-white">
+            <div class="panel-heading">
+                <h6 class="panel-title">
+                    @Html.Label("Transaction Details", new { @class = "text-bold", style = "text-transform:uppercase;" })
+                </h6>
+            </div>
+            <div id="grid"></div>
+            <div class="panel-body">
+
+                @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.CustomTransactionModel>()
+                            .Name("MemberTranGrid")
+                            .Columns(columns =>
+                            {
+                                columns.Command(command => {command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Transaction" }); }).Width(120).Title("Action");
+                                columns.Bound(m => m.Trx_id).Visible(false);//Width(50);
+                                columns.ForeignKey(p => p.Member_id, (System.Collections.IEnumerable)ViewData["activemembers"], "Member_id", "FullName").Title("Member Name");
+                                // columns.Bound(m => m.Member_id).Title("Member Name");//Width(50);
+                                columns.Bound(m => m.productname).Title("Product Name");
+                                columns.Bound(m => m.subproductname).Title("Subproduct Name");//.Width(50);
+                                columns.Bound(m => m.Total_Weight_given).Title("Total Weight Given");
+                                columns.Bound(m => m.Required_Qty).Title("Required Qty");
+                                columns.Bound(m => m.Total_weight_recieved).Title("Total weight recieved");
+                                columns.Bound(m => m.Recieved_qty).Title("Recieved Qty");
+                                columns.Bound(m => m.Order_date).Title("Order Date").Format("{0: MM/dd/yyyy}");
+                                columns.Bound(m => m.Return_date).Title("Return Date").Format("{0: MM/dd/yyyy}");
+                                columns.Bound(m => m.Actual_return_date).Title("Actual Return Date").Format("{0:MM/dd/yyyy}").EditorTemplateName("Date").Width(280);
+                                columns.Bound(m => m.Is_completed).Title("Is Complete");
+                                //columns.Bound(m => m.Piece_Labor_Rate).Title("Price Labour Rate");
+                                //columns.Bound(m => m.Actual_piece_labor_rate).Title("Actual Price Labour Rate");
+                                //columns.Bound(m => m.transaction_amount).Title("Transaction Amount");
+
+                            })
+                              .ToolBar(toolbar =>
+   toolbar.Custom().IconClass("k-icon k-i-plus").Text("Add Transaction").HtmlAttributes(new { @title = "Add Payment", href = "javascript:void(0)", onclick = "AddTransaction()" })
+    )
+
+.Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Are you sure you want to delete this transaction?").DisplayDeleteConfirmation("Are you sure you want to delete this transaction?"))
+            //.Excel(excel => excel
+            //.AllPages(true)
+            //.Filterable(true)
+            //.FileName("Inquiry.xlsx")
+
+
+            //.Events(e=>e.DataBound("onDataBound"))
+            //.Editable(editable =>
+            //.Resizable(r => r.Columns(true))
+            .Pageable(x =>
+            {
+                x.Refresh(true);
+                x.PageSizes(CommonHelper.LargePageSizes);
+            })
+
+            //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            //.Sortable(sortable => sortable.AllowUnsort(false))
+            .Scrollable(s => s.Height("auto"))
+            .NoRecords()
+             .ClientDetailTemplateId("client-template")
+            //.Events(grid => grid.DataBound("onDataBoundEdit"))
+            .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            //.PageSize(CommonHelper.PazeSize)
+            .Events(events => events.Error("onError(\"InquiryGrid\")"))
+           .Model(model =>
+           {
+               model.Id(p => p.Trx_id);
+               model.Field(p => p.productname).Editable(false);
+               model.Field(p => p.subproductname).Editable(false);
+               model.Field(p => p.Total_Weight_given).Editable(false);
+               model.Field(p => p.Required_Qty).Editable(false);
+               model.Field(p => p.Order_date).Editable(false);
+               model.Field(p => p.Return_date).Editable(false);
+
+
+
+           })
+            .Create(update => update.Action("KendoSave", "Transaction").Data("Getmemberid"))
+            .Update(update => update.Action("KendoSave", "Transaction"))
+            .Read(read => read.Action("KendoRead", "Transaction").Data("onAdditionalData"))
+            .Destroy(destroy => destroy.Action("kendoDestroy", "Transaction")))
+                )
+
+            </div>
+
+
+
+        </div>
+
+        <script id="client-template" type="text/kendo-tmpl">
+
+        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.CustomTranDetails>()
+                        .Name("grid1_#=Trx_id#")
+                        .Columns(columns =>
+                        {
+
+
+                            columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Transaction Details" }); }).Width(120).Title("Action");
+                            
+                            columns.Bound(m => m.Trxdetails_id).Title("Product Name").Visible(false);//Width(50);
+                            columns.Bound(m => m.Material).Title("Raw Material");//Width(50);
+                            columns.Bound(m => m.subproduct_name).Title("Subproduct Name");
+                            columns.Bound(m => m.Totalqty).Title("Required Qty");
+                            columns.Bound(m => m.Given_qty).Title("Given Qty");
+                        })
+
+
+                                        .Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+                                        //.Excel(excel => excel
+                                        //.AllPages(true)
+                                        //.Filterable(true)
+                                        //.FileName("Inquiry.xlsx")
+
+
+
+                                        //.Editable(editable =>
+                                        //.Resizable(r => r.Columns(true))
+                                        .Pageable(x =>
+                                        {
+                                            x.Refresh(true);
+                                            x.PageSizes(CommonHelper.LargePageSizes);
+                                        })
+                                        // .Events(e=>e.Save("savechk"))
+                                        //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+                                        //.Sortable(sortable => sortable.AllowUnsort(false))
+                                        .Scrollable(s => s.Height("auto"))
+                                        .NoRecords()
+
+                                        //.Events(grid => grid.DataBound("onDataBoundEdit"))
+                                        .DataSource(dataSource => dataSource
+                                        .Ajax()
+                                         .Model(model =>
+                                         {
+                                             model.Id(d => d.Trxdetails_id);
+                                             model.Field(p => p.product_name).Editable(false);
+                                             model.Field(p => p.subproduct_name).Editable(false);
+                                             model.Field(p => p.type).Editable(false);
+                                             model.Field(p => p.Material).Editable(false);
+                                             model.Field(p => p.Totalqty).Editable(false);
+                                             model.Field(p => p.unit_type).Editable(false);
+
+
+                                         })
+                                        .ServerOperation(false)
+                                        //.PageSize(CommonHelper.PazeSize)
+                                        .Events(events => events.Error("onError(\"InquiryGrid\")"))
+                                       
+                                        //.Create(update => update.Action("KendoSave", "Product"))
+                                        .Create(update => update.Action("saveTranDetails", "Transaction"))
+                                        .Update(update => update.Action("saveTranDetails", "Transaction"))
+                                        .Read(read => read.Action("DetailReadGrid", "Transaction" , new { Trx_id = "#=Trx_id#" })))
+                                          //.Destroy(destroy => destroy.Action("ReadrealtionDestroy", "Transaction")))
+                                          .ToClientTemplate()
+            )
+
+
+
+
+        </script>
+    </div>
+
+
+}
+
+@(Html.Kendo().Window()
+                          .Name("flatBookingWindow")
+                          .Draggable(true)
+                          .Width(870)
+                          .Height(520)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+@(Html.Kendo().Window()
+                          .Name("AddMemberWindow")
+                          .Draggable(true)
+                          .Width(1230)
+                          .Height(550)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+
+<script>
+    function searchClick() {
+        debugger;
+        var grid = $("#MemberTranGrid").data("kendoGrid")
+        var currentPage = grid.dataSource.page();
+        var ProjectId = getKendComboboxValue('Member_id');
+
+        if (currentPage != 1) {
+            grid.dataSource.page(1);
+        }
+        //setLocalValue('Project', getKendComboboxValue('srcProject'));
+        ////setLocalValue('Member', getInputValueById('MemberName'));
+        //setLocalValue('Member', getInputValueById('srcMemberName'));
+        //setLocalValue('FlatShop', getKendComboboxValue('srcFlatShop'));
+        //setLocalValue('StartDate', getKendoDatePickerValue('fromDate'));
+        //setLocalValue('EndDate', getKendoDatePickerValue('toDate'));
+        //setLocalValue('FlatNo', getInputValueById('FlatNo'));
+        //setLocalValue('Resaled', Boolean($("#IsEnabled").prop('checked')));
+        readKendoGrid("MemberTranGrid");
+        $("#MemberTranGrid").show();
+    }
+    function resetClick() {
+
+
+        //$("#srcMemberName").data("kendoComboBox").text('');
+        //setKendComboboxValue('srcProject', '');
+        //setKendComboboxValue('srcEmployee', '');
+        ////setKendComboboxValue('srcMemberName', '');
+        //setKendComboboxValue('srcFlatShop', '');
+        ///* setInputValueById('MemberName', '');*/
+        //setInputValueById('fromDate', '');
+        //setInputValueById('toDate', '');
+        //setInputValueById('FlatNo', '');
+        //$("#srcResaledData").prop('checked', false);
+        //$("#IsEnabled").prop('checked', false);
+
+        //setLocalValue('Project', '');
+        ////setLocalValue('Member', '');
+        //setLocalValue('Employee', '');
+        //setLocalValue('FlatShop', '');
+        //setLocalValue('StartDate', '');
+        //setLocalValue('EndDate', '');
+        //setLocalValue('FlatNo', '');
+        //setLocalValue('ResaledData', false);
+
+        // $("#BookingDetailGrid").hide();
+        readKendoGrid("MemberTranGrid");
+    }
+    $("#Member_id").change(function () {
+            debugger;
+            $.ajax({
+                type :'POST',
+                dataType:'json',
+                data: { id: $("#Member_id").val()},
+                url : '@Url.Action("BindNameBasedOnMobileNo", "Transaction")',
+                success: function (result) {
+                    debugger;
+                    if (result.AttributeName != "") {
+
+                        $('#MemberName').val(result.AttributeName)
+                        $("#subproduct_id").data("kendoComboBox").enable(false);
+                        $("#Product_id").data("kendoComboBox").enable(false);
+                    }
+                    else {
+                        $('#MemberName').val('')
+                        $("#subproduct_id").data("kendoComboBox").enable(true);
+                        $("#Product_id").data("kendoComboBox").enable(true);
+                    }
+                    //readKendoGrid("MemberTranGrid").data($("#Member_id").data("kendoComboBox").text());
+                 }
+            });
+        readKendoGrid("MemberTranGrid");
+    });
+
+
+
+
+
+
+    $("#Product_id").change(function () {
+        if ($("#Product_id").val() > 0) {
+
+            $("#subproduct_id").data("kendoComboBox").enable(false);
+            $("#Member_id").data("kendoComboBox").enable(false);
+        }
+        else {
+            $("#subproduct_id").data("kendoComboBox").enable(true);
+            $("#Member_id").data("kendoComboBox").enable(true);
+        }
+        readKendoGrid("MemberTranGrid");
+
+    });
+    $("#subproduct_id").change(function () {
+        if ($("#subproduct_id").val() > 0) {
+
+            $("#Product_id").data("kendoComboBox").enable(false);
+            $("#Member_id").data("kendoComboBox").enable(false);
+        }
+        else {
+            $("#Product_id").data("kendoComboBox").enable(true);
+            $("#Member_id").data("kendoComboBox").enable(true);
+        }
+        readKendoGrid("MemberTranGrid");
+
+    });
+
+    function onAdditionalData(e) {
+        return {
+            name: $("#Member_id").data("kendoComboBox").text(),
+            productid: $("#Product_id").val(),
+            subproductid:  $("#subproduct_id").val()
+        }
+
+    }
+
+    function Getmemberid(e) {
+        return {
+            memberid: $("#Member_id").data("kendoComboBox").value(),
+        }
+
+    }
+    function AddTransaction()
+    {
+        debugger;
+        var urllink = '@Url.Action("Create", "Transaction")';
+        window.location.href = urllink;
+    }
+    function onDataBound(e) {
+        var grid = $("#MemberTranGrid").data("kendoGrid");
+        var data = grid.dataSource.view();
+                /* Add DoubleClick Event */
+        grid.tbody.find("tr").dblclick(function (e) {
+            var dataItem = grid.dataItem(this);
+            //if (dataItem.IsFinalize == false)
+            //{
+            //Set values for Id(s)
+            if (dataItem.Trx_id > 0) {
+                var urllink = '@Url.Action("Create", "Transaction")';
+                window.location.href = urllink + "?id=" + dataItem.Trx_id;
+            }
+           
+        });
+       
+    }
+</script>
+

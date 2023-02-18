@@ -1,0 +1,13 @@
+﻿@model object
+
+@(Html.Kendo().ComboBoxFor(m => m)
+      //.Value(Model.PropertyTypeId == 0 ? string.Empty : Model.PropertyTypeId.ToString())
+      .DataTextField("Name")
+      .DataValueField("TypeId")
+      .DataSource(source => source.Read(read => read.Action("GetPropertyTypeList", "Common")))
+      .Suggest(true)
+      .MinLength(0)
+      .Filter(FilterType.Contains)
+      .Events(e => e.Change("onCheckDDValue"))
+      .Placeholder(CommonHelper.PleaseSelect))
+      @*.HtmlAttributes(new { @TabIndex = 2 }))*@

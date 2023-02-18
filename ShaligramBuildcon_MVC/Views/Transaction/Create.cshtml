@@ -1,0 +1,617 @@
+﻿@model CustomTransactionModel
+@using ShaligramBuildcon_MVC.Models
+@{
+    ViewBag.Title = "Add/Edit Transaction";
+}
+
+<style>
+    .Wrap {
+        white-space: pre-wrap !important;
+        overflow: unset;
+        /*text-overflow: ellipsis;*/
+    }
+
+    textarea#Note {
+        overflow: auto;
+    }
+</style>
+@using (Html.BeginForm("SaveTransaction", "Transaction", FormMethod.Post, new { @class = "form-horizontal", @id = "idform" }))
+{
+    @Html.HiddenFor(m => m.Trx_id)
+    @Html.HiddenFor(m => m.PRtoPOItemDetailTableString)
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="panel panel-white">
+            <div class="panel-heading">
+                <div class="row">
+
+                    <h4 class="col-sm-6 panel-title">
+                        <i class="icon-info22 position-left"></i>
+                        Add Transaction
+
+                    </h4>
+                    <div class="col-sm-6 text-right multi-btns">
+
+
+                        <input type="submit" class="btn btn-info btn-xs legitRipple" value="Save" name="submit" onclick="return SaveTransaction()">
+
+
+                        <a href="@Url.Action("Index", "Booking")" class="btn btn-info btn-xs legitRipple">Cancel</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                <div class="panel panel-white">
+                    <div class="panel-body">
+
+
+
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+
+
+                            <div class="form-group">
+                                @Html.Label("Member Name", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().ComboBoxFor(m => m.Member_id)
+
+              .DataTextField("FullName")
+              .DataValueField("Member_id")
+              .DataSource(source => source.Read(read => read.Action("GetMemberNo", "Transaction")))
+              .Suggest(true)
+              .Filter(FilterType.Contains)
+              .Events(e => e.Change("onCheckDDValue"))
+              .Placeholder(CommonHelper.PleaseSelect)
+              .HtmlAttributes(new { @style = "width: 100% !important;" }))
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("Product", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().ComboBoxFor(m => m.Product_id)
+
+              .DataTextField("Name")
+              .DataValueField("Product_Id")
+              .DataSource(source => source.Read(read => read.Action("GetProductList", "Transaction")))
+
+              .Events(e => e.Change("onCheckDDValue"))
+              .Placeholder(CommonHelper.PleaseSelect)
+              .HtmlAttributes(new { @style = "width: 100% !important;" }))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("Required Qty", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+
+                                    @(Html.Kendo().NumericTextBoxFor(m => m.Required_Qty).Min(0)
+        //.Name("RQty")
+ .Spinners(false)
+ .Round(true)
+
+                                      //.Format("#")
+                                      .Culture("en-IN")
+//.Events(e => e.Change("setActualAmount"))
+                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 14 }))
+                                    @Html.ValidationMessageFor(m => m.Required_Qty)
+
+
+                                    @*@(Html.Kendo().TextBox().Name("RQty").HtmlAttributes(new { @TabIndex = 3 }))*@
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("Orderd Date", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().DatePickerFor(m => m.Order_date)
+
+              .Value(DateTime.Today)
+              .HtmlAttributes(new { @style = "width: 100% !important;" })
+              .Events(e => e.Change("startChange"))
+              .HtmlAttributes(new { @TabIndex = 3, @readonly = "readonly" })
+            .ParseFormats(new string[] { "dd-MM-yyyy" })
+                                    )
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+
+
+                            <div class="form-group">
+
+                            </div>
+
+                            <div class="form-group" style="margin-top:30px;">
+                                @Html.Label("SubProduct", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().ComboBoxFor(m => m.subproduct_id)
+
+              .DataTextField("Name")
+              .DataValueField("SubProduct_Id")
+              .DataSource(source => source.Read(read => read.Action("GetSubProductList", "Transaction")))
+
+              .Events(e => e.Change("onCheckDDValue"))
+              .Placeholder(CommonHelper.PleaseSelect)
+              .HtmlAttributes(new { @style = "width: 100% !important;" }))
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                @Html.Label("Total Weight Given", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+
+                                    @(Html.Kendo().NumericTextBoxFor(m => m.Total_Weight_given).Min(0)
+        //.Name("TotalWt")
+ .Spinners(false)
+ .Round(true)
+
+                                      //.Format("#")
+                                      .Culture("en-IN")
+
+//.Events(e => e.Change("setActualAmount"))
+                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 14 }))
+                                    @Html.ValidationMessageFor(m => m.Total_Weight_given)
+
+
+                                    @* @(Html.Kendo().TextBox().Name("TotalWt").HtmlAttributes(new { @TabIndex = 3, @readonly = "readonly" }))*@
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("Return Date", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().DatePickerFor(m => m.Return_date)
+
+              .Value(Model.Return_date ==  DateTime.Today.AddDays(15) ?  DateTime.Today.AddDays(15) : Model.Return_date)
+              .HtmlAttributes(new { @style = "width: 100% !important;" })
+              .Events(e => e.Change("endChange"))
+              .ParseFormats(new string[] { "dd-MM-yyyy" })
+                )
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="panel-body" id="maingrid1">
+
+                        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.CustomTranDetails>()
+                        .Name("grid")
+                        .Columns(columns =>
+                        {
+                           
+                            //          columns.Bound(p => p.status)
+                            //.Title("status")
+                            // .ClientTemplate("<input type='checkbox' #= status ? checked='checked': '' # class='' />").Width(20);
+
+                             columns.Bound(p => p.status).ClientTemplate("<input type='checkbox' disabled #= status == true ? checked='checked' : '' # />").Width(40);
+                            //columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Payment Plan" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Payment Plan" }); }).Width(100).Title("Action");
+                            columns.Bound(m => m.product_name).Title("Product Name");//Width(50);
+                            columns.Bound(m => m.type).Title("Type");
+                            columns.Bound(m => m.Material).Title("Material");//.Width(50);
+                            columns.Bound(m => m.Totalqty).Title("Total Qty");
+                            columns.Bound(m => m.unit_type).Title("Unit Type");
+                            columns.Bound(m => m.Given_qty).Title("Given Qty");
+                            columns.Bound(m => m.Trxdetails_id).Title("Product Name").Visible(false);
+
+                        })
+
+
+                                        .Editable(editable => editable.Mode(GridEditMode.InCell).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+                                        //.Excel(excel => excel
+                                        //.AllPages(true)
+                                        //.Filterable(true)
+                                        //.FileName("Inquiry.xlsx")
+
+
+
+                                        //.Editable(editable =>
+                                        //.Resizable(r => r.Columns(true))
+                                        .Pageable(x =>
+                                        {
+                                            x.Refresh(true);
+                                            x.PageSizes(CommonHelper.LargePageSizes);
+                                        })
+                                       
+                                        //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+                                        //.Sortable(sortable => sortable.AllowUnsort(false))
+                                        .Scrollable(s => s.Height("auto"))
+                                        .NoRecords()
+
+                                        //.Events(grid => grid.DataBound("onDataBoundEdit"))
+                                        .DataSource(dataSource => dataSource
+                                        .Ajax()
+                                         .Model(model =>
+                                         {
+
+                                             model.Field(p => p.product_name).Editable(false);
+                                             model.Field(p => p.type).Editable(false);
+                                             model.Field(p => p.Material).Editable(false);
+                                             model.Field(p => p.Totalqty).Editable(false);
+                                             model.Field(p => p.unit_type).Editable(false);
+                                             
+
+
+                                         })
+                                        .ServerOperation(false)
+                                        //.PageSize(CommonHelper.PazeSize)
+                                        .Events(events => events.Error("onError(\"InquiryGrid\")"))
+                                        .Model(model => model.Id(d => d.product_name))
+                                        //.Create(update => update.Action("KendoSave", "Product"))
+                                        //.Create(update => update.Action("ReadrealtionGridSave", "Transaction"))
+                                        .Read(read => read.Action("ReadGrid", "Transaction").Data("Data")))
+                // .Update(update => update.Action("ReadrealtionGridSave", "Transaction"))
+                //.Destroy(destroy => destroy.Action("ReadrealtionDestroy", "Transaction")))
+
+
+                )
+
+                    </div>
+
+                    <div class="panel-body" id="membergrid1">
+
+                        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.CustomTranDetails>()
+                        .Name("membergrid")
+                        .Columns(columns =>
+                        {
+                            columns.Bound(p => p.status)
+                  .Title("status")
+                   .ClientTemplate("<input type='checkbox' #= status ? checked='checked': '' # class='' />");
+
+                            // columns.Bound(p => p.status).ClientTemplate("<input type='checkbox' disabled #= status == true ? checked='checked' : '' # />");
+                            //columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Payment Plan" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Payment Plan" }); }).Width(100).Title("Action");
+                            columns.Bound(m => m.Trxdetails_id).Title("Product Name").Visible(false);//Width(50);
+                            columns.Bound(m => m.product_name).Title("Product Name");//Width(50);
+                            columns.Bound(m => m.subproduct_name).Title("Subproduct Name");
+                            columns.Bound(m => m.Totalqty).Title("Required Qty");
+                            columns.Bound(m => m.Given_qty).Title("Given Qty");
+                        })
+
+
+                                        .Editable(editable => editable.Mode(GridEditMode.InCell).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+                                        //.Excel(excel => excel
+                                        //.AllPages(true)
+                                        //.Filterable(true)
+                                        //.FileName("Inquiry.xlsx")
+
+
+
+                                        //.Editable(editable =>
+                                        //.Resizable(r => r.Columns(true))
+                                        .Pageable(x =>
+                                        {
+                                            x.Refresh(true);
+                                            x.PageSizes(CommonHelper.LargePageSizes);
+                                        })
+                                      
+                                        //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+                                        //.Sortable(sortable => sortable.AllowUnsort(false))
+                                        .Scrollable(s => s.Height("auto"))
+                                        .NoRecords()
+
+                                        //.Events(grid => grid.DataBound("onDataBoundEdit"))
+                                        .DataSource(dataSource => dataSource
+                                        .Ajax()
+                                         .Model(model =>
+                                         {
+
+                                             model.Field(p => p.product_name).Editable(false);
+                                             model.Field(p => p.subproduct_name).Editable(false);
+                                             model.Field(p => p.type).Editable(false);
+                                             model.Field(p => p.Material).Editable(false);
+                                             model.Field(p => p.Totalqty).Editable(false);
+                                             model.Field(p => p.unit_type).Editable(false);
+
+
+                                         })
+                                        .ServerOperation(false)
+                                        //.PageSize(CommonHelper.PazeSize)
+                                        .Events(events => events.Error("onError(\"InquiryGrid\")"))
+                                        .Model(model => model.Id(d => d.Trxdetails_id))
+                                        //.Create(update => update.Action("KendoSave", "Product"))
+                                        //.Create(update => update.Action("ReadrealtionGridSave", "Transaction"))
+                                        .Read(read => read.Action("DetailReadGrid", "Transaction").Data("memberData")))
+                //.Update(update => update.Action("ReadrealtionGridSave", "Transaction"))
+                //.Destroy(destroy => destroy.Action("ReadrealtionDestroy", "Transaction")))
+
+
+                )
+
+                    </div>
+
+
+
+                    <div class="panel-body">
+
+
+
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+
+
+                            <div class="form-group">
+                                @Html.Label("Laboue Rate", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().NumericTextBoxFor(m => m.Piece_Labor_Rate).Min(0)
+                                      .Spinners(false)
+                                      .Round(true)
+
+                                      //.Name("LbRate")
+                                      //.Format("#")
+                                      .Culture("en-IN")
+                                      //.Events(e => e.Change("setActualAmount"))
+                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 14 ,  @readonly = "readonly" }))
+                                    @Html.ValidationMessageFor(m => m.Piece_Labor_Rate)
+                                    @*@(Html.Kendo().TextBox().Name("LbRate").HtmlAttributes(new { @TabIndex = 3, @readonly = "readonly" }))*@
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+
+                            <div class="form-group">
+                                @Html.Label("Actual Laboue Rate", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+
+                                    @(Html.Kendo().NumericTextBoxFor(m => m.Actual_piece_labor_rate).Min(0)
+                                      .Spinners(false)
+                                      .Round(true)
+
+                                      //.Name("ALbRate")
+                                      //.Format("#")
+                                      .Culture("en-IN")
+                                      //.Events(e => e.Change("setActualAmount"))
+                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 14 }))
+                                    @Html.ValidationMessageFor(m => m.Actual_piece_labor_rate)
+
+
+                                    @*@(Html.Kendo().TextBox().Name("ALbRate").HtmlAttributes(new { @TabIndex = 3 }))*@
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("Total Actual Amount", new { @class = "col-lg-3 control-label" })
+                                <div class="col-lg-6">
+                                    @(Html.Kendo().NumericTextBoxFor(m => m.Total_Actual_Amount).Min(0)
+ .Spinners(false)
+
+ .Round(true)
+                                      //.Name("ttlAmount")
+//.Format("#")
+                                      .Culture("en-IN")
+//.Events(e => e.Change("setActualAmount"))
+                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 14, @readonly = "readonly" }))
+                                    @Html.ValidationMessageFor(m => m.Total_Actual_Amount)
+                                    @*@(Html.Kendo().TextBox().Name("ttlAmount").HtmlAttributes(new { @TabIndex = 3, @readonly = "readonly" }))*@
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+}
+
+
+<script>
+    $(document).ready(function () {
+       
+        $('#Return_date').val('@DateTime.Now.AddDays(15)');
+        $('#membergrid1').hide();
+        if (@Model.Trx_id > 0) {
+
+
+            $('#Total_Actual_Amount').val('@Model.Total_Actual_Amount');
+            $('#Actual_piece_labor_rate').val('@Model.Actual_piece_labor_rate');
+            $('#Piece_Labor_Rate').val('@Model.Piece_Labor_Rate');
+            $('#Return_date').val('@Model.Return_date');
+            $('#Total_Weight_given').val('@Model.Total_Weight_given');
+            $('#subproduct_id').val('@Model.subproduct_id');
+            $('#Order_date').val('@Model.Order_date');
+            $('#Required_Qty').val('@Model.Required_Qty');
+            $('#Member_id').val('@Model.Required_Qty');
+            $('#Product_id').val('@Model.Required_Qty');
+            $('#membergrid1').show();
+            $('#maingrid1').hide();
+            readKendoGrid("membergrid");
+        }
+        else {
+            $('#maingrid1').show();
+        }
+
+    });
+
+    $('#grid').on('checked', '.chkbx', function () {
+        
+        debugger;
+            var checked = $(this).is(':checked');
+            var grid = $('#grid').data().kendoGrid;
+            var dataItem = grid.dataItem($(this).closest('tr'));
+            dataItem.set('status', checked);
+        })
+
+    function Data(e) {
+        debugger;
+        return {
+            productid: $("#Product_id").val() ,
+            qty: $("#Required_Qty").val(),
+            subproductid: $("#subproduct_id").val(),
+        }
+
+    }
+
+  
+
+    function memberData(e) {
+        debugger;
+        return {
+            memberid: $("#Trx_id").val()
+        }
+
+    }
+    $("#Required_Qty").change(function () {
+        $("#Total_Actual_Amount").data("kendoNumericTextBox").value($("#Actual_piece_labor_rate").val() * $("#Required_Qty").val())
+        //$("#ttlAmount").val($("#ALbRate").val() * $("#RQty").val())
+        readKendoGrid("grid");
+    });
+
+    $("#Actual_piece_labor_rate").change(function () {
+        $("#Total_Actual_Amount").data("kendoNumericTextBox").value($("#Actual_piece_labor_rate").val() * $("#Required_Qty").val())
+
+    });
+
+    function startChange() {
+        var endPicker = $("#toDate").data("kendoDatePicker"),
+            startDate = this.value();
+
+        if (startDate) {
+            startDate = new Date(startDate);
+            startDate.setDate(startDate.getDate() + 1);
+            endPicker.min(startDate);
+        }
+        $("#toDate").data("kendoDatePicker").value('');
+    }
+    function endChange() {
+        var startPicker = $("#fromDate").data("kendoDatePicker"),
+            endDate = this.value();
+
+        if (endDate) {
+            endDate = new Date(endDate);
+            endDate.setDate(endDate.getDate() - 1);
+            startPicker.max(endDate);
+        }
+    }
+    $("#Product_id").change(function () {
+         $.ajax({
+                type :'POST',
+                dataType:'json',
+             data: { id: $("#Product_id").val()},
+                url : '@Url.Action("GetProductList1", "Transaction")',
+                success: function (result) {
+                    debugger;
+                    $("#Piece_Labor_Rate").data("kendoNumericTextBox").value(result.lbrrate)
+                    //$('#LbRate').val(result.lbrrate)
+
+                    if ($("#Product_id").val() > 0) {
+
+                        $("#subproduct_id").data("kendoComboBox").enable(false);
+                    }
+                    else {
+                        $('#Piece_Labor_Rate').val('')
+                        $("#subproduct_id").data("kendoComboBox").enable(true);
+                    }
+                 }
+            });
+        readKendoGrid("grid");
+
+    });
+    $("#subproduct_id").change(function () {
+        $.ajax({
+                type :'POST',
+                dataType:'json',
+             data: { id: $("#Product_id").val()},
+                url : '@Url.Action("GetSubProductList1", "Transaction")',
+                success: function (result) {
+                    debugger;
+                    $("#Piece_Labor_Rate").data("kendoNumericTextBox").value(result.lbrrate)
+                   /* $('#LbRate').val(result.lbrrate)*/
+
+                    if ($("#subproduct_id").val() > 0) {
+
+                        $("#Product_id").data("kendoComboBox").enable(false);
+                    }
+                    else {
+                        $("#Product_id").data("kendoComboBox").enable(true);
+                    }
+                 }
+            });
+
+        readKendoGrid("grid");
+
+    });
+        function SaveTransaction(e) {
+            debugger;
+            $('#valMember_id').remove();
+            $('#valProduct_id').remove();
+            $('#valsubproduct_id').remove();
+            $('#valRequired_Qty').remove();
+            $('#valTotal_Weight_given').remove();
+            $('#valActual_piece_labor_rate').remove();
+
+        var isValid = 0;
+
+
+            if ($('#Member_id').val() == '') {
+                $('#Member_id').after('<div id="valMember_id" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Please Select Member.</span></div>');
+                isValid = 1;
+            }
+            if ($('#subproduct_id').val() == '') {
+                if ($('#Product_id').val() == '') {
+                    $('#Product_id').after('<div id="valProduct_id" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Please Select Product.</span></div>');
+                    isValid = 1;
+                }
+            }
+            if ($('#Product_id').val() == '') {
+                if ($('#subproduct_id').val() == '') {
+                $('#subproduct_id').after('<div id="valsubproduct_id" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Please Select SubProduct.</span></div>');
+                isValid = 1;
+            }
+
+            }
+            
+
+            if ($('#Required_Qty').val() == '0') {
+                $('#Required_Qty').after('<div id="valRequired_Qty" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Required Quantity should be greater then 0.</span></div>');
+                isValid = 1;
+            }
+            if ($('#Total_Weight_given').val() == '0') {
+                $('#Total_Weight_given').after('<div id="valTotal_Weight_given" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Total Weight Given should be greater then 0.</span></div>');
+                isValid = 1;
+            }
+
+            if ($('#Actual_piece_labor_rate').val() == '0') {
+                $('#Actual_piece_labor_rate').after('<div id="valActual_piece_labor_rate" style="position:inherit;"><span role="alert"   data-valmsg-for="files" data-for="files" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error"><span class="k-icon k-warning"> </span>Actual piece labor rate should be greater then 0.</span></div>');
+                isValid = 1;
+            }
+
+            if (isValid == 0) {
+                $('#PRtoPOItemDetailTableString').val(kendo.stringify($("#grid").data("kendoGrid").dataSource.data()));
+                $('#idform').submit();
+                return true;
+            }
+
+        else {
+            return false;
+        }
+    }
+
+    
+
+
+
+</script>
+
+

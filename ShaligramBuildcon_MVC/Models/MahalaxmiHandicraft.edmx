@@ -1,0 +1,1880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Mahalaxmi_HandicraftModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Location_id" />
+          </Key>
+          <Property Name="Location_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Rack" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Measurement_unit">
+          <Key>
+            <PropertyRef Name="unit_id" />
+          </Key>
+          <Property Name="unit_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="unit_type" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Member_id" />
+          </Key>
+          <Property Name="Member_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="F_Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="L_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Contact_no" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Alternate_conatact_no" Type="varchar" MaxLength="10" />
+          <Property Name="Address" Type="varchar" MaxLength="4000" />
+          <Property Name="Aadhar" Type="varchar" MaxLength="20" />
+          <Property Name="Deposit Amount" Type="int" Nullable="false" />
+          <Property Name="Status" Type="bit" Nullable="false" />
+          <Property Name="Created_at" Type="datetime" Nullable="false" />
+          <Property Name="Updated_at" Type="datetime" Nullable="false" />
+          <Property Name="member_Category_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Memeber_Category">
+          <Key>
+            <PropertyRef Name="member_category_id" />
+          </Key>
+          <Property Name="member_category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="Menus">
+          <Key>
+            <PropertyRef Name="MenuId" />
+          </Key>
+          <Property Name="MenuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParentMenuId" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ImagePath" Type="varchar" MaxLength="100" />
+          <Property Name="Controller" Type="varchar" MaxLength="50" />
+          <Property Name="Action" Type="varchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="DispalyOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Payment_id" />
+          </Key>
+          <Property Name="Payment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Member_id" Type="int" Nullable="false" />
+          <Property Name="Trx_id" Type="int" Nullable="false" />
+          <Property Name="Payment_date" Type="int" Nullable="false" />
+          <Property Name="Mode" Type="int" Nullable="false" />
+          <Property Name="created_at" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="updated_at" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Product_Id" />
+          </Key>
+          <Property Name="Product_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+          <Property Name="SKU" Type="int" Nullable="false" />
+          <Property Name="Created_at" Type="datetime" Nullable="false" />
+          <Property Name="Updated_at" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Category_id" Type="int" Nullable="false" />
+          <Property Name="Location_id" Type="int" Nullable="false" />
+          <Property Name="image_url" Type="varbinary" MaxLength="1" />
+          <Property Name="Labor Rate" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product_Category">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="Product_RM_usage">
+          <Key>
+            <PropertyRef Name="PRM_id" />
+          </Key>
+          <Property Name="PRM_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Product_id" Type="int" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="int" Nullable="false" />
+          <Property Name="Required_qty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product_Subproduct_relation">
+          <Key>
+            <PropertyRef Name="PSR_id" />
+          </Key>
+          <Property Name="PSR_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Product_id" Type="int" Nullable="false" />
+          <Property Name="SubProduct_id" Type="int" Nullable="false" />
+          <Property Name="Required_qty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Raw_Material">
+          <Key>
+            <PropertyRef Name="Rawmaterial_Id" />
+          </Key>
+          <Property Name="Rawmaterial_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+          <Property Name="SKU" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="unit_id" Type="int" Nullable="false" />
+          <Property Name="Created_at" Type="datetime" Nullable="false" />
+          <Property Name="Updated_at" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Category_id" Type="int" Nullable="false" />
+          <Property Name="Location_id" Type="int" Nullable="false" />
+          <Property Name="image_url" Type="varbinary" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Raw_material_supplier_relation">
+          <Key>
+            <PropertyRef Name="RMS_id" />
+          </Key>
+          <Property Name="RMS_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="supplier_id" Type="int" Nullable="false" />
+          <Property Name="Rawmaterial_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Rawmaterial_Category">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="Sub_Product">
+          <Key>
+            <PropertyRef Name="SubProduct_Id" />
+          </Key>
+          <Property Name="SubProduct_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+          <Property Name="SKU" Type="int" Nullable="false" />
+          <Property Name="Created_at" Type="datetime" Nullable="false" />
+          <Property Name="Updated_at" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Location_id" Type="int" Nullable="false" />
+          <Property Name="image_url" Type="varbinary" MaxLength="1" />
+          <Property Name="Labour rate" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Subproduct_RM_usage">
+          <Key>
+            <PropertyRef Name="SPRM_id" />
+          </Key>
+          <Property Name="SPRM_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Subproduct_id" Type="int" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="int" Nullable="false" />
+          <Property Name="Required_qty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="supplier_id" />
+          </Key>
+          <Property Name="supplier_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Contact_Person" Type="varchar" MaxLength="30" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+          <Property Name="Contact" Type="varchar" MaxLength="10" />
+          <Property Name="city" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="Trx_id" />
+          </Key>
+          <Property Name="Trx_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Member_id" Type="int" Nullable="false" />
+          <Property Name="Product_id" Type="int" />
+          <Property Name="subproduct_id" Type="int" />
+          <Property Name="Required_Qty" Type="int" Nullable="false" />
+          <Property Name="Total_Weight given" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_weight_recieved" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Recieved_qty" Type="int" />
+          <Property Name="Order_date" Type="datetime" Nullable="false" />
+          <Property Name="Return_date" Type="datetime" Nullable="false" />
+          <Property Name="Actual_return_date" Type="datetime" />
+          <Property Name="Is_completed" Type="bit" Nullable="false" />
+          <Property Name="Piece_Labor_Rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Actual_piece_labor rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_Actual_Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ValidFrom" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="ValidTo" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Transaction_details">
+          <Key>
+            <PropertyRef Name="Trxdetails_id" />
+          </Key>
+          <Property Name="Trxdetails_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Trx_id" Type="int" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="int" Nullable="false" />
+          <Property Name="subproduct_id" Type="int" Nullable="false" />
+          <Property Name="Required_qty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Given_qty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Is_pending" Type="bit" Nullable="false" />
+          <Property Name="ValidFrom" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="ValidTo" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Mahalaxmi_Handicraft.dbo.Transaction_History' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Transaction_History">
+          <Key>
+            <PropertyRef Name="Trx_id" />
+            <PropertyRef Name="Member_id" />
+            <PropertyRef Name="Required_Qty" />
+            <PropertyRef Name="Total_Weight given" />
+            <PropertyRef Name="Order_date" />
+            <PropertyRef Name="Return_date" />
+            <PropertyRef Name="Is_completed" />
+            <PropertyRef Name="Piece_Labor_Rate" />
+            <PropertyRef Name="Actual_piece_labor rate" />
+            <PropertyRef Name="Total_Actual_Amount" />
+            <PropertyRef Name="ValidFrom" />
+            <PropertyRef Name="ValidTo" />
+          </Key>
+          <Property Name="Trx_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Member_id" Type="int" Nullable="false" />
+          <Property Name="Product_id" Type="int" />
+          <Property Name="subproduct_id" Type="int" />
+          <Property Name="Required_Qty" Type="int" Nullable="false" />
+          <Property Name="Total_Weight given" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_weight_recieved" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Recieved_qty" Type="int" />
+          <Property Name="Order_date" Type="datetime" Nullable="false" />
+          <Property Name="Return_date" Type="datetime" Nullable="false" />
+          <Property Name="Actual_return_date" Type="datetime" />
+          <Property Name="Is_completed" Type="bit" Nullable="false" />
+          <Property Name="Piece_Labor_Rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Actual_piece_labor rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_Actual_Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ValidFrom" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="ValidTo" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Member_member_Category_id">
+          <End Role="Memeber_Category" Type="Self.Memeber_Category" Multiplicity="1" />
+          <End Role="Member" Type="Self.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Memeber_Category">
+              <PropertyRef Name="member_category_id" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="member_Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_Member_id">
+          <End Role="Member" Type="Self.Member" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="Member_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_Trx_id">
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="Trx_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category_id">
+          <End Role="Product_Category" Type="Self.Product_Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product_Category">
+              <PropertyRef Name="category_id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Location_id">
+          <End Role="Location" Type="Self.Location" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="Location_id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Location_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_RM_usage_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Product_RM_usage" Type="Self.Product_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Product_RM_usage">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_RM_usage_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Product_RM_usage" Type="Self.Product_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Product_RM_usage">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Subproduct_relation_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Product_Subproduct_relation" Type="Self.Product_Subproduct_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Product_Subproduct_relation">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Subproduct_relation_SubProduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Product_Subproduct_relation" Type="Self.Product_Subproduct_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Product_Subproduct_relation">
+              <PropertyRef Name="SubProduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Category_id- Remove">
+          <End Role="Rawmaterial_Category" Type="Self.Rawmaterial_Category" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rawmaterial_Category">
+              <PropertyRef Name="category_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Location_id">
+          <End Role="Location" Type="Self.Location" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="Location_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="Location_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Rawmaterial_Id">
+          <End Role="Measurement_unit" Type="Self.Measurement_unit" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Measurement_unit">
+              <PropertyRef Name="unit_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="unit_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_material_supplier_relation_Rawmaterial_Id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Raw_material_supplier_relation" Type="Self.Raw_material_supplier_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Raw_material_supplier_relation">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_material_supplier_relation_supplier_id">
+          <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+          <End Role="Raw_material_supplier_relation" Type="Self.Raw_material_supplier_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="supplier_id" />
+            </Principal>
+            <Dependent Role="Raw_material_supplier_relation">
+              <PropertyRef Name="supplier_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subproduct_RM_usage_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Subproduct_RM_usage" Type="Self.Subproduct_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Subproduct_RM_usage">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subproduct_RM_usage_Subproduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Subproduct_RM_usage" Type="Self.Subproduct_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Subproduct_RM_usage">
+              <PropertyRef Name="Subproduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_Member_id">
+          <End Role="Member" Type="Self.Member" Multiplicity="1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="Member_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_subproduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="subproduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_Trxdetails_id">
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="Trx_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="BindCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="BindLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="childmenulist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="DeleteProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteProductsRmRelation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteProductsSubproductRelation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetProductRMRelation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="productid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="parentmenulist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_Products" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_RawMaterials" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Sp_SaveProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="productid" Type="int" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="SKU" Type="int" Mode="In" />
+          <Parameter Name="Categoryid" Type="int" Mode="In" />
+          <Parameter Name="locationid" Type="int" Mode="In" />
+          <Parameter Name="labourrate" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Sp_SaveProductsRmRelations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="pmrid" Type="int" Mode="In" />
+          <Parameter Name="Productid" Type="int" Mode="In" />
+          <Parameter Name="RMId" Type="int" Mode="In" />
+          <Parameter Name="RequiredQty" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="Sp_SaveSubProductsRmRelations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PSR_id" Type="int" Mode="In" />
+          <Parameter Name="Productid" Type="int" Mode="In" />
+          <Parameter Name="SubProduct_id" Type="int" Mode="In" />
+          <Parameter Name="RequiredQty" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="sp_subproduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Mahalaxmi_HandicraftModelStoreContainer">
+          <EntitySet Name="Location" EntityType="Self.Location" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Measurement_unit" EntityType="Self.Measurement_unit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Memeber_Category" EntityType="Self.Memeber_Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Menus" EntityType="Self.Menus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product_Category" EntityType="Self.Product_Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product_RM_usage" EntityType="Self.Product_RM_usage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product_Subproduct_relation" EntityType="Self.Product_Subproduct_relation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Raw_Material" EntityType="Self.Raw_Material" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Raw_material_supplier_relation" EntityType="Self.Raw_material_supplier_relation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Rawmaterial_Category" EntityType="Self.Rawmaterial_Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sub_Product" EntityType="Self.Sub_Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subproduct_RM_usage" EntityType="Self.Subproduct_RM_usage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transaction" EntityType="Self.Transaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transaction_details" EntityType="Self.Transaction_details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transaction_History" EntityType="Self.Transaction_History" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Transaction_History].[Trx_id] AS [Trx_id], 
+    [Transaction_History].[Member_id] AS [Member_id], 
+    [Transaction_History].[Product_id] AS [Product_id], 
+    [Transaction_History].[subproduct_id] AS [subproduct_id], 
+    [Transaction_History].[Required_Qty] AS [Required_Qty], 
+    [Transaction_History].[Total_Weight given] AS [Total_Weight given], 
+    [Transaction_History].[Total_weight_recieved] AS [Total_weight_recieved], 
+    [Transaction_History].[Recieved_qty] AS [Recieved_qty], 
+    [Transaction_History].[Order_date] AS [Order_date], 
+    [Transaction_History].[Return_date] AS [Return_date], 
+    [Transaction_History].[Actual_return_date] AS [Actual_return_date], 
+    [Transaction_History].[Is_completed] AS [Is_completed], 
+    [Transaction_History].[Piece_Labor_Rate] AS [Piece_Labor_Rate], 
+    [Transaction_History].[Actual_piece_labor rate] AS [Actual_piece_labor rate], 
+    [Transaction_History].[Total_Actual_Amount] AS [Total_Actual_Amount], 
+    [Transaction_History].[ValidFrom] AS [ValidFrom], 
+    [Transaction_History].[ValidTo] AS [ValidTo]
+    FROM [dbo].[Transaction_History] AS [Transaction_History]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Member_member_Category_id" Association="Self.FK_Member_member_Category_id">
+            <End Role="Memeber_Category" EntitySet="Memeber_Category" />
+            <End Role="Member" EntitySet="Member" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_Member_id" Association="Self.FK_Payment_Member_id">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_Trx_id" Association="Self.FK_Payment_Trx_id">
+            <End Role="Transaction" EntitySet="Transaction" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category_id" Association="Self.FK_Product_Category_id">
+            <End Role="Product_Category" EntitySet="Product_Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Location_id" Association="Self.FK_Product_Location_id">
+            <End Role="Location" EntitySet="Location" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_RM_usage_Product_id" Association="Self.FK_Product_RM_usage_Product_id">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Product_RM_usage" EntitySet="Product_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_RM_usage_Rawmaterial_id" Association="Self.FK_Product_RM_usage_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Product_RM_usage" EntitySet="Product_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Subproduct_relation_Product_id" Association="Self.FK_Product_Subproduct_relation_Product_id">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Product_Subproduct_relation" EntitySet="Product_Subproduct_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Subproduct_relation_SubProduct_id" Association="Self.FK_Product_Subproduct_relation_SubProduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Product_Subproduct_relation" EntitySet="Product_Subproduct_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Category_id- Remove" Association="Self.FK_Raw_Material_Category_id- Remove">
+            <End Role="Rawmaterial_Category" EntitySet="Rawmaterial_Category" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Location_id" Association="Self.FK_Raw_Material_Location_id">
+            <End Role="Location" EntitySet="Location" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Rawmaterial_Id" Association="Self.FK_Raw_Material_Rawmaterial_Id">
+            <End Role="Measurement_unit" EntitySet="Measurement_unit" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_material_supplier_relation_Rawmaterial_Id" Association="Self.FK_Raw_material_supplier_relation_Rawmaterial_Id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Raw_material_supplier_relation" EntitySet="Raw_material_supplier_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_material_supplier_relation_supplier_id" Association="Self.FK_Raw_material_supplier_relation_supplier_id">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Raw_material_supplier_relation" EntitySet="Raw_material_supplier_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subproduct_RM_usage_Rawmaterial_id" Association="Self.FK_Subproduct_RM_usage_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Subproduct_RM_usage" EntitySet="Subproduct_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subproduct_RM_usage_Subproduct_id" Association="Self.FK_Subproduct_RM_usage_Subproduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Subproduct_RM_usage" EntitySet="Subproduct_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_Member_id" Association="Self.FK_Transaction_Member_id">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="Transaction" EntitySet="Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_Product_id" Association="Self.FK_Transaction_Product_id">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Transaction" EntitySet="Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_Rawmaterial_id" Association="Self.FK_Transaction_details_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_subproduct_id" Association="Self.FK_Transaction_details_subproduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_Trxdetails_id" Association="Self.FK_Transaction_details_Trxdetails_id">
+            <End Role="Transaction" EntitySet="Transaction" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Mahalaxmi_HandicraftModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Location_id" />
+          </Key>
+          <Property Name="Location_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Rack" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Products" Relationship="Self.FK_Product_Location_id" FromRole="Location" ToRole="Product" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Raw_Material_Location_id" FromRole="Location" ToRole="Raw_Material" />
+        </EntityType>
+        <EntityType Name="Measurement_unit">
+          <Key>
+            <PropertyRef Name="unit_id" />
+          </Key>
+          <Property Name="unit_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="unit_type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Raw_Material_Rawmaterial_Id" FromRole="Measurement_unit" ToRole="Raw_Material" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Member_id" />
+          </Key>
+          <Property Name="Member_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="F_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="L_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Contact_no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Alternate_conatact_no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Aadhar" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Deposit_Amount" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+          <Property Name="Created_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="member_Category_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Memeber_Category" Relationship="Self.FK_Member_member_Category_id" FromRole="Member" ToRole="Memeber_Category" />
+          <NavigationProperty Name="Payments" Relationship="Self.FK_Payment_Member_id" FromRole="Member" ToRole="Payment" />
+          <NavigationProperty Name="Transactions" Relationship="Self.FK_Transaction_Member_id" FromRole="Member" ToRole="Transaction" />
+        </EntityType>
+        <EntityType Name="Memeber_Category">
+          <Key>
+            <PropertyRef Name="member_category_id" />
+          </Key>
+          <Property Name="member_category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Members" Relationship="Self.FK_Member_member_Category_id" FromRole="Memeber_Category" ToRole="Member" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Payment_id" />
+          </Key>
+          <Property Name="Payment_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Member_id" Type="Int32" Nullable="false" />
+          <Property Name="Trx_id" Type="Int32" Nullable="false" />
+          <Property Name="Payment_date" Type="Int32" Nullable="false" />
+          <Property Name="Mode" Type="Int32" Nullable="false" />
+          <Property Name="created_at" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="updated_at" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Member" Relationship="Self.FK_Payment_Member_id" FromRole="Payment" ToRole="Member" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_Payment_Trx_id" FromRole="Payment" ToRole="Transaction" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Product_Id" />
+          </Key>
+          <Property Name="Product_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="SKU" Type="Int32" Nullable="false" />
+          <Property Name="Created_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="Category_id" Type="Int32" Nullable="false" />
+          <Property Name="Location_id" Type="Int32" Nullable="false" />
+          <Property Name="image_url" Type="Binary" MaxLength="1" FixedLength="false" />
+          <Property Name="Labor_Rate" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Location" Relationship="Self.FK_Product_Location_id" FromRole="Product" ToRole="Location" />
+          <NavigationProperty Name="Product_Category" Relationship="Self.FK_Product_Category_id" FromRole="Product" ToRole="Product_Category" />
+          <NavigationProperty Name="Product_RM_usage" Relationship="Self.FK_Product_RM_usage_Product_id" FromRole="Product" ToRole="Product_RM_usage" />
+          <NavigationProperty Name="Product_Subproduct_relation" Relationship="Self.FK_Product_Subproduct_relation_Product_id" FromRole="Product" ToRole="Product_Subproduct_relation" />
+          <NavigationProperty Name="Transactions" Relationship="Self.FK_Transaction_Product_id" FromRole="Product" ToRole="Transaction" />
+        </EntityType>
+        <EntityType Name="Product_Category">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Products" Relationship="Self.FK_Product_Category_id" FromRole="Product_Category" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product_RM_usage">
+          <Key>
+            <PropertyRef Name="PRM_id" />
+          </Key>
+          <Property Name="PRM_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Product_id" Type="Int32" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="Int32" Nullable="false" />
+          <Property Name="Required_qty" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_RM_usage_Product_id" FromRole="Product_RM_usage" ToRole="Product" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Product_RM_usage_Rawmaterial_id" FromRole="Product_RM_usage" ToRole="Raw_Material" />
+        </EntityType>
+        <EntityType Name="Product_Subproduct_relation">
+          <Key>
+            <PropertyRef Name="PSR_id" />
+          </Key>
+          <Property Name="PSR_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Product_id" Type="Int32" Nullable="false" />
+          <Property Name="SubProduct_id" Type="Int32" Nullable="false" />
+          <Property Name="Required_qty" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_Subproduct_relation_Product_id" FromRole="Product_Subproduct_relation" ToRole="Product" />
+          <NavigationProperty Name="Sub_Product" Relationship="Self.FK_Product_Subproduct_relation_SubProduct_id" FromRole="Product_Subproduct_relation" ToRole="Sub_Product" />
+        </EntityType>
+        <EntityType Name="Raw_Material">
+          <Key>
+            <PropertyRef Name="Rawmaterial_Id" />
+          </Key>
+          <Property Name="Rawmaterial_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="SKU" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="unit_id" Type="Int32" Nullable="false" />
+          <Property Name="Created_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="Category_id" Type="Int32" Nullable="false" />
+          <Property Name="Location_id" Type="Int32" Nullable="false" />
+          <Property Name="image_url" Type="Binary" MaxLength="1" FixedLength="false" />
+          <NavigationProperty Name="Location" Relationship="Self.FK_Raw_Material_Location_id" FromRole="Raw_Material" ToRole="Location" />
+          <NavigationProperty Name="Measurement_unit" Relationship="Self.FK_Raw_Material_Rawmaterial_Id" FromRole="Raw_Material" ToRole="Measurement_unit" />
+          <NavigationProperty Name="Product_RM_usage" Relationship="Self.FK_Product_RM_usage_Rawmaterial_id" FromRole="Raw_Material" ToRole="Product_RM_usage" />
+          <NavigationProperty Name="Rawmaterial_Category" Relationship="Self.FK_Raw_Material_Category_id__Remove" FromRole="Raw_Material" ToRole="Rawmaterial_Category" />
+          <NavigationProperty Name="Raw_material_supplier_relation" Relationship="Self.FK_Raw_material_supplier_relation_Rawmaterial_Id" FromRole="Raw_Material" ToRole="Raw_material_supplier_relation" />
+          <NavigationProperty Name="Subproduct_RM_usage" Relationship="Self.FK_Subproduct_RM_usage_Rawmaterial_id" FromRole="Raw_Material" ToRole="Subproduct_RM_usage" />
+          <NavigationProperty Name="Transaction_details" Relationship="Self.FK_Transaction_details_Rawmaterial_id" FromRole="Raw_Material" ToRole="Transaction_details" />
+        </EntityType>
+        <EntityType Name="Raw_material_supplier_relation">
+          <Key>
+            <PropertyRef Name="RMS_id" />
+          </Key>
+          <Property Name="RMS_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="supplier_id" Type="Int32" Nullable="false" />
+          <Property Name="Rawmaterial_Id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Raw_material_supplier_relation_Rawmaterial_Id" FromRole="Raw_material_supplier_relation" ToRole="Raw_Material" />
+          <NavigationProperty Name="Supplier" Relationship="Self.FK_Raw_material_supplier_relation_supplier_id" FromRole="Raw_material_supplier_relation" ToRole="Supplier" />
+        </EntityType>
+        <EntityType Name="Rawmaterial_Category">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Raw_Material_Category_id__Remove" FromRole="Rawmaterial_Category" ToRole="Raw_Material" />
+        </EntityType>
+        <EntityType Name="Sub_Product">
+          <Key>
+            <PropertyRef Name="SubProduct_Id" />
+          </Key>
+          <Property Name="SubProduct_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="SKU" Type="Int32" Nullable="false" />
+          <Property Name="Created_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="Location_id" Type="Int32" Nullable="false" />
+          <Property Name="image_url" Type="Binary" MaxLength="1" FixedLength="false" />
+          <Property Name="Labour_rate" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product_Subproduct_relation" Relationship="Self.FK_Product_Subproduct_relation_SubProduct_id" FromRole="Sub_Product" ToRole="Product_Subproduct_relation" />
+          <NavigationProperty Name="Subproduct_RM_usage" Relationship="Self.FK_Subproduct_RM_usage_Subproduct_id" FromRole="Sub_Product" ToRole="Subproduct_RM_usage" />
+          <NavigationProperty Name="Transaction_details" Relationship="Self.FK_Transaction_details_subproduct_id" FromRole="Sub_Product" ToRole="Transaction_details" />
+        </EntityType>
+        <EntityType Name="Subproduct_RM_usage">
+          <Key>
+            <PropertyRef Name="SPRM_id" />
+          </Key>
+          <Property Name="SPRM_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Subproduct_id" Type="Int32" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="Int32" Nullable="false" />
+          <Property Name="Required_qty" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Subproduct_RM_usage_Rawmaterial_id" FromRole="Subproduct_RM_usage" ToRole="Raw_Material" />
+          <NavigationProperty Name="Sub_Product" Relationship="Self.FK_Subproduct_RM_usage_Subproduct_id" FromRole="Subproduct_RM_usage" ToRole="Sub_Product" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="supplier_id" />
+          </Key>
+          <Property Name="supplier_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Contact_Person" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Contact" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Raw_material_supplier_relation" Relationship="Self.FK_Raw_material_supplier_relation_supplier_id" FromRole="Supplier" ToRole="Raw_material_supplier_relation" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="Trx_id" />
+          </Key>
+          <Property Name="Trx_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Member_id" Type="Int32" Nullable="false" />
+          <Property Name="Product_id" Type="Int32" />
+          <Property Name="subproduct_id" Type="Int32" />
+          <Property Name="Required_Qty" Type="Int32" Nullable="false" />
+          <Property Name="Total_Weight_given" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_weight_recieved" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Recieved_qty" Type="Int32" />
+          <Property Name="Order_datte" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Return_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Actual_return_date" Type="DateTime" Precision="3" />
+          <Property Name="Valid_From" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Valide_to" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Is_completed" Type="Boolean" Nullable="false" />
+          <Property Name="Calculated_Piece_Labor_Rate" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Actual_piece_labor_rate" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_Actual_Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Member" Relationship="Self.FK_Transaction_Member_id" FromRole="Transaction" ToRole="Member" />
+          <NavigationProperty Name="Payments" Relationship="Self.FK_Payment_Trx_id" FromRole="Transaction" ToRole="Payment" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Transaction_Product_id" FromRole="Transaction" ToRole="Product" />
+          <NavigationProperty Name="Transaction_details" Relationship="Self.FK_Transaction_details_Trxdetails_id" FromRole="Transaction" ToRole="Transaction_details" />
+          <NavigationProperty Name="Transaction_History" Relationship="Self.FK_Transaction_History_Trx_id" FromRole="Transaction" ToRole="Transaction_History" />
+          <Property Name="Order_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Piece_Labor_Rate" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="ValidFrom" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ValidTo" Type="DateTime" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Transaction_details1" Relationship="Mahalaxmi_HandicraftModel.FK_Transaction_details_Trxdetails_id1" FromRole="Transaction" ToRole="Transaction_details" />
+        </EntityType>
+        <EntityType Name="Transaction_details">
+          <Key>
+            <PropertyRef Name="Trxdetails_id" />
+          </Key>
+          <Property Name="Trxdetails_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Trx_id" Type="Int32" Nullable="false" />
+          <Property Name="Rawmaterial_id" Type="Int32" Nullable="false" />
+          <Property Name="subproduct_id" Type="Int32" Nullable="false" />
+          <Property Name="Required_qty" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Given_qty" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Is_pending" Type="Boolean" Nullable="false" />
+          <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Raw_Material" Relationship="Self.FK_Transaction_details_Rawmaterial_id" FromRole="Transaction_details" ToRole="Raw_Material" />
+          <NavigationProperty Name="Sub_Product" Relationship="Self.FK_Transaction_details_subproduct_id" FromRole="Transaction_details" ToRole="Sub_Product" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_Transaction_details_Trxdetails_id" FromRole="Transaction_details" ToRole="Transaction" />
+          <Property Name="ValidFrom" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ValidTo" Type="DateTime" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Transaction1" Relationship="Mahalaxmi_HandicraftModel.FK_Transaction_details_Trxdetails_id1" FromRole="Transaction_details" ToRole="Transaction" />
+        </EntityType>
+        <EntityType Name="Transaction_History">
+          <Key>
+            <PropertyRef Name="Trx_id" />
+            <PropertyRef Name="Member_id" />
+            <PropertyRef Name="Required_Qty" />
+            <PropertyRef Name="Total_Weight_given" />
+            <PropertyRef Name="Order_datte" />
+            <PropertyRef Name="Return_date" />
+            <PropertyRef Name="Is_completed" />
+            <PropertyRef Name="Calculated_Piece_Labor_Rate" />
+            <PropertyRef Name="Actual_piece_labor_rate" />
+            <PropertyRef Name="Total_Actual_Amount" />
+            <PropertyRef Name="Valid_From" />
+            <PropertyRef Name="Valid_to" />
+            <PropertyRef Name="Order_date" />
+            <PropertyRef Name="Piece_Labor_Rate" />
+            <PropertyRef Name="Total_Actual_Amount1" />
+            <PropertyRef Name="ValidFrom" />
+            <PropertyRef Name="ValidTo" />
+          </Key>
+          <Property Name="Trx_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Member_id" Type="Int32" Nullable="false" />
+          <Property Name="Product_id" Type="Int32" />
+          <Property Name="subproduct_id" Type="Int32" />
+          <Property Name="Required_Qty" Type="Int32" Nullable="false" />
+          <Property Name="Total_Weight_given" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_weight_recieved" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Recieved_qty" Type="Int32" />
+          <Property Name="Order_datte" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Return_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Actual_return_date" Type="DateTime" Precision="3" />
+          <Property Name="Is_completed" Type="Boolean" Nullable="false" />
+          <Property Name="Calculated_Piece_Labor_Rate" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Actual_piece_labor_rate" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Total_Actual_Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Valid_From" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Valid_to" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_Transaction_History_Trx_id" FromRole="Transaction_History" ToRole="Transaction" />
+          <Property Name="Order_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Piece_Labor_Rate" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="Total_Actual_Amount1" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="ValidFrom" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ValidTo" Type="DateTime" Nullable="false" Precision="7" />
+        </EntityType>
+        <Association Name="FK_Product_Location_id">
+          <End Role="Location" Type="Self.Location" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="Location_id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Location_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Location_id">
+          <End Role="Location" Type="Self.Location" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="Location_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="Location_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Rawmaterial_Id">
+          <End Role="Measurement_unit" Type="Self.Measurement_unit" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Measurement_unit">
+              <PropertyRef Name="unit_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="unit_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Member_member_Category_id">
+          <End Role="Memeber_Category" Type="Self.Memeber_Category" Multiplicity="1" />
+          <End Role="Member" Type="Self.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Memeber_Category">
+              <PropertyRef Name="member_category_id" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="member_Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_Member_id">
+          <End Role="Member" Type="Self.Member" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="Member_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_Member_id">
+          <End Role="Member" Type="Self.Member" Multiplicity="1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="Member_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_Trx_id">
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="Trx_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category_id">
+          <End Role="Product_Category" Type="Self.Product_Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product_Category">
+              <PropertyRef Name="category_id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_RM_usage_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Product_RM_usage" Type="Self.Product_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Product_RM_usage">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Subproduct_relation_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Product_Subproduct_relation" Type="Self.Product_Subproduct_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Product_Subproduct_relation">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_Product_id">
+          <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_RM_usage_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Product_RM_usage" Type="Self.Product_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Product_RM_usage">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Subproduct_relation_SubProduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Product_Subproduct_relation" Type="Self.Product_Subproduct_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Product_Subproduct_relation">
+              <PropertyRef Name="SubProduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_Material_Category_id__Remove">
+          <End Role="Rawmaterial_Category" Type="Self.Rawmaterial_Category" Multiplicity="1" />
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rawmaterial_Category">
+              <PropertyRef Name="category_id" />
+            </Principal>
+            <Dependent Role="Raw_Material">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_material_supplier_relation_Rawmaterial_Id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Raw_material_supplier_relation" Type="Self.Raw_material_supplier_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Raw_material_supplier_relation">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subproduct_RM_usage_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Subproduct_RM_usage" Type="Self.Subproduct_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Subproduct_RM_usage">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_Rawmaterial_id">
+          <End Role="Raw_Material" Type="Self.Raw_Material" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raw_Material">
+              <PropertyRef Name="Rawmaterial_Id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="Rawmaterial_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Raw_material_supplier_relation_supplier_id">
+          <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+          <End Role="Raw_material_supplier_relation" Type="Self.Raw_material_supplier_relation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="supplier_id" />
+            </Principal>
+            <Dependent Role="Raw_material_supplier_relation">
+              <PropertyRef Name="supplier_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subproduct_RM_usage_Subproduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Subproduct_RM_usage" Type="Self.Subproduct_RM_usage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Subproduct_RM_usage">
+              <PropertyRef Name="Subproduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_subproduct_id">
+          <End Role="Sub_Product" Type="Self.Sub_Product" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sub_Product">
+              <PropertyRef Name="SubProduct_Id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="subproduct_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_details_Trxdetails_id">
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="Transaction_details" Type="Self.Transaction_details" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="Trxdetails_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_History_Trx_id">
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="Transaction_History" Type="Self.Transaction_History" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Transaction_History">
+              <PropertyRef Name="Trx_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Mahalaxmi_HandicraftEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Locations" EntityType="Self.Location" />
+          <EntitySet Name="Measurement_unit" EntityType="Self.Measurement_unit" />
+          <EntitySet Name="Members" EntityType="Self.Member" />
+          <EntitySet Name="Memeber_Category" EntityType="Self.Memeber_Category" />
+          <EntitySet Name="Payments" EntityType="Self.Payment" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Product_Category" EntityType="Self.Product_Category" />
+          <EntitySet Name="Product_RM_usage" EntityType="Self.Product_RM_usage" />
+          <EntitySet Name="Product_Subproduct_relation" EntityType="Self.Product_Subproduct_relation" />
+          <EntitySet Name="Raw_Material" EntityType="Self.Raw_Material" />
+          <EntitySet Name="Raw_material_supplier_relation" EntityType="Self.Raw_material_supplier_relation" />
+          <EntitySet Name="Rawmaterial_Category" EntityType="Self.Rawmaterial_Category" />
+          <EntitySet Name="Sub_Product" EntityType="Self.Sub_Product" />
+          <EntitySet Name="Subproduct_RM_usage" EntityType="Self.Subproduct_RM_usage" />
+          <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+          <EntitySet Name="Transactions" EntityType="Self.Transaction" />
+          <EntitySet Name="Transaction_details" EntityType="Self.Transaction_details" />
+          <EntitySet Name="Transaction_History" EntityType="Self.Transaction_History" />
+          <AssociationSet Name="FK_Product_Location_id" Association="Self.FK_Product_Location_id">
+            <End Role="Location" EntitySet="Locations" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Location_id" Association="Self.FK_Raw_Material_Location_id">
+            <End Role="Location" EntitySet="Locations" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Rawmaterial_Id" Association="Self.FK_Raw_Material_Rawmaterial_Id">
+            <End Role="Measurement_unit" EntitySet="Measurement_unit" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Member_member_Category_id" Association="Self.FK_Member_member_Category_id">
+            <End Role="Memeber_Category" EntitySet="Memeber_Category" />
+            <End Role="Member" EntitySet="Members" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_Member_id" Association="Self.FK_Payment_Member_id">
+            <End Role="Member" EntitySet="Members" />
+            <End Role="Payment" EntitySet="Payments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_Member_id" Association="Self.FK_Transaction_Member_id">
+            <End Role="Member" EntitySet="Members" />
+            <End Role="Transaction" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_Trx_id" Association="Self.FK_Payment_Trx_id">
+            <End Role="Transaction" EntitySet="Transactions" />
+            <End Role="Payment" EntitySet="Payments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category_id" Association="Self.FK_Product_Category_id">
+            <End Role="Product_Category" EntitySet="Product_Category" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_RM_usage_Product_id" Association="Self.FK_Product_RM_usage_Product_id">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Product_RM_usage" EntitySet="Product_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Subproduct_relation_Product_id" Association="Self.FK_Product_Subproduct_relation_Product_id">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Product_Subproduct_relation" EntitySet="Product_Subproduct_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_Product_id" Association="Self.FK_Transaction_Product_id">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Transaction" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_RM_usage_Rawmaterial_id" Association="Self.FK_Product_RM_usage_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Product_RM_usage" EntitySet="Product_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Subproduct_relation_SubProduct_id" Association="Self.FK_Product_Subproduct_relation_SubProduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Product_Subproduct_relation" EntitySet="Product_Subproduct_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_Material_Category_id__Remove" Association="Self.FK_Raw_Material_Category_id__Remove">
+            <End Role="Rawmaterial_Category" EntitySet="Rawmaterial_Category" />
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_material_supplier_relation_Rawmaterial_Id" Association="Self.FK_Raw_material_supplier_relation_Rawmaterial_Id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Raw_material_supplier_relation" EntitySet="Raw_material_supplier_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subproduct_RM_usage_Rawmaterial_id" Association="Self.FK_Subproduct_RM_usage_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Subproduct_RM_usage" EntitySet="Subproduct_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_Rawmaterial_id" Association="Self.FK_Transaction_details_Rawmaterial_id">
+            <End Role="Raw_Material" EntitySet="Raw_Material" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Raw_material_supplier_relation_supplier_id" Association="Self.FK_Raw_material_supplier_relation_supplier_id">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="Raw_material_supplier_relation" EntitySet="Raw_material_supplier_relation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subproduct_RM_usage_Subproduct_id" Association="Self.FK_Subproduct_RM_usage_Subproduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Subproduct_RM_usage" EntitySet="Subproduct_RM_usage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_subproduct_id" Association="Self.FK_Transaction_details_subproduct_id">
+            <End Role="Sub_Product" EntitySet="Sub_Product" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_details_Trxdetails_id" Association="Self.FK_Transaction_details_Trxdetails_id">
+            <End Role="Transaction" EntitySet="Transactions" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_History_Trx_id" Association="Self.FK_Transaction_History_Trx_id">
+            <End Role="Transaction" EntitySet="Transactions" />
+            <End Role="Transaction_History" EntitySet="Transaction_History" />
+          </AssociationSet>
+          <FunctionImport Name="sp_Products" ReturnType="Collection(Mahalaxmi_HandicraftModel.sp_Products_Result)" />
+          <FunctionImport Name="BindCategory" ReturnType="Collection(Mahalaxmi_HandicraftModel.BindCategory_Result)" />
+          <FunctionImport Name="BindLocation" ReturnType="Collection(Mahalaxmi_HandicraftModel.BindLocation_Result)" />
+          <FunctionImport Name="Sp_SaveProducts" ReturnType="Collection(Int32)">
+            <Parameter Name="productid" Mode="In" Type="Int32" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="SKU" Mode="In" Type="Int32" />
+            <Parameter Name="Categoryid" Mode="In" Type="Int32" />
+            <Parameter Name="locationid" Mode="In" Type="Int32" />
+            <Parameter Name="labourrate" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteProducts">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Menus" EntityType="Mahalaxmi_HandicraftModel.Menu" />
+          <FunctionImport Name="GetProductRMRelation" ReturnType="Collection(Mahalaxmi_HandicraftModel.GetProductRMRelation_Result)">
+          <Parameter Name="productid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetProductRMRelation1" ReturnType="Collection(Mahalaxmi_HandicraftModel.GetProductRMRelation1_Result)">
+          <Parameter Name="productid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_RawMaterials" ReturnType="Collection(Mahalaxmi_HandicraftModel.sp_RawMaterials_Result)" />
+          <FunctionImport Name="Sp_SaveProductsRmRelations" ReturnType="Collection(Int32)">
+            <Parameter Name="pmrid" Mode="In" Type="Int32" />
+            <Parameter Name="Productid" Mode="In" Type="Int32" />
+            <Parameter Name="RMId" Mode="In" Type="Int32" />
+            <Parameter Name="RequiredQty" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="childmenulist" ReturnType="Collection(Mahalaxmi_HandicraftModel.childmenulist_Result)" />
+          <FunctionImport Name="parentmenulist" ReturnType="Collection(Mahalaxmi_HandicraftModel.parentmenulist_Result)" />
+          <FunctionImport Name="Sp_SaveSubProductsRmRelations" ReturnType="Collection(Int32)">
+            <Parameter Name="PSR_id" Mode="In" Type="Int32" />
+            <Parameter Name="Productid" Mode="In" Type="Int32" />
+            <Parameter Name="SubProduct_id" Mode="In" Type="Int32" />
+            <Parameter Name="RequiredQty" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <AssociationSet Name="FK_Transaction_details_Trxdetails_id1" Association="Mahalaxmi_HandicraftModel.FK_Transaction_details_Trxdetails_id1">
+            <End Role="Transaction" EntitySet="Transactions" />
+            <End Role="Transaction_details" EntitySet="Transaction_details" />
+          </AssociationSet>
+          <FunctionImport Name="sp_subproduct" ReturnType="Collection(Mahalaxmi_HandicraftModel.sp_subproduct_Result)" />
+          <FunctionImport Name="DeleteProductsRmRelation" ReturnType="Collection(String)">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteProductsSubproductRelation" ReturnType="Collection(String)">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="sp_Products_Result">
+          <Property Type="Int32" Name="Product_Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="400" />
+          <Property Type="Int32" Name="SKU" Nullable="false" />
+          <Property Type="DateTime" Name="Created_at" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="Updated_at" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="Int32" Name="Category_id" Nullable="false" />
+          <Property Type="Int32" Name="Location_id" Nullable="false" />
+          <Property Type="Binary" Name="image_url" Nullable="true" MaxLength="1" />
+          <Property Type="Int32" Name="Labor_Rate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="BindCategory_Result">
+          <Property Type="Int32" Name="category_id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="400" />
+        </ComplexType>
+        <ComplexType Name="BindLocation_Result">
+          <Property Type="Int32" Name="Location_id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="Rack" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="MenuId" />
+          </Key>
+          <Property Name="MenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParentMenuId" Type="Int32" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ImagePath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Controller" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Action" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="DispalyOrder" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="GetProductRMRelation_Result">
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="Rawmaterial_id" Nullable="false" />
+          <Property Type="Decimal" Name="Required_qty" Nullable="false" Precision="18" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="GetProductRMRelation1_Result">
+          <Property Type="String" Name="productname" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="RMName" Nullable="false" MaxLength="30" />
+          <Property Type="Decimal" Name="Required_qty" Nullable="false" Precision="18" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="sp_RawMaterials_Result">
+          <Property Type="Int32" Name="Rawmaterial_Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="400" />
+          <Property Type="Decimal" Name="SKU" Nullable="false" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="unit_id" Nullable="false" />
+          <Property Type="DateTime" Name="Created_at" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="Updated_at" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="Int32" Name="Category_id" Nullable="false" />
+          <Property Type="Int32" Name="Location_id" Nullable="false" />
+          <Property Type="Binary" Name="image_url" Nullable="true" MaxLength="1" />
+        </ComplexType>
+        <ComplexType Name="childmenulist_Result">
+          <Property Type="Int32" Name="MenuId" Nullable="false" />
+          <Property Type="Int32" Name="ParentMenuId" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Controller" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Action" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Int32" Name="DispalyOrder" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="parentmenulist_Result">
+          <Property Type="Int32" Name="MenuId" Nullable="false" />
+          <Property Type="Int32" Name="ParentMenuId" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Controller" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Action" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Int32" Name="DispalyOrder" Nullable="true" />
+        </ComplexType>
+        <Association Name="FK_Transaction_details_Trxdetails_id1">
+          <End Type="Mahalaxmi_HandicraftModel.Transaction" Role="Transaction" Multiplicity="1" />
+          <End Type="Mahalaxmi_HandicraftModel.Transaction_details" Role="Transaction_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transaction">
+              <PropertyRef Name="Trx_id" />
+            </Principal>
+            <Dependent Role="Transaction_details">
+              <PropertyRef Name="Trx_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_subproduct_Result">
+          <Property Type="Int32" Name="SubProduct_Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="400" />
+          <Property Type="Int32" Name="SKU" Nullable="false" />
+          <Property Type="DateTime" Name="Created_at" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="Updated_at" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="Int32" Name="Location_id" Nullable="false" />
+          <Property Type="Binary" Name="image_url" Nullable="true" MaxLength="1" />
+          <Property Type="Int32" Name="Labour_rate" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Mahalaxmi_HandicraftModelStoreContainer" CdmEntityContainer="Mahalaxmi_HandicraftEntities">
+          <EntitySetMapping Name="Locations">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Location">
+              <MappingFragment StoreEntitySet="Location">
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Rack" ColumnName="Rack" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Measurement_unit">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Measurement_unit">
+              <MappingFragment StoreEntitySet="Measurement_unit">
+                <ScalarProperty Name="unit_id" ColumnName="unit_id" />
+                <ScalarProperty Name="unit_type" ColumnName="unit_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Member">
+              <MappingFragment StoreEntitySet="Member">
+                <ScalarProperty Name="Member_id" ColumnName="Member_id" />
+                <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+                <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+                <ScalarProperty Name="Contact_no" ColumnName="Contact_no" />
+                <ScalarProperty Name="Alternate_conatact_no" ColumnName="Alternate_conatact_no" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Aadhar" ColumnName="Aadhar" />
+                <ScalarProperty Name="Deposit_Amount" ColumnName="Deposit Amount" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="member_Category_id" ColumnName="member_Category_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Memeber_Category">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Memeber_Category">
+              <MappingFragment StoreEntitySet="Memeber_Category">
+                <ScalarProperty Name="member_category_id" ColumnName="member_category_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Payments">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Payment">
+              <MappingFragment StoreEntitySet="Payment">
+                <ScalarProperty Name="Payment_id" ColumnName="Payment_id" />
+                <ScalarProperty Name="Member_id" ColumnName="Member_id" />
+                <ScalarProperty Name="Trx_id" ColumnName="Trx_id" />
+                <ScalarProperty Name="Payment_date" ColumnName="Payment_date" />
+                <ScalarProperty Name="Mode" ColumnName="Mode" />
+                <ScalarProperty Name="created_at" ColumnName="created_at" />
+                <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="Labor_Rate" ColumnName="Labor Rate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_Category">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Product_Category">
+              <MappingFragment StoreEntitySet="Product_Category">
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_RM_usage">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Product_RM_usage">
+              <MappingFragment StoreEntitySet="Product_RM_usage">
+                <ScalarProperty Name="PRM_id" ColumnName="PRM_id" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="Rawmaterial_id" ColumnName="Rawmaterial_id" />
+                <ScalarProperty Name="Required_qty" ColumnName="Required_qty" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_Subproduct_relation">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Product_Subproduct_relation">
+              <MappingFragment StoreEntitySet="Product_Subproduct_relation">
+                <ScalarProperty Name="PSR_id" ColumnName="PSR_id" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="SubProduct_id" ColumnName="SubProduct_id" />
+                <ScalarProperty Name="Required_qty" ColumnName="Required_qty" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Raw_Material">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Raw_Material">
+              <MappingFragment StoreEntitySet="Raw_Material">
+                <ScalarProperty Name="Rawmaterial_Id" ColumnName="Rawmaterial_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="unit_id" ColumnName="unit_id" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Raw_material_supplier_relation">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Raw_material_supplier_relation">
+              <MappingFragment StoreEntitySet="Raw_material_supplier_relation">
+                <ScalarProperty Name="RMS_id" ColumnName="RMS_id" />
+                <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+                <ScalarProperty Name="Rawmaterial_Id" ColumnName="Rawmaterial_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rawmaterial_Category">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Rawmaterial_Category">
+              <MappingFragment StoreEntitySet="Rawmaterial_Category">
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sub_Product">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Sub_Product">
+              <MappingFragment StoreEntitySet="Sub_Product">
+                <ScalarProperty Name="SubProduct_Id" ColumnName="SubProduct_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="Labour_rate" ColumnName="Labour rate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subproduct_RM_usage">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Subproduct_RM_usage">
+              <MappingFragment StoreEntitySet="Subproduct_RM_usage">
+                <ScalarProperty Name="SPRM_id" ColumnName="SPRM_id" />
+                <ScalarProperty Name="Subproduct_id" ColumnName="Subproduct_id" />
+                <ScalarProperty Name="Rawmaterial_id" ColumnName="Rawmaterial_id" />
+                <ScalarProperty Name="Required_qty" ColumnName="Required_qty" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Suppliers">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Supplier">
+              <MappingFragment StoreEntitySet="Supplier">
+                <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Contact_Person" ColumnName="Contact_Person" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="city" ColumnName="city" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transactions">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Transaction">
+              <MappingFragment StoreEntitySet="Transaction">
+                <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+                <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+                <ScalarProperty Name="Piece_Labor_Rate" ColumnName="Piece_Labor_Rate" />
+                <ScalarProperty Name="Order_date" ColumnName="Order_date" />
+                <ScalarProperty Name="Trx_id" ColumnName="Trx_id" />
+                <ScalarProperty Name="Member_id" ColumnName="Member_id" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="subproduct_id" ColumnName="subproduct_id" />
+                <ScalarProperty Name="Required_Qty" ColumnName="Required_Qty" />
+                <ScalarProperty Name="Total_Weight_given" ColumnName="Total_Weight given" />
+                <ScalarProperty Name="Total_weight_recieved" ColumnName="Total_weight_recieved" />
+                <ScalarProperty Name="Recieved_qty" ColumnName="Recieved_qty" />
+                <ScalarProperty Name="Return_date" ColumnName="Return_date" />
+                <ScalarProperty Name="Actual_return_date" ColumnName="Actual_return_date" />
+                <ScalarProperty Name="Is_completed" ColumnName="Is_completed" />
+                <ScalarProperty Name="Actual_piece_labor_rate" ColumnName="Actual_piece_labor rate" />
+                <ScalarProperty Name="Total_Actual_Amount" ColumnName="Total_Actual_Amount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transaction_details">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Transaction_details">
+              <MappingFragment StoreEntitySet="Transaction_details">
+                <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+                <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+                <ScalarProperty Name="Trxdetails_id" ColumnName="Trxdetails_id" />
+                <ScalarProperty Name="Trx_id" ColumnName="Trx_id" />
+                <ScalarProperty Name="Rawmaterial_id" ColumnName="Rawmaterial_id" />
+                <ScalarProperty Name="subproduct_id" ColumnName="subproduct_id" />
+                <ScalarProperty Name="Required_qty" ColumnName="Required_qty" />
+                <ScalarProperty Name="Given_qty" ColumnName="Given_qty" />
+                <ScalarProperty Name="Is_pending" ColumnName="Is_pending" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transaction_History">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Transaction_History">
+              <MappingFragment StoreEntitySet="Transaction_History">
+                <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+                <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+                <ScalarProperty Name="Total_Actual_Amount1" ColumnName="Total_Actual_Amount" />
+                <ScalarProperty Name="Piece_Labor_Rate" ColumnName="Piece_Labor_Rate" />
+                <ScalarProperty Name="Order_date" ColumnName="Order_date" />
+                <ScalarProperty Name="Trx_id" ColumnName="Trx_id" />
+                <ScalarProperty Name="Member_id" ColumnName="Member_id" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="subproduct_id" ColumnName="subproduct_id" />
+                <ScalarProperty Name="Required_Qty" ColumnName="Required_Qty" />
+                <ScalarProperty Name="Total_Weight_given" ColumnName="Total_Weight given" />
+                <ScalarProperty Name="Total_weight_recieved" ColumnName="Total_weight_recieved" />
+                <ScalarProperty Name="Recieved_qty" ColumnName="Recieved_qty" />
+                <ScalarProperty Name="Return_date" ColumnName="Return_date" />
+                <ScalarProperty Name="Actual_return_date" ColumnName="Actual_return_date" />
+                <ScalarProperty Name="Is_completed" ColumnName="Is_completed" />
+                <ScalarProperty Name="Actual_piece_labor_rate" ColumnName="Actual_piece_labor rate" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_Products" FunctionName="Mahalaxmi_HandicraftModel.Store.sp_Products">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.sp_Products_Result">
+                <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="Labor_Rate" ColumnName="Labor Rate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BindCategory" FunctionName="Mahalaxmi_HandicraftModel.Store.BindCategory">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.BindCategory_Result">
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BindLocation" FunctionName="Mahalaxmi_HandicraftModel.Store.BindLocation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.BindLocation_Result">
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Rack" ColumnName="Rack" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Sp_SaveProducts" FunctionName="Mahalaxmi_HandicraftModel.Store.Sp_SaveProducts" />
+          <FunctionImportMapping FunctionImportName="DeleteProducts" FunctionName="Mahalaxmi_HandicraftModel.Store.DeleteProducts" />
+          <EntitySetMapping Name="Menus">
+            <EntityTypeMapping TypeName="Mahalaxmi_HandicraftModel.Menu">
+              <MappingFragment StoreEntitySet="Menus">
+                <ScalarProperty Name="DispalyOrder" ColumnName="DispalyOrder" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetProductRMRelation1" FunctionName="Mahalaxmi_HandicraftModel.Store.GetProductRMRelation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.GetProductRMRelation1_Result">
+                <ScalarProperty Name="productname" ColumnName="productname" />
+                <ScalarProperty Name="RMName" ColumnName="RMName" />
+                <ScalarProperty Name="Required_qty" ColumnName="Required_qty" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_RawMaterials" FunctionName="Mahalaxmi_HandicraftModel.Store.sp_RawMaterials">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.sp_RawMaterials_Result">
+                <ScalarProperty Name="Rawmaterial_Id" ColumnName="Rawmaterial_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="unit_id" ColumnName="unit_id" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Sp_SaveProductsRmRelations" FunctionName="Mahalaxmi_HandicraftModel.Store.Sp_SaveProductsRmRelations" />
+          <FunctionImportMapping FunctionImportName="childmenulist" FunctionName="Mahalaxmi_HandicraftModel.Store.childmenulist">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.childmenulist_Result">
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="DispalyOrder" ColumnName="DispalyOrder" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="parentmenulist" FunctionName="Mahalaxmi_HandicraftModel.Store.parentmenulist">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.parentmenulist_Result">
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="DispalyOrder" ColumnName="DispalyOrder" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Sp_SaveSubProductsRmRelations" FunctionName="Mahalaxmi_HandicraftModel.Store.Sp_SaveSubProductsRmRelations" />
+          <FunctionImportMapping FunctionImportName="sp_subproduct" FunctionName="Mahalaxmi_HandicraftModel.Store.sp_subproduct">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Mahalaxmi_HandicraftModel.sp_subproduct_Result">
+                <ScalarProperty Name="SubProduct_Id" ColumnName="SubProduct_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+                <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="Labour_rate" ColumnName="Labour rate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="DeleteProductsRmRelation" FunctionName="Mahalaxmi_HandicraftModel.Store.DeleteProductsRmRelation" />
+          <FunctionImportMapping FunctionImportName="DeleteProductsSubproductRelation" FunctionName="Mahalaxmi_HandicraftModel.Store.DeleteProductsSubproductRelation" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

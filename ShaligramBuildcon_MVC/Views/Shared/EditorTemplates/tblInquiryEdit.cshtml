@@ -1,0 +1,59 @@
+﻿@model Inquiry
+
+@Html.HiddenFor(m=>m.InquiryId)
+
+<div class="col-sm-12">
+    <div class="row">
+        <div class="editor-label">
+            @Html.LabelFor(m => m.VisitorName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.VisitorName, new { @class = "k-textbox", @tabindex = "1" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.ContactNumber)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.ContactNumber, new { @class = "k-textbox", @tabindex = "2" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Email)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m=>m.Email,new { @class = "k-textbox" , @tabindex = "4" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Address)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(x => x.Address, 4, 5, new { @tabindex = "4", @class = "k-textbox" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Status)
+        </div>
+        <div class="editor-field">
+            @(Html.Kendo().ComboBoxFor(m => m.StatusId)
+                       .Value(Model.StatusId == 0 ? string.Empty : Model.StatusId.ToString())
+                       .Placeholder("--Select Status --")
+                       .DataTextField("Name")
+                       .DataValueField("StatusId")
+                       .HtmlAttributes(new { @data_value_primitive = true, @tabindex = 5 })
+                       .DataSource(source =>
+                       {
+                           source.Read(read =>
+                           {
+                               read.Action("GetStatusList", "Common");
+                           });
+                       })
+                       .Events(e => e.Change("onCheckDDValue"))
+            )
+            @Html.ValidationMessageFor(m => m.StatusId)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Remarks)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(x => x.Remarks, 4, 5, new { @tabindex = "4", @class = "k-textbox" })
+        </div>
+    </div>
+</div>

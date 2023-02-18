@@ -1,0 +1,254 @@
+﻿@model ProjectPlan
+
+<style>
+    .k-window {
+        width: 1000px !important;
+        height:auto;
+    }
+    .k-edit-buttons {
+        width: 980px !important;
+    }
+</style>
+<form id="memberdataForm">
+    @Html.HiddenFor(m => m.ProjectPlanId)
+    @Html.HiddenFor(m => m.PlanFileList)
+    <div class="k-edit-form-container" style="width:1000px !important;">
+        <div class="row">
+            <table style="width:100%">
+
+                <tr>
+                    <td>
+                        <div class="k-edit-label">@Html.LabelFor(m => m.ProjectPlanName)</div>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().TextBoxFor(m => m.ProjectPlanName).HtmlAttributes(new { style = "width:100%;", @tabIndex = 1 }))
+                            @Html.ValidationMessageFor(m => m.ProjectPlanName)
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.SaleableArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.SaleableArea).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 2 }))
+                            @Html.ValidationMessageFor(m => m.SaleableArea)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.SaleableAreaUnitId)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().ComboBoxFor(m => m.SaleableAreaUnitId)
+                                                                      .Value(Model.SaleableAreaUnitId == 0 ? string.Empty : Model.SaleableAreaUnitId.ToString())
+                                                                      .DataTextField("Name")
+                                                                      .DataValueField("UnitId")
+                                                                      .DataSource(source => source.Read(read => read.Action("GetUnitList", "Common")))
+                                                                      .Suggest(true)
+                                                                      .Filter(FilterType.Contains)
+                                                                      .Events(e => e.Change("onCheckDDValue"))
+                                                                      .Placeholder(CommonHelper.PleaseSelect)
+                                                                      .HtmlAttributes(new { @TabIndex = 3 }))
+                            @Html.ValidationMessageFor(m => m.SaleableAreaUnitId)
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.SaleableCarpetTerraceArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.SaleableCarpetTerraceArea).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 4 }))
+                            @Html.ValidationMessageFor(m => m.SaleableCarpetTerraceArea)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label"> @Html.LabelFor(m => m.SaleableCarpetUnitId)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().ComboBoxFor(m => m.SaleableCarpetUnitId)
+                                                                      .Value(Model.SaleableCarpetUnitId == 0 ? string.Empty : Model.SaleableCarpetUnitId.ToString())
+                                                                      .DataTextField("Name")
+                                                                      
+                                                                      .DataValueField("UnitId")
+                                                                      .DataSource(source => source.Read(read => read.Action("GetUnitList", "Common")))
+                                                                      .Suggest(true)
+                                                                      .ValuePrimitive(true)
+                                                                      .Filter(FilterType.Contains)
+                                                                      .Events(e => e.Change("onCheckDDValue"))
+                                                                      .Placeholder(CommonHelper.PleaseSelect)
+                                                                      .HtmlAttributes(new { @TabIndex = 5 }))
+                            @Html.ValidationMessageFor(m => m.SaleableCarpetUnitId)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.InsiteCarpetArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.InsiteCarpetArea).Min(0)
+                                                      .Spinners(false)
+                                                      .Round(true)
+                                                      .Events(e => e.Change("CalTotalCarpetArea"))
+                                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 8}))
+                            @Html.ValidationMessageFor(m => m.InsiteCarpetArea)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.BuildUpCarpetUnitId)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().ComboBoxFor(m => m.BuildUpCarpetUnitId)
+                                                                      .Value(Model.BuildUpCarpetUnitId == 0 ? string.Empty : Model.BuildUpCarpetUnitId.ToString())
+                                                                      .DataTextField("Name")
+                                                                      .DataValueField("UnitId")
+                                                                      .DataSource(source => source.Read(read => read.Action("GetUnitList", "Common")))
+                                                                      .Suggest(true)
+                                                                      .ValuePrimitive(true)
+                                                                      .Filter(FilterType.Contains)
+                                                                      .Events(e => e.Change("onCheckDDValue"))
+                                                                      .Placeholder(CommonHelper.PleaseSelect)
+                                                                      .HtmlAttributes(new { @TabIndex = 9}))
+                            @Html.ValidationMessageFor(m => m.BuildUpCarpetUnitId)
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.BalconyArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.BalconyArea).Min(0)
+                                                      .Spinners(false)
+                                                      .Round(true)
+                                                      .Events(e => e.Change("CalTotalCarpetArea"))
+                                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 10 }))
+                            @Html.ValidationMessageFor(m => m.BalconyArea)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.VerandaArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.VerandaArea).Min(0)
+                                                      .Spinners(false)
+                                                      .Round(true)
+                                                      .Events(e => e.Change("CalTotalCarpetArea"))
+                                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 10 }))
+                            @Html.ValidationMessageFor(m => m.VerandaArea)
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.WashArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.WashArea).Min(0)
+                                                      .Spinners(false)
+                                                      .Round(true)
+                                                      .Events(e => e.Change("CalTotalCarpetArea"))
+                                                      .HtmlAttributes(new { style = "width:100%;", @tabIndex = 11 }))
+                            @Html.ValidationMessageFor(m => m.WashArea)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.TotalBuildupCarpetArea)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().TextBoxFor(m => m.TotalBuildupCarpetArea)//.Min(0)
+                                                      //.Spinners(false)
+                                                      //.Round(true)
+                                                      .HtmlAttributes(new { style = "width:100%;", @readonly = "readonly" }))
+                            @Html.ValidationMessageFor(m => m.TotalBuildupCarpetArea)
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.SalebleConAreaFt)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.SalebleConAreaFt).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 12 }))
+                            @Html.ValidationMessageFor(m => m.SalebleConAreaFt)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.SaleblePlotAreaFt)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.SaleblePlotAreaFt).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 13 }))
+                            @Html.ValidationMessageFor(m => m.SaleblePlotAreaFt)
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.BuiltUpLandAreaMtr)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.BuiltUpLandAreaMtr).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 14 }))
+                            @Html.ValidationMessageFor(m => m.BuiltUpLandAreaMtr)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.ConBuiltUpAreaMtr)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.ConBuiltUpAreaMtr).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 15 }))
+                            @Html.ValidationMessageFor(m => m.ConBuiltUpAreaMtr)
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.OpenTerraceAreaFt)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.OpenTerraceAreaFt).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 16 }))
+                            @Html.ValidationMessageFor(m => m.OpenTerraceAreaFt)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.ConCarpetAreaMtr)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.ConCarpetAreaMtr).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 17 }))
+                            @Html.ValidationMessageFor(m => m.ConCarpetAreaMtr)
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.UndividedLandAreaMtr)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.UndividedLandAreaMtr).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 18 }))
+                            @Html.ValidationMessageFor(m => m.UndividedLandAreaMtr)
+                        </div>
+                    </td>
+                    <td>
+                        <label class="k-edit-label">@Html.LabelFor(m => m.OpenTerraceAreaYards)</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().NumericTextBoxFor(m => m.OpenTerraceAreaYards).Spinners(false).Min(0).HtmlAttributes(new { style = "width:100%;", @tabIndex = 19 }))
+                            @Html.ValidationMessageFor(m => m.OpenTerraceAreaYards)
+                        </div>
+                    </td>
+                    
+                </tr>
+                @*<tr>
+                    <td colspan="2">
+                        <label class="k-edit-label">@Html.Label("Upload Files")</label>
+                        <div class="k-edit-field">
+                            @(Html.Kendo().Upload()
+                                                          .Name("planFiles")
+                                                          .Multiple(true)
+                                                          .Async(a => a
+                                                          .Save("SavePlanFiles", "ProjectPlan")
+                                                          .AutoUpload(true)
+                                                          .SaveField("files"))
+                                                          .Events(e => e.Success("successUploadFile"))
+                                                          .Validation(validation => validation.AllowedExtensions(new string[] { ".docx", ".doc", ".jpeg", ".jpg", ".png", ".pdf", ".xlsx", ".xls", ".txt" }))
+                                                          .HtmlAttributes(new { @style = "width: 18em!important;", @TabIndex = 20 }))
+                            @Html.ValidationMessage("planFiles")
+                        </div>
+                    </td>
+                </tr>*@
+            </table>
+        </div>
+    </div>
+</form>
+

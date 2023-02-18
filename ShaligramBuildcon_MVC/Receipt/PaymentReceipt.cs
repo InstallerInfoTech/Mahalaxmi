@@ -1,0 +1,27 @@
+namespace ShaligramBuildcon_MVC.Receipt
+{
+    using System;
+    using System.ComponentModel;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using Telerik.Reporting;
+    using Telerik.Reporting.Drawing;
+
+    /// <summary>
+    /// Summary description for PaymentReceipt.
+    /// </summary>
+    public partial class PaymentReceipt : Telerik.Reporting.Report
+    {
+        public PaymentReceipt()
+        {
+            //
+            // Required for telerik Reporting designer support
+            //
+            InitializeComponent();
+
+            //
+            // TODO: Add any constructor code after InitializeComponent call
+            //
+        }
+    }
+}

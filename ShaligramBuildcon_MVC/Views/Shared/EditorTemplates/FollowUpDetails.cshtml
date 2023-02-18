@@ -1,0 +1,152 @@
+﻿@model FollowUpDetails
+<div class="k-edit-form-container">
+    @Html.HiddenFor(m => m.FollowUpId)
+    @Html.HiddenFor(m => m.InquiryId)
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FollowUpDetailsDate)
+    </div>
+
+    <div class="editor-field">
+        @(Html.Kendo().DatePickerFor(x => x.FollowUpDetailsDate)
+                      .Value(DateTime.Now)
+                      //.Min(DateTime.Now)
+                       .Min(DateTime.Today.AddDays(-1))
+                      .Events(e => e.Change("FollowUpDateChange"))
+                      .HtmlAttributes(new { @TabIndex = 1, oncopy = "return false", onpaste = "return false" }))
+        @Html.ValidationMessageFor(m => m.FollowUpDetailsDate)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.ResponseTypeId)
+    </div>
+    <div class="editor-field">
+        @(Html.Kendo().ComboBoxFor(m => m.ResponseTypeId)
+                          .Value(Model.ResponseTypeId == 0 ? string.Empty : Model.ResponseTypeId.ToString())
+                          //.Value(SessionHelper.EmployeeId.ToString())
+                          .DataTextField("Name")
+                          .DataValueField("ResponseTypeId")
+                          .DataSource(source => source.Read(read => read.Action("GetResponseTypeList", "Common")))
+                          .Suggest(true)
+                          .Filter(FilterType.Contains)
+                          .Events(e => e.Change("onCheckDDValue"))
+                          .Placeholder(CommonHelper.PleaseSelect)
+                          .HtmlAttributes(new { @TabIndex = 2 }))
+        @Html.ValidationMessageFor(m => m.ResponseTypeId)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.ModeId)
+    </div>
+    <div class="editor-field">
+        @(Html.Kendo().ComboBoxFor(m => m.ModeId)
+                            .Value(Model.ModeId == 0 ? string.Empty : Model.ModeId.ToString())
+                            //.Value(SessionHelper.EmployeeId.ToString())
+                            .DataTextField("Name")
+                            .DataValueField("ModeId")
+                            .DataSource(source => source.Read(read => read.Action("GetCommunicationModeList", "Common")))
+                            .Suggest(true)
+                            .Filter(FilterType.Contains)
+                            .Events(e => e.Change("onCheckDDValue"))
+                            .Placeholder(CommonHelper.PleaseSelect)
+                            .HtmlAttributes(new { @TabIndex = 3 }))
+        @Html.ValidationMessageFor(m => m.ModeId)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FollowUpById)
+    </div>
+    <div class="editor-field">
+        @(Html.Kendo().ComboBoxFor(m => m.FollowUpById)
+                          //.Value(Model.FollowUpBy == 0 ? SessionHelper.EmployeeId.ToString() : Model.FollowUpBy.ToString())
+                          .Value(Model.FollowUpById == 0 ? string.Empty : Model.FollowUpById.ToString())
+                          .DataTextField("Name")
+                          .DataValueField("EmployeeId")
+                          .DataSource(source => source.Read(read => read.Action("GetEmployeeList", "Common")))
+                          .Suggest(true)
+                          .Filter(FilterType.Contains)
+                          .Events(e => e.Change("onCheckDDValue"))
+                          .Placeholder(CommonHelper.PleaseSelect)
+                          .HtmlAttributes(new { @TabIndex = 4 }))
+        @Html.ValidationMessageFor(m => m.FollowUpById)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.ReferenceBy)
+    </div>
+    <div class="editor-field">
+        @Html.Kendo().TextBoxFor(x => x.ReferenceBy).HtmlAttributes(new { @tabindex = 5})
+        @Html.ValidationMessageFor(m => m.ReferenceBy)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FollowUpStatusId)
+    </div>
+    <div class="editor-field">
+        @(Html.Kendo().ComboBoxFor(m => m.FollowUpStatusId)
+                            .Value(Model.FollowUpStatusId == 0 ? string.Empty : Model.FollowUpStatusId.ToString())
+                            //.Value(Model.StatusId.ToString())
+                            .DataTextField("Name")
+                            .DataValueField("StatusId")
+                            .DataSource(source => source.Read(read => read.Action("GetStatusList", "Common")))
+                            .Suggest(true)
+                            .Filter(FilterType.Contains)
+                            .Events(e => e.Change("onCheckDDValue"))
+                            .Placeholder(CommonHelper.PleaseSelect)
+                            .HtmlAttributes(new { @TabIndex = 6 }))
+        @Html.ValidationMessageFor(m => m.FollowUpStatusId)
+
+
+    </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.NextFollowUpDate)
+            </div>
+            <div class="editor-field">
+                @(Html.Kendo().DatePickerFor(x => x.NextFollowUpDate)
+                     //.Min(DateTime.Now)
+                     .Min(DateTime.Today.AddDays(-1))
+                    .Events(e => e.Change("NextFollowUpDateChange"))
+                    .HtmlAttributes(new { @TabIndex = 6 }))
+        @*@Html.ValidationMessageFor(m => m.NextFollowUpDate)*@
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FollowUpRemarks)
+    </div>
+    <div class="editor-field">
+        @Html.TextAreaFor(x => x.FollowUpRemarks, 4, 5, new { @tabindex = "7", @class = "k-textbox" })
+        @Html.ValidationMessageFor(m => m.FollowUpRemarks)
+    </div>
+
+</div>
+
+<script>
+    $("#FollowUpRemarks").prop("maxlength", "250");
+
+    $('#FollowUpRemarks').blur(function () {
+        $(this).val($.trim($(this).val()));
+    });
+    $('#NextFollowUpDate').attr('placeholder', 'DD-MM-YYYY');
+    $("#NextFollowUpDate").keypress(function (evt) {
+        return false;
+    });
+
+    $("#FollowUpDetailsDate").keypress(function (evt) {
+        return false;
+    });
+  
+    $("#FollowUpDetailsDate").keydown(function (evt) {
+        
+        var code = evt.keyCode || evt.which;
+        if (code != 9) {
+            evt.preventDefault();
+        }
+
+    });
+
+    $("#NextFollowUpDate").keydown(function (evt) {
+
+        var code = evt.keyCode || evt.which;
+        if (code != 9) {
+            evt.preventDefault();
+        }
+
+    });
+</script>
+

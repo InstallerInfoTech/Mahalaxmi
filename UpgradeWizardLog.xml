@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-12.1.18.620.min.js" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Content\kendo-ui\js\telerikReportViewer-12.1.18.620.min.js" />
+  <event action="Analyze" type="Warning" name="telerikReportViewer.kendo-12.1.18.620.min.js" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Content\kendo-ui\js\telerikReportViewer.kendo-12.1.18.620.min.js">The contents of the file have been changed.</event>
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Warning" name="packages.config" path="D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\packages.config'!</event>
+  <event action="Analyze" type="Success" name="PaymentReceipt.resx" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Receipt\PaymentReceipt.resx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Template\ForgotPassword.html" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Template\ForgotPassword.html" />
+  <event action="Analyze" type="Success" name="ForgotPassword.html" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Template\ForgotPassword.html" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\_ViewStart.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\_ViewStart.cshtml" />
+  <event action="Analyze" type="Warning" name="_ViewStart.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\_ViewStart.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\_ViewStart.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\BankMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\BankMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\BankMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddFlatBookView.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddFlatBookView.cshtml" />
+  <event action="Analyze" type="Success" name="_AddFlatBookView.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddFlatBookView.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddMemberView.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddMemberView.cshtml" />
+  <event action="Analyze" type="Success" name="_AddMemberView.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\_AddMemberView.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Create.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Booking\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Create.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Employees\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Home\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Home\Index.cshtml" />
+  <event action="Analyze" type="Warning" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Home\Index.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Home\Index.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Create.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Inquiry\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ForgotPassword.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ForgotPassword.cshtml" />
+  <event action="Analyze" type="Success" name="ForgotPassword.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ForgotPassword.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ResetPassword.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ResetPassword.cshtml" />
+  <event action="Analyze" type="Success" name="ResetPassword.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Login\ResetPassword.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Create.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Member\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Payment\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Payment\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Payment\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\_AddReceiptView.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\_AddReceiptView.cshtml" />
+  <event action="Analyze" type="Success" name="_AddReceiptView.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\_AddReceiptView.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Details.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Details.cshtml" />
+  <event action="Analyze" type="Success" name="Details.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Details.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentMaster\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentProgress\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentProgress\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PaymentProgress\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\_AddDateView.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\_AddDateView.cshtml" />
+  <event action="Analyze" type="Success" name="_AddDateView.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\_AddDateView.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Create.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Create.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Project\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\_AddFileView.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\_AddFileView.cshtml" />
+  <event action="Analyze" type="Success" name="_AddFileView.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\_AddFileView.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectPlan\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectStatus\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectStatus\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectStatus\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectTypes\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectTypes\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectTypes\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectUnitBlocks\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectUnitBlocks\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\ProjectUnitBlocks\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PropertyType\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PropertyType\Index.cshtml" />
+  <event action="Analyze" type="Warning" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PropertyType\Index.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\PropertyType\Index.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\_RoleMenuAssignment.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\_RoleMenuAssignment.cshtml" />
+  <event action="Analyze" type="Success" name="_RoleMenuAssignment.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\_RoleMenuAssignment.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Role\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Footer.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Footer.cshtml" />
+  <event action="Analyze" type="Warning" name="_Footer.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Footer.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Footer.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Header.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Header.cshtml" />
+  <event action="Analyze" type="Warning" name="_Header.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Header.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Header.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Layout.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Layout.cshtml" />
+  <event action="Analyze" type="Warning" name="_Layout.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Layout.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Layout.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Notification.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Notification.cshtml" />
+  <event action="Analyze" type="Success" name="_Notification.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_Notification.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_SideBar.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_SideBar.cshtml" />
+  <event action="Analyze" type="Warning" name="_SideBar.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_SideBar.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\_SideBar.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Date.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Date.cshtml" />
+  <event action="Analyze" type="Success" name="Date.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Date.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\DateTime.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\DateTime.cshtml" />
+  <event action="Analyze" type="Success" name="DateTime.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\DateTime.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Email.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Email.cshtml" />
+  <event action="Analyze" type="Success" name="Email.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Email.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\FollowUpDetails.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\FollowUpDetails.cshtml" />
+  <event action="Analyze" type="Success" name="FollowUpDetails.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\FollowUpDetails.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+  <event action="Analyze" type="Success" name="GridForeignKey.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\IntNumericTextBox.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\IntNumericTextBox.cshtml" />
+  <event action="Analyze" type="Success" name="IntNumericTextBox.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\IntNumericTextBox.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\NumericTextbox.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\NumericTextbox.cshtml" />
+  <event action="Analyze" type="Success" name="NumericTextbox.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\NumericTextbox.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Password.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Password.cshtml" />
+  <event action="Analyze" type="Success" name="Password.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Password.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\ProjectPlanTemplate.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\ProjectPlanTemplate.cshtml" />
+  <event action="Analyze" type="Success" name="ProjectPlanTemplate.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\ProjectPlanTemplate.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\readOnlyNumeric.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\readOnlyNumeric.cshtml" />
+  <event action="Analyze" type="Success" name="readOnlyNumeric.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\readOnlyNumeric.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\String.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\String.cshtml" />
+  <event action="Analyze" type="Success" name="String.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\String.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\tblInquiryEdit.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\tblInquiryEdit.cshtml" />
+  <event action="Analyze" type="Success" name="tblInquiryEdit.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\tblInquiryEdit.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\TextArea.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\TextArea.cshtml" />
+  <event action="Analyze" type="Success" name="TextArea.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\TextArea.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Time.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Time.cshtml" />
+  <event action="Analyze" type="Success" name="Time.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\EditorTemplates\Time.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\Error.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\Error.cshtml" />
+  <event action="Analyze" type="Warning" name="Error.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\Error.cshtml">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Shared\Error.cshtml'!</event>
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\States\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\States\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\States\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Testd\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Units\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Units\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Units\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config" />
+  <event action="Analyze" type="Warning" name="Web.config" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Views\Web.config'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config" />
+  <event action="Analyze" type="Warning" name="Web.config" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Web.config'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config" />
+  <event action="Analyze" type="Warning" name="Web.Debug.config" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Debug.config'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config" />
+  <event action="Analyze" type="Warning" name="Web.Release.config" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\Web.Release.config'!</event>
+  <event action="Analyze" type="Warning" name="ShaligramBuildcon_MVC" path="D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\Data.ShaligramBuildcon_MVC.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Warning" name="App.config" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config">The file is read-only: 'D:\PMS\trunk\Data.ShaligramBuildcon_MVC\App.config'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Warning" name="packages.config" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config">The file is read-only: 'D:\PMS\trunk\Data.ShaligramBuildcon_MVC\packages.config'!</event>
+  <event action="Analyze" type="Warning" name="Data.ShaligramBuildcon_MVC" path="D:\PMS\trunk\Data.ShaligramBuildcon_MVC\Data.ShaligramBuildcon_MVC.csproj">The file is read-only: 'D:\PMS\trunk\Data.ShaligramBuildcon_MVC\Data.ShaligramBuildcon_MVC.csproj'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Common.ShaligramBuildcon_MVC.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config" />
+  <event action="Analyze" type="Warning" name="App.config" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config">The file is read-only: 'D:\PMS\trunk\Common.ShaligramBuildcon_MVC\App.config'!</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config" />
+  <event action="Analyze" type="Warning" name="packages.config" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config">The file is read-only: 'D:\PMS\trunk\Common.ShaligramBuildcon_MVC\packages.config'!</event>
+  <event action="Analyze" type="Warning" name="Label.resx" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Resources\Label.resx">The file is read-only: 'D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Resources\Label.resx'!</event>
+  <event action="Analyze" type="Warning" name="Message.resx" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Resources\Message.resx">The file is read-only: 'D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Resources\Message.resx'!</event>
+  <event action="Analyze" type="Warning" name="Common.ShaligramBuildcon_MVC" path="D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Common.ShaligramBuildcon_MVC.csproj">The file is read-only: 'D:\PMS\trunk\Common.ShaligramBuildcon_MVC\Common.ShaligramBuildcon_MVC.csproj'!</event>
+  <event action="Analyze" type="Warning" name="ShaligramBuildcon_MVC" path="D:\PMS\trunk\ShaligramBuildcon_MVC.sln">The file is read-only: 'D:\PMS\trunk\ShaligramBuildcon_MVC.sln'!</event>
+  <event action="Upgrade" type="Error" name="Assembly References" path="D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj">System.UnauthorizedAccessException: Access to the path 'D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Xml.XmlDocument.Save(String filename)
+   at Telerik.Reporting.Vs.Common.ProjectFile.SaveAs(String fileName)
+   at Telerik.Reporting.UpgradeWizard.Engine.ProjectReferencesItem.UpgradeInternal()
+   at Telerik.Reporting.UpgradeWizard.Engine.UpgradeItem.Upgrade()</event>
+  <event action="Upgrade" type="Success" name="telerikReportViewer-12.1.18.620.min.js" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Content\kendo-ui\js\telerikReportViewer-12.1.18.620.min.js" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer.kendo-12.1.18.620.min.js" path="D:\PMS\trunk\ShaligramBuildcon_MVC\Content\kendo-ui\js\telerikReportViewer.kendo-12.1.18.620.min.js" />
+  <event action="Upgrade" type="Success" name="ShaligramBuildcon_MVC" path="D:\PMS\trunk\ShaligramBuildcon_MVC\ShaligramBuildcon_MVC.csproj" />
+  <event action="Upgrade" type="Success" name="ShaligramBuildcon_MVC" path="D:\PMS\trunk\ShaligramBuildcon_MVC.sln" />
+</log>

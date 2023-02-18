@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC3DEAF0-2D87-4882-98A5-7CC665CBA99F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ShaligramBuildconConsole</RootNamespace>
+    <AssemblyName>ShaligramBuildconConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\BankMaster.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BlockProgress.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BlockProgressFile.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BlockProgressReview.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BookingDetail.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BuildconPMSMVC_LiveEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildconPMSMVC_LiveEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BuildconPMSMVC_LiveEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BuildconPMSMVC_LiveEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildconPMSMVC_LiveEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CommunicationMode.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DeviceType.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EmailLog.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Employee.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FollowUpDetail.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Inquiry.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Member.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MemberFile.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Menu.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentDetail.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentFile.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentMaster.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentPlan.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentTransferMode.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Project.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectContact.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectFile.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectPlan.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectStatu.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectType.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectUnitBlock.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProjectUnitPropertyDetail.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PropertyType.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ResponseType.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Role.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RoleMenu.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SACCodeMaster.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Setting.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\State.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Status.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Unit.cs">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Data\BuildconPMSMVC_LiveEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuildconPMSMVC_LiveEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\BuildconPMSMVC_LiveEntities.edmx.diagram">
+      <DependentUpon>BuildconPMSMVC_LiveEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\BuildconPMSMVC_LiveEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildconPMSMVC_LiveEntities.edmx</DependentUpon>
+      <LastGenOutput>BuildconPMSMVC_LiveEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\BuildconPMSMVC_LiveEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildconPMSMVC_LiveEntities.edmx</DependentUpon>
+      <LastGenOutput>BuildconPMSMVC_LiveEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

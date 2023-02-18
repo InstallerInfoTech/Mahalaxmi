@@ -1,0 +1,254 @@
+﻿@model ShaligramBuildcon_MVC.Models.Product
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="panel panel-white">
+    <div class="panel-heading">
+        <h5 class="panel-title">
+            Products
+        </h5>
+    </div>
+    <div class="panel-body">
+        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.ProductViewModel>()
+                                    .Name("InquiryGrid")
+                                    .Columns(columns =>
+                                    {
+                                        columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Add/Edit Products" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Products" }); }).Width(120).Title("Action");
+                                        columns.Bound(m => m.Product_Id).Width(200).HtmlAttributes(new { style = "text-transform:uppercase;" }).Visible(false);//Width(50);
+                                        columns.Bound(m => m.Name).Title("Product Name");//.Width(50);
+                                        columns.Bound(m => m.Description).Title("Description");
+                                        columns.Bound(m => m.SKU).Title("SKU");
+                                        columns.ForeignKey(p => p.Category_id, (System.Collections.IEnumerable)ViewData["categories"], "category_id", "Name").Title("Category");
+
+                                        columns.ForeignKey(p => p.Location_id, (System.Collections.IEnumerable)ViewData["Location"], "Location_id", "Name").Title("Location");
+                                        columns.Bound(m => m.Labor_Rate).Title("Labour Rate");
+
+
+                                    })
+                                     .ToolBar(toolbar => toolbar.Template("<a id='btnAdd' class='k-button k-button-icontext k-grid-add' href='#'><span class='k-icon k-add'></span>+Add new products</a><a id='btnAddRawMaterial' onclick=addrawmaterial() class='k-button k-button-icontext' href='#'><span class='k-icon k-add'></span>Add Raw Materials</a>")
+                                    )
+            .Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+            .Excel(excel => excel
+            .AllPages(true)
+            .Filterable(true)
+            .FileName("Inquiry.xlsx")
+
+            .ProxyURL(Url.Action("Excel_Export_Save", "Inquiry"))
+            )
+            //.Editable(editable =>
+            //.Resizable(r => r.Columns(true))
+            .Pageable(x =>
+            {
+                x.Refresh(true);
+                x.PageSizes(CommonHelper.LargePageSizes);
+            })
+            .Editable(editable =>
+            {
+                editable.Mode(GridEditMode.InLine);
+                editable.DisplayDeleteConfirmation("Are you sure you want to delete this Category?");//"Are you sure you want to delete this Category?"
+
+            })
+            .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            .Sortable(sortable => sortable.AllowUnsort(false))
+            .Scrollable(s => s.Height("auto"))
+            .NoRecords()
+             .ClientDetailTemplateId("client-template")
+            //.Events(grid => grid.DataBound("onDataBoundEdit"))
+            .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            .PageSize(CommonHelper.PazeSize)
+            .Events(events => events.Error("onError(\"InquiryGrid\")"))
+            .Model(model => model.Id(d => d.Product_Id))
+            .Create(update => update.Action("KendoSave", "Product"))
+            .Read(read => read.Action("KendoRead", "Product"))
+            .Update(update => update.Action("KendoSave", "Product"))
+            .Destroy(destroy => destroy.Action("kendoDestroy", "Product")))
+            
+            )
+
+
+    </div>
+
+    <script id="client-template" type="text/kendo-tmpl">
+        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.ProductRMRelation>()
+                                    .Name("grid_#=Product_Id#")
+                                    .Columns(columns =>
+                                    {
+                                        columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Payment Plan" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Payment Plan" }); }).Width(100).Title("Action");
+                                        
+                                        columns.ForeignKey(p => p.Rawmaterial_id, (System.Collections.IEnumerable)ViewData["RM"], "Rawmaterial_Id", "Name").Title("Raw Material");
+                                        columns.Bound(m => m.Required_qty).Title("Required Qty");//.Width(50);
+                                        columns.Bound(m => m.Product_id).Visible(false);//.Width(50);
+
+
+
+
+                                    })
+            .ToolBar(toolbar => toolbar.Create().Text("Add Raw Material Relation"))
+
+            .Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+            .Excel(excel => excel
+            .AllPages(true)
+            .Filterable(true)
+            .FileName("Inquiry.xlsx")
+            .ProxyURL(Url.Action("Excel_Export_Save", "Inquiry"))
+            )
+            //.Editable(editable =>
+            //.Resizable(r => r.Columns(true))
+            //.Pageable(x =>
+            //{
+            //    x.Refresh(true);
+            //    x.PageSizes(CommonHelper.LargePageSizes);
+            //})
+            //.Editable(editable =>
+            //{
+            //    editable.Mode(GridEditMode.InLine);
+            //    editable.DisplayDeleteConfirmation("Are you sure you want to delete this Category?");//"Are you sure you want to delete this Category?"
+
+            //})
+            //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+
+            //.Sortable(sortable => sortable.AllowUnsort(false))
+            //.Scrollable(s => s.Height("auto"))
+            .NoRecords()
+             //.Events(grid => grid.DataBound("onDataBoundEdit"))
+            
+            .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            .PageSize(CommonHelper.PazeSize)
+            .Events(events => events.Error("onError(\"InquiryGrid\")"))
+            .Model(model => model.Id(d => d.Rawmaterial_id))
+             .Create(update => update.Action("ReadrealtionGridSave", "Product"))
+            .Read(read => read.Action("ReadrealtionGrid", "Product" , new { productid = "#=Product_Id#" }))
+            .Update(update => update.Action("ReadrealtionGridSave", "Product"))
+            .Destroy(destroy => destroy.Action("ReadrealtionDestroy", "Product").Data("GetPRMID")))
+
+            .ToClientTemplate()
+
+
+            )
+
+         @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.ProductSubProductRelations>()
+                                    .Name("grid1_#=Product_Id#")
+                                    .Columns(columns =>
+                                    {
+                                        columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Edit Payment Plan" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Payment Plan" }); }).Width(100).Title("Action");
+                                        //columns.Bound(m => m.RMName).Title("Raw Material");//.Width(50);
+                                        columns.ForeignKey(p => p.SubProduct_id, (System.Collections.IEnumerable)ViewData["SubProduct"], "SubProduct_Id", "Name").Title("Sub Product");
+                                        columns.Bound(m => m.Required_qty).Title("Required Qty");//.Width(50);
+                                        columns.Bound(m => m.Product_id).Visible(false);//.Width(50);
+
+
+
+                                    })
+            .ToolBar(toolbar => toolbar.Create().Text("Add Subproduct Relation"))
+
+            .Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+            .Excel(excel => excel
+            .AllPages(true)
+            .Filterable(true)
+            .FileName("Inquiry.xlsx")
+            .ProxyURL(Url.Action("Excel_Export_Save", "Inquiry"))
+            )
+            //.Editable(editable =>
+            //.Resizable(r => r.Columns(true))
+            //.Pageable(x =>
+            //{
+            //    x.Refresh(true);
+            //    x.PageSizes(CommonHelper.LargePageSizes);
+            //})
+            //.Editable(editable =>
+            //{
+            //    editable.Mode(GridEditMode.InLine);
+            //    editable.DisplayDeleteConfirmation("Are you sure you want to delete this Category?");//"Are you sure you want to delete this Category?"
+
+            //})
+            //.Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            //.Sortable(sortable => sortable.AllowUnsort(false))
+            //.Scrollable(s => s.Height("auto"))
+            .NoRecords()
+            //.Events(grid => grid.DataBound("onDataBoundEdit"))
+            .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            .PageSize(CommonHelper.PazeSize)
+            .Events(events => events.Error("onError(\"InquiryGrid\")"))
+            .Model(model => model.Id(d => d.PSR_id))
+             .Create(update => update.Action("productsubproductrelsave", "Product"))
+            .Update(update => update.Action("productsubproductrelsave", "Product"))
+            .Destroy(destroy => destroy.Action("productsubproductrelDelete", "Product").Data("GetPSRID"))
+            //.Read(read => read.Action("Productsubproductrealtionread", "Product" , new { productid = "#=Product_id#" }))
+            .Read(read => read.Action("Productsubproductrealtionread", "Product", new { productid = "#=Product_Id#" }))
+            )
+            .ToClientTemplate()
+            )
+
+    </script>
+
+   
+
+
+    @(Html.Kendo().Window()
+                          .Name("rawmaterials")
+                          .Draggable(true)
+                          .Width(870)
+                          .Height(520)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+
+</div>
+
+
+
+@(Html.Kendo().Window()
+                          .Name("rawmaterials")
+                          .Draggable(true)
+                          .Width(870)
+                          .Height(520)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+
+<script>
+    function GetPRMID(e) {
+
+        return {
+            PRMID: e.PRM_id
+            
+        }
+    }
+
+    function GetPSRID(e) {
+
+        return {
+            PRSID: e.PSR_id
+
+        }
+    }
+</script>
+@*<script>
+        function addrawmaterial(e)
+        {
+            debugger
+
+
+            var window = $("#rawmaterials").data("kendoWindow");
+            window.content("Add Raw Material");
+
+            window.refresh({
+                url: '@Url.Action("AddRawmaterial", "Product")',
+
+            });
+            window.center();
+            window.open();
+            window.title("Add Raw Material")
+        }
+    </script>*@

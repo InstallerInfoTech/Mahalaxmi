@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2745C8BF-71D1-4380-B107-3326D6CC99F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShaligramBuildcon_MVC</RootNamespace>
+    <AssemblyName>ShaligramBuildcon_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Data.ShaligramBuildcon_MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Data.ShaligramBuildcon_MVC.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc, Version=2018.2.620.545, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kendo\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.4.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.4.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming">
+      <HintPath>..\Kendo\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=12.1.18.620, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kendo\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Services.WebApi, Version=12.1.18.620, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kendo\Telerik.Reporting.Services.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Mvc, Version=12.1.18.620, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kendo\Telerik.ReportViewer.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet">
+      <HintPath>..\Kendo\Telerik.Web.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core">
+      <HintPath>..\Kendo\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet">
+      <HintPath>..\Kendo\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml">
+      <HintPath>..\Kendo\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip">
+      <HintPath>..\Kendo\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip.Extensions">
+      <HintPath>..\Kendo\Telerik.Windows.Zip.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebapiConfig.cs" />
+    <Compile Include="Controllers\RawMaterialController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\PurchaserequisitionController.cs" />
+    <Compile Include="Controllers\SubProductController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Helper\DigitToWords.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AuthorizationHelper.cs" />
+    <Compile Include="Helper\EmailHelper.cs" />
+    <Compile Include="Helper\HtmlHelperExtensions.cs" />
+    <Compile Include="Helper\SelectionList.cs" />
+    <Compile Include="Helper\SessionHelper.cs" />
+    <Compile Include="Helper\WebHelper.cs" />
+    <Compile Include="Models\BindCategory_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BindLocation_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\childmenulist_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomMemberModel.cs" />
+    <Compile Include="Models\CustomTranDetails.cs" />
+    <Compile Include="Models\CustomTransactionModel.cs" />
+    <Compile Include="Models\GetProductRMRelation1_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetProductRMRelation_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Location.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MahalaxmiHandicraft.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MahalaxmiHandicraft.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MahalaxmiHandicraft.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MahalaxmiHandicraft.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MahalaxmiHandicraft.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Measurement_unit.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Member.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Memeber_Category.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Menu.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\parentmenulist_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductRMRelation.cs" />
+    <Compile Include="Models\ProductSubProductRelations.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\Product_Category.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product_RM_usage.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product_Subproduct_relation.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rawmaterial_Category.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Raw_Material.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Raw_material_supplier_relation.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_Products_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_RawMaterials_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_subproduct_Result.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subproduct_RM_usage.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sub_Product.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Supplier.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Transaction.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Transaction_details.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Transaction_History.cs">
+      <DependentUpon>MahalaxmiHandicraft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\ATSReport_Greens.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\ATSReport_Greens.Designer.cs">
+      <DependentUpon>ATSReport_Greens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\ATSReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\ATSReport.Designer.cs">
+      <DependentUpon>ATSReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\BookingForm_Arcade.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\BookingForm_Arcade.Designer.cs">
+      <DependentUpon>BookingForm_Arcade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\BookingForm_Greens.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\BookingForm_Greens.Designer.cs">
+      <DependentUpon>BookingForm_Greens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\CommercialBookingForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\CommercialBookingForm.Designer.cs">
+      <DependentUpon>CommercialBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\BookingForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\BookingForm.Designer.cs">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\Maintainance Receipt Deposit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\Maintainance Receipt Deposit.Designer.cs">
+      <DependentUpon>Maintainance Receipt Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\Maintainance Receipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\Maintainance Receipt.Designer.cs">
+      <DependentUpon>Maintainance Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\MaintainanceReceiptService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\MaintainanceReceiptService.Designer.cs">
+      <DependentUpon>MaintainanceReceiptService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\PaymentReceipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\PaymentReceipt.Designer.cs">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt\Receipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipt\Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignalR\GenerateMsgHTML.cs" />
+    <Compile Include="SignalR\NotificationHub.cs" />
+    <Compile Include="SignalR\NotificationRepository.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootbox.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\colors.css" />
+    <Content Include="Content\css\components.css" />
+    <Content Include="Content\css\core.css" />
+    <Content Include="Content\css\Error_style.css" />
+    <Content Include="Content\css\examples.css" />
+    <Content Include="Content\css\icomoon.css" />
+    <Content Include="Content\css\pnotify.custom.min.css" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\css\switch.css" />
+    <Content Include="Content\fonts\icomoone627.svg" />
+    <Content Include="Content\img\alert_Confirmation.png" />
+    <Content Include="Content\img\alert_Error.png" />
+    <Content Include="Content\img\alert_Information.png" />
+    <Content Include="Content\img\alert_Notification.png" />
+    <Content Include="Content\img\alert_Warning.png" />
+    <Content Include="Content\img\bg.jpg" />
+    <Content Include="Content\img\clear.png" />
+    <Content Include="Content\img\close.png" />
+    <Content Include="Content\img\Duplicate.png" />
+    <Content Include="Content\img\Email_Logo.png" />
+    <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\ie-spacer.gif" />
+    <Content Include="Content\img\logo-inverse.svg" />
+    <Content Include="Content\img\logo-white-final.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo.svg" />
+    <Content Include="Content\img\logo_old.png" />
+    <Content Include="Content\img\placeholder.jpg" />
+    <Content Include="Content\img\pop_bm.png" />
+    <Content Include="Content\img\pop_lm.png" />
+    <Content Include="Content\img\pop_rm.png" />
+    <Content Include="Content\img\pop_tm.png" />
+    <Content Include="Content\img\resize.png" />
+    <Content Include="Content\img\small-logo.png" />
+    <Content Include="Content\img\small_logo.png" />
+    <Content Include="Content\img\spacer.gif" />
+    <Content Include="Content\img\top.png" />
+    <Content Include="Content\kendo-ui\js\cultures\kendo.culture.en-IN.min.js" />
+    <Content Include="Content\kendo-ui\js\cultures\kendo.culture.en-US.min.js" />
+    <Content Include="Content\kendo-ui\js\jszip.min.js" />
+    <Content Include="Content\kendo-ui\js\kendo.all.min.js" />
+    <Content Include="Content\kendo-ui\js\kendo.aspnetmvc.min.js" />
+    <Content Include="Content\kendo-ui\js\messages\kendo.messages.en-US.min.js" />
+    <Content Include="Content\kendo-ui\js\telerikReportViewer-12.1.18.620.min.js" />
+    <Content Include="Content\kendo-ui\js\telerikReportViewer.kendo-12.1.18.620.min.js" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="Content\kendo-ui\styles\kendo.common.min.css" />
+    <Content Include="Content\kendo-ui\styles\kendo.custom.css" />
+    <Content Include="Content\kendo-ui\styles\kendo.silver.min.css" />
+    <Content Include="Content\kendo-ui\styles\kendoCustom.css" />
+    <Content Include="Content\kendo-ui\styles\Silver\editor.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\imagebrowser.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\indeterminate.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\loading-image.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\loading.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\loading_2x.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\markers.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\markers_2x.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\slider-h.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\slider-v.gif" />
+    <Content Include="Content\kendo-ui\styles\Silver\sprite.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\sprite_2x.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\sprite_kpi.png" />
+    <Content Include="Content\kendo-ui\styles\Silver\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo-ui\styles\telerikReportViewer.css" />
+    <Content Include="Content\kendo-ui\styles\textures\brushed-metal.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots1.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots10.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots11.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots12.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots13.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots2.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots3.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots4.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots5.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots6.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots7.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots8.png" />
+    <Content Include="Content\kendo-ui\styles\textures\dots9.png" />
+    <Content Include="Content\kendo-ui\styles\textures\glass-lighter.png" />
+    <Content Include="Content\kendo-ui\styles\textures\glass.png" />
+    <Content Include="Content\kendo-ui\styles\textures\highlight.png" />
+    <Content Include="Content\kendo-ui\styles\textures\hsv-gradient.png" />
+    <Content Include="Content\kendo-ui\styles\textures\hue.png" />
+    <Content Include="Content\kendo-ui\styles\textures\leather1.png" />
+    <Content Include="Content\kendo-ui\styles\textures\leather2.png" />
+    <Content Include="Content\kendo-ui\styles\textures\noise.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe1.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe2.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe3.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe4.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe5.png" />
+    <Content Include="Content\kendo-ui\styles\textures\stripe6.png" />
+    <Content Include="Content\kendo-ui\styles\textures\transparency.png" />
+    <Content Include="Content\kendo-ui\styles\textures\transtexture.png" />
+    <Content Include="Content\ussal-notification\ussal-notification.css" />
+    <Content Include="Content\ussal-notification\ussal-notification.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\MahalaxmiHandicraft.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MahalaxmiHandicraft.edmx</DependentUpon>
+      <LastGenOutput>MahalaxmiHandicraft.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MahalaxmiHandicraft.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MahalaxmiHandicraft.edmx</DependentUpon>
+      <LastGenOutput>MahalaxmiHandicraft.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\blockui.min.js" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\drilldown.js" />
+    <EntityDeploy Include="Models\MahalaxmiHandicraft.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MahalaxmiHandicraft.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MahalaxmiHandicraft.edmx.diagram">
+      <DependentUpon>MahalaxmiHandicraft.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.preloader.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.4.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.4.1.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jszip.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\nicescroll.min.js" />
+    <Content Include="Scripts\pace.min.js" />
+    <Content Include="Scripts\pnotify.custom.min.js" />
+    <Content Include="Scripts\ripple.min.js" />
+    <Content Include="Scripts\switchery.min.js" />
+    <Content Include="Scripts\uniform.min.js" />
+    <Content Include="Scripts\validate.min.js" />
+    <Content Include="Template\EmailMember.html" />
+    <Content Include="Template\ForgotPassword.html" />
+    <Content Include="Template\telerikReportViewerTemplate.html" />
+    <Content Include="Uploads\Logo\d8ac4273-b9fb-4330-a97b-2411679bf250_you-can-do-it.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\PropertyTypeDD.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ProjectRelatedPlanDD.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\CheckBox.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ProjectUnitDetailTemplate.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\CalTotalNumericTextbox.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Switch.cshtml" />
+    <Content Include="Views\Shared\ChangePassword.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\IntNumericTextBoxWithOurDecimal.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ProjectUnitDetailsTemplate.cshtml" />
+    <Content Include="Views\Purchaserequisition\Index.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\_partialrawmaterial.cshtml" />
+    <Content Include="Views\Subproduct\Index.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
+    <Content Include="Views\RawMaterial\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Uploads\ProjectImportFile\" />
+    <Folder Include="Views\SignalR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\icomoond41d.eot" />
+    <Content Include="Content\fonts\icomoone627.eot" />
+    <Content Include="Content\fonts\icomoone627.ttf" />
+    <Content Include="Content\fonts\icomoone627.woff" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="Content\kendo-ui\styles\fonts\glyphs\WebComponentsIcons.woff" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_SideBar.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Email.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\IntNumericTextBox.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\NumericTextbox.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\readOnlyNumeric.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\TextArea.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Time.cshtml" />
+    <Content Include="Views\Shared\_Notification.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ProjectPlanTemplate.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\tblInquiryEdit.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\FollowUpDetails.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\ATSReport_Greens.resx">
+      <DependentUpon>ATSReport_Greens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\ATSReport.resx">
+      <DependentUpon>ATSReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\BookingForm_Arcade.resx">
+      <DependentUpon>BookingForm_Arcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\BookingForm_Greens.resx">
+      <DependentUpon>BookingForm_Greens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\CommercialBookingForm.resx">
+      <DependentUpon>CommercialBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\BookingForm.resx">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\Maintainance Receipt Deposit.resx">
+      <DependentUpon>Maintainance Receipt Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\Maintainance Receipt.resx">
+      <DependentUpon>Maintainance Receipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\MaintainanceReceiptService.resx">
+      <DependentUpon>MaintainanceReceiptService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\PaymentReceipt.resx">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt\Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50087</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

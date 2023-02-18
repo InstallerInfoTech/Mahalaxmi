@@ -1,0 +1,223 @@
+﻿@using ShaligramBuildcon_MVC.Helper
+@using ShaligramBuildcon_MVC
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>@ViewBag.Title - Mahalaxmi Handicrafts</title>
+    <link rel="icon" type="image/png" href="~/Content/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    @Styles.Render("~/Content/ui")
+
+    @Styles.Render("~/Content/kendo")
+
+    @Scripts.Render("~/Scripts/HeaderJQuery")
+    <script src="~/signalr/hubs"></script>
+    <style>
+        a#scroll-up {
+            bottom: 20px;
+            position: fixed;
+            right: 20px;
+            opacity: 0.5;
+            padding: 6px;
+        }
+        .letter-icon {
+            width: 20px !important;
+            font-size: initial !important;
+        }
+    </style>
+</head>
+<body>
+    @*@Html.Partial("_Header")*@
+
+    @Html.Partial("_SideBar")
+
+    <div class="page-container">
+        <div class="page-content">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="toast__container">
+        <div class="toast__cell">
+        </div>
+    </div>
+
+    <div class="footer text-muted text-center">
+        © @DateTime.Now.Year. <a>Mahalaxmi Handicrafts.</a> All Rights Reserved.
+    </div>
+    <a id="scroll-up" style="display:none">
+        <img src="~/Content/img/top.png" height="auto" width="40px"/>
+    </a>
+    @Scripts.Render("~/Scripts/UIScripts")
+
+</body>
+</html>
+@(Html.Kendo().Window()
+    .Name("ChangePassword")
+    .Title("Change Password")
+    .Visible(false)
+    .Draggable(true)
+    .Height(205)
+    .Width(660)
+    .Modal(true))
+
+<script>
+    //var pathArray = '@WebHelper.SiteRootPathUrl';
+    var controllerName = '@ViewContext.RouteData.Values["Controller"].ToString()';
+    // Declare a proxy to reference the hub.
+    var notifications = $.connection.notificationHub;
+    var isSuperAdmin = '@SessionHelper.IsSuperAdmin'.toLowerCase();
+    $(document).ready(function () {
+        kendo.culture("en-IN");
+        setActiveMenulink();
+        var errormessage = '@TempData[Enums1.NotifyType.Error.GetDescription1()]';
+        var successmessage = '@TempData[Enums1.NotifyType.Success.GetDescription1()]';
+
+        if (errormessage !== "") {
+            notification("Error", errormessage, "error");
+        }
+
+        if (successmessage !== "") {
+            notification("Success", successmessage, "success");
+        }
+        // Create a function that the hub can call to broadcast messages.
+        notifications.client.updateMessages = function () {
+            getAllMessages();
+        };
+        // Start the connection.
+        $.connection.hub.start().done(function () {
+            console.log("Hub Connected!");
+            if (isSuperAdmin == "true") {
+                getAllMessages();
+            }
+            else {
+                if (controllerName == "Booking" || controllerName == "Inquiry" || controllerName == "PaymentMaster") {
+                    notifications.server.sendNotifications();
+                }
+            }
+        }).fail(function (e) {
+            console.log("Could not Connect!");
+            console.log(e);
+        });
+    });
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            $("#scroll-up").show();
+        } else {
+            $("#scroll-up").hide();
+        }
+    });
+
+    $("#scroll-up").on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+    function getAllMessages() {
+        var ulList = $('#messagesUlList');
+        var baseurl = '@Url.Action("GetNotifications", "SignalRNotification")';
+        $.ajax({
+            url: baseurl,
+            contentType: 'application/html;charset:utf-8',
+            type: 'GET',
+            cache: false,
+            data: {
+                type: $("#filterCombo").val()
+            },
+            dataType: 'html'
+        }).success(function (result) {
+            ulList.empty().append(result);
+            //console.log(result);
+        }).error(function (e) {
+            //alert(e);
+            console.log(e);
+        });
+    }
+
+    function filterNotification() {
+        getAllMessages();
+        //alert("Handler for .change() called.");
+    }
+
+    function DeleteMsg(id) {
+        $.ajax({
+            url: '@Url.Action("DeleteNotification", "SignalRNotification")',
+            type: 'POST',
+            cache: false,
+            data: {
+                NotificationId: id
+            }
+            }).done(function (result) {
+                notifications.server.sendNotifications();
+            });
+    }
+
+    function deleteAllNotification() {
+        var NotificationIds = [];
+        $('#ulBar input:checked').each(function () {
+            NotificationIds.push($(this).attr('id'));
+        });
+        if (NotificationIds.length > 0) {
+            var url = '@Url.Action("DeleteSelectedNotifications", "SignalRNotification")';
+            var paramValue = JSON.stringify(NotificationIds);
+            callwebservice(url, { model: paramValue }, DeleteCompleted, false, datatypeEnum.text, typeEnum.post);
+        }
+        else
+        {
+            notification("Error", "Please Select at least one Notification", "error");
+            return false;
+        }
+    }
+
+    function DeleteCompleted(returString) {
+        if (returString != null) {
+            if (returString !== "") {
+                showMessageOnly(returString, 'popup-error');
+            }
+            else {
+                notifications.server.sendNotifications();
+                notification("Success", "Notifications Deleted Successfully..!!", "success");
+            }
+        }
+    }
+
+    function ShowErrorMessage(msg) {
+        var pNotify = new PNotify({
+            text: msg,
+            type: 'error'
+        });
+    }
+
+    function SucessMessage(msg) {
+        var pNotify = new PNotify({
+            text: msg,
+            type: 'success'
+        });
+    }
+    </script>
+    @*//function changeType(e) {
+    //    var icon = $('#show_password').hasClass("icon-eye");
+    //    if (icon) {
+    //        $('#show_password').removeClass('icon-eye').addClass('icon-eye-blocked');
+    //        $('#Password').attr('type', 'password');
+    //    }
+    //    else {
+    //        $('#show_password').removeClass('icon-eye-blocked').addClass('icon-eye');
+    //        $('#Password').attr('type', 'text');
+    //    }
+    //}*@
+
+    @*function OpenChangePasswordWindow()
+    {
+        var urllink = '@Url.Action("OpenChangePasswordWindow","ChangePassword")';
+        var window = $("#ChangePassword").data("kendoWindow");
+        window.refresh({
+            url: urllink
+        });
+        //$("#ChangePassword").data("kendoWindow").center().open();
+        window.open();
+        window.center();
+    }*@
+@*<!--</script>-->*@
+ 

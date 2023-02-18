@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c796f75aa0c44ad98d6a5d5b19399f9" Name="Diagram1">
+        <EntityTypeShape EntityType="SMSPVTModel.AccessRight" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.AccountType" Width="1.5" PointX="12.75" PointY="328.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ApprovalMatrix" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ATMCard" Width="1.5" PointX="23.25" PointY="364" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ATMcard_tracking" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ATMCardType" Width="1.5" PointX="21" PointY="345.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BankDetail" Width="1.5" PointX="21" PointY="335" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BankDetails_tracking" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BillingRequest" Width="1.5" PointX="17.25" PointY="382" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BillingRequestStatu" Width="1.5" PointX="15" PointY="410.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BillingService" Width="1.5" PointX="37.5" PointY="402.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Branch" Width="1.5" PointX="6.75" PointY="306" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Branch_tracking" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BrokerageInvoice" Width="1.5" PointX="23.25" PointY="377.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.BrokerageInvoiceLedger" Width="1.5" PointX="46.5" PointY="390.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Calibration" Width="1.5" PointX="20.25" PointY="350.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CashRequest" Width="1.5" PointX="26.25" PointY="395.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Category" Width="1.5" PointX="10.5" PointY="410.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Category_tracking" Width="1.5" PointX="4.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CertificationType" Width="1.5" PointX="3.75" PointY="357" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ChatMessage" Width="1.5" PointX="17.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ChequeBook" Width="1.5" PointX="39" PointY="414.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ChequePrefix" Width="1.5" PointX="39" PointY="412.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.City" Width="1.5" PointX="4.5" PointY="306.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.City_tracking" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CityToPortRate" Width="1.5" PointX="20.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoice" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoiceGST" Width="1.5" PointX="6.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoiceParticular" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoiceReference" Width="1.5" PointX="8" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoiceShipmentDetail" Width="1.5" PointX="8" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CoastalInvoiceVoucherLedger" Width="1.5" PointX="8" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CommonRateStructure" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ComodityMaster" Width="1.5" PointX="20.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Company" Width="1.5" PointX="4.5" PointY="315.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Company_tracking" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CompanyOwnershipStatu" Width="1.5" PointX="2.25" PointY="318.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Consignment" Width="1.5" PointX="3" PointY="363.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Consignment_tracking" Width="1.5" PointX="8.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentAREDetail" Width="1.5" PointX="5.25" PointY="393.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentCommission" Width="1.5" PointX="17.25" PointY="388.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentCommissionLedger" Width="1.5" PointX="43.5" PointY="398.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentContainer" Width="1.5" PointX="10.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentContainerMasterDetail" Width="1.5" PointX="5.25" PointY="361.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentDO" Width="1.5" PointX="11.25" PointY="391.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentDOContainer" Width="1.5" PointX="20.25" PointY="390.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentDOContainer_tracking" Width="1.5" PointX="12.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentInvoice" Width="1.5" PointX="30" PointY="340.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentJobDoc" Width="1.5" PointX="20.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentService" Width="1.5" PointX="5.25" PointY="407.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentShippingBillDetail" Width="1.5" PointX="5.25" PointY="410" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentType" Width="1.5" PointX="6.75" PointY="325" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentTypeDetail" Width="1.5" PointX="38.25" PointY="384.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ContainerSize" Width="1.5" PointX="3" PointY="351.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Contra" Width="1.5" PointX="38.25" PointY="354.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ContraLedger" Width="1.5" PointX="49.5" PointY="391.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ContraReference" Width="1.5" PointX="49.5" PointY="386.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ContraVoucherLedger" Width="1.5" PointX="52.5" PointY="369" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CosignmentBillOfEntryDetail" Width="1.5" PointX="7.5" PointY="394.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CosignmentMBLNoDetail" Width="1.5" PointX="5.25" PointY="418.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Country" Width="1.5" PointX="2.25" PointY="303.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Country_tracking" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNote" Width="1.5" PointX="6" PointY="371.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteAgainstInvoice" Width="1.5" PointX="2.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteDetail" Width="1.5" PointX="20.25" PointY="393.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteGST" Width="1.5" PointX="22.5" PointY="403.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteLedger" Width="1.5" PointX="29.25" PointY="389.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteReference" Width="1.5" PointX="35.25" PointY="367" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteSetup" Width="1.5" PointX="35.25" PointY="384.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CurrencyMaster" Width="1.5" PointX="22.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DashboardPartialView" Width="1.5" PointX="10.5" PointY="322.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DashboardRole" Width="1.5" PointX="12.75" PointY="351.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DashboardRole_tracking" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNote" Width="1.5" PointX="24" PointY="303.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteDetail" Width="1.5" PointX="26.25" PointY="309.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteDetailsHistory" Width="1.5" PointX="22.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteHistory" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteLedger" Width="1.5" PointX="38.25" PointY="391.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteLedgerHistory" Width="1.5" PointX="17.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteReceipt" Width="1.5" PointX="52.5" PointY="384.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DebitNoteReference" Width="1.5" PointX="26.25" PointY="304.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DeleteConsignmentTbl" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Department" Width="1.5" PointX="10.5" PointY="333.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Department_tracking" Width="1.5" PointX="19.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Designation" Width="1.5" PointX="10.5" PointY="337.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Designation_tracking" Width="1.5" PointX="24.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DetentionSlab" Width="1.5" PointX="24.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DetentionSlab_tracking" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DieselChange" Width="1.5" PointX="4.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DO" Width="1.5" PointX="23.25" PointY="389.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DO_tracking" Width="1.5" PointX="26.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBill" Width="1.5" PointX="41.25" PointY="370.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBill_tracking" Width="1.5" PointX="6.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillDO" Width="1.5" PointX="43.5" PointY="388.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillDO_tracking" Width="1.5" PointX="8.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillDOContainer" Width="1.5" PointX="43.5" PointY="364.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillDOContainer_tracking" Width="1.5" PointX="26.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillGST" Width="1.5" PointX="43.5" PointY="393.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillReference" Width="1.5" PointX="52.5" PointY="378.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOBillReferences_tracking" Width="1.5" PointX="10.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainer" Width="1.5" PointX="28.5" PointY="405.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainer_tracking" Width="1.5" PointX="12.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainerMasterDetail" Width="1.5" PointX="25.5" PointY="406.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainerMasterDetail_tracking" Width="1.5" PointX="14.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainerReplacement" Width="1.5" PointX="30.75" PointY="411.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOContainerReplacement_tracking" Width="1.5" PointX="26.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Document" Width="1.5" PointX="26.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Documents_tracking" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DoCuttOffTimeReplacement" Width="1.5" PointX="25.5" PointY="403.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DoCuttOffTimeReplacement_tracking" Width="1.5" PointX="0.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOLedger" Width="1.5" PointX="26.25" PointY="377.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOLedger_tracking" Width="1.5" PointX="28.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOStationDetail" Width="1.5" PointX="37.5" PointY="406.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOStationDetail_tracking" Width="1.5" PointX="28.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DOStatu" Width="1.5" PointX="21" PointY="426.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DoVesselReplacement" Width="1.5" PointX="25.5" PointY="410.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DoVesselReplacement_tracking" Width="1.5" PointX="28.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Driver" Width="1.5" PointX="9" PointY="373.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Driver_tracking" Width="1.5" PointX="16.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverSalary" Width="1.5" PointX="41.25" PointY="361.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverSalaryAddtionalAmount" Width="1.5" PointX="11.25" PointY="394.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverSalaryDetail" Width="1.5" PointX="29.25" PointY="394.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverSalaryLedger" Width="1.5" PointX="49.5" PointY="359.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverSalaryReference" Width="1.5" PointX="52.5" PointY="373.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Einvoicedetail" Width="1.5" PointX="28.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EinvoiceItemDetail" Width="1.5" PointX="28.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EinvoiceMaster" Width="1.5" PointX="18.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Email" Width="1.5" PointX="28.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EmailTemplate" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Employee" Width="1.5" PointX="12.75" PointY="339.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Employee_tracking" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EmployeeCurrentSalary" Width="1.5" PointX="32.25" PointY="330" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EPCopyStatu" Width="1.5" PointX="0.75" PointY="365.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EWayBillDetail" Width="1.5" PointX="30.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EwayBillGenerate" Width="1.5" PointX="30.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EwayBillGenerateItemDetail" Width="1.5" PointX="20.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExceededLRPartiallyComplete" Width="1.5" PointX="30.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoice" Width="1.5" PointX="57.75" PointY="397.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceAdditionalDetail" Width="1.5" PointX="60" PointY="381.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceAgency" Width="1.5" PointX="22.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceDetail" Width="1.5" PointX="63" PointY="381.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceGST" Width="1.5" PointX="30.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceGSTDetail" Width="1.5" PointX="2.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceLedger" Width="1.5" PointX="60" PointY="399.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceMovement" Width="1.5" PointX="4.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ExemptInvoiceReference" Width="1.5" PointX="60" PointY="404.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Factory" Width="1.5" PointX="35.25" PointY="413.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Factory_tracking" Width="1.5" PointX="6.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FireExtinguisher" Width="1.5" PointX="20.25" PointY="354.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightInvoice" Width="1.5" PointX="12" PointY="369.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightInvoiceAdditionalDetail" Width="1.5" PointX="60" PointY="373.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightInvoiceDetail" Width="1.5" PointX="63" PointY="376.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightInvoiceReference" Width="1.5" PointX="14.25" PointY="401" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightLedger" Width="1.5" PointX="35.25" PointY="390.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightStatement" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightStatementDetail" Width="1.5" PointX="13" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightStatementLedger" Width="1.5" PointX="13" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FreightStatementReference" Width="1.5" PointX="8.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelMarketRate" Width="1.5" PointX="60" PointY="333.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelMarketRate_tracking" Width="1.5" PointX="10.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipStockLedger" Width="1.5" PointX="26.25" PointY="383.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipStockLedger_tracking" Width="1.5" PointX="12.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipVoucherLedger" Width="1.5" PointX="40.5" PointY="402.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipVoucherLedger_tracking" Width="1.5" PointX="30.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipWithoutLR" Width="1.5" PointX="38.25" PointY="371.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipWithoutLR_tracking" Width="1.5" PointX="32.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipWithoutLRReference" Width="1.5" PointX="23.25" PointY="409.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelSlipWithoutLRReferences_tracking" Width="1.5" PointX="32.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelStation" Width="1.5" PointX="12.75" PointY="319.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelStation_tracking" Width="1.5" PointX="32.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelStationDetail" Width="1.5" PointX="60" PointY="340.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelStationDetails_tracking" Width="1.5" PointX="32.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelType" Width="1.5" PointX="57.75" PointY="362.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.FuelType_tracking" Width="1.5" PointX="32.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.GetOutLocation" Width="1.5" PointX="24.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.GstApiOtherAddress" Width="1.5" PointX="32.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.GstApiRecord" Width="1.5" PointX="32.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.HSNMaster" Width="1.5" PointX="14.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ImportDelivery" Width="1.5" PointX="29.25" PointY="372.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ImportDelivery_tracking" Width="1.5" PointX="34.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryComplaint" Width="1.5" PointX="34.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryItemRate" Width="1.5" PointX="15" PointY="418.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryJob" Width="1.5" PointX="20.25" PointY="358" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryJobCard" Width="1.5" PointX="35.25" PointY="356.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryJobDetail" Width="1.5" PointX="22.5" PointY="349" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryJobStatu" Width="1.5" PointX="18" PointY="348.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryMasterComplaint" Width="1.5" PointX="34.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryPartMaster" Width="1.5" PointX="34.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.inventorypartMasterDetail" Width="1.5" PointX="16.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryPurchaseOrder" Width="1.5" PointX="3" PointY="444.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Invoice" Width="1.5" PointX="9" PointY="360.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceDetail" Width="1.5" PointX="11.25" PointY="357.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceGST" Width="1.5" PointX="17.25" PointY="400.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceLedger" Width="1.5" PointX="44.25" PointY="409.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoicePayment" Width="1.5" PointX="17.25" PointY="356.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceReference" Width="1.5" PointX="23.25" PointY="372" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceSetup" Width="1.5" PointX="35.25" PointY="396.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceStatu" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.IssuedItemDetail" Width="1.5" PointX="60" PointY="392.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.IssuedItemDetails_tracking" Width="1.5" PointX="34.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Item" Width="1.5" PointX="12.75" PointY="415.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Item_tracking" Width="1.5" PointX="34.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemAttribute" Width="1.5" PointX="34.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemDetail" Width="1.5" PointX="20.25" PointY="430" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssue" Width="1.5" PointX="19" PointY="318.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueDetail" Width="1.5" PointX="18" PointY="418.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueOrder" Width="1.5" PointX="23.25" PointY="353.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueOrder_tracking" Width="1.5" PointX="34.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueOrderDetail" Width="1.5" PointX="57.75" PointY="410.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueOrderDetails_tracking" Width="1.5" PointX="18.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueReturn" Width="1.5" PointX="21.25" PointY="342" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueReturnDetail" Width="1.5" PointX="43.25" PointY="403.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemIssueStatu" Width="1.5" PointX="20.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemScrappedOrderDetail" Width="1.5" PointX="31.5" PointY="348.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemScrappedOrderDetails_tracking" Width="1.5" PointX="26.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemStatu" Width="1.5" PointX="52.5" PointY="365.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemStock" Width="1.5" PointX="38.25" PointY="347.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemStockLedger" Width="1.5" PointX="29.25" PointY="381" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemStockLedger_tracking" Width="1.5" PointX="32.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemStockTrack" Width="1.5" PointX="15" PointY="414" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ItemVendor" Width="1.5" PointX="9" PointY="382.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JobDocument" Width="1.5" PointX="34.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JobDocumentDetail" Width="1.5" PointX="36.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JobStatu" Width="1.5" PointX="0.75" PointY="387.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalReference" Width="1.5" PointX="23.25" PointY="413.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalVoucher" Width="1.5" PointX="27" PointY="338.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalVoucherCredit" Width="1.5" PointX="38.25" PointY="396.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalVoucherDebit" Width="1.5" PointX="29.25" PointY="353.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalVoucherDetail" Width="1.5" PointX="30" PointY="331.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.JournalVoucherLedger" Width="1.5" PointX="55.25" PointY="359.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LeadDetail" Width="1.5" PointX="15.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LeadFollowUpDetail" Width="1.5" PointX="18" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LeadMaster" Width="1.5" PointX="36.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Ledger" Width="1.5" PointX="15" PointY="355.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Ledger_tracking" Width="1.5" PointX="4.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerClosingBalance" Width="1.5" PointX="6.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerEntry" Width="1.5" PointX="8.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerGroup" Width="1.5" PointX="12.75" PointY="410.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerHistory" Width="1.5" PointX="15" PointY="445.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerMapping" Width="1.5" PointX="17.25" PointY="439" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerReference" Width="1.5" PointX="17.25" PointY="442.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerSecondaryGroup" Width="1.5" PointX="12.75" PointY="427.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Location" Width="1.5" PointX="18.75" PointY="331.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Location_tracking" Width="1.5" PointX="36.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LR" Width="1.5" PointX="57.75" PointY="370.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LR_tracking" Width="1.5" PointX="10.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LR_Wise_Rate" Width="1.5" PointX="36.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRCashRequest" Width="1.5" PointX="63" PointY="370" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRCashRequest_tracking" Width="1.5" PointX="36.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRCashRequestStatu" Width="1.5" PointX="60.75" PointY="361.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRCommission" Width="1.5" PointX="63" PointY="386.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRCommissionLedger" Width="1.5" PointX="74.25" PointY="381.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRConsignment" Width="1.5" PointX="66" PointY="378.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRContainer" Width="1.5" PointX="60" PointY="415.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRContainer_tracking" Width="1.5" PointX="22.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRDetention" Width="1.5" PointX="60" PointY="419.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRDetention_tracking" Width="1.5" PointX="36.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExpenseReference" Width="1.5" PointX="36.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExpenseReferences_tracking" Width="1.5" PointX="28.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExpens" Width="1.5" PointX="66" PointY="368.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExpenses_tracking" Width="1.5" PointX="36.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExtraFuelRequest" Width="1.5" PointX="66" PointY="383" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRExtraFuelRequest_tracking" Width="1.5" PointX="0.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRFuel" Width="1.5" PointX="60" PointY="365.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRFuel_tracking" Width="1.5" PointX="12.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRFuelSlip" Width="1.5" PointX="69" PointY="380.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRFuelSlip_tracking" Width="1.5" PointX="14.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRHistory" Width="1.5" PointX="36.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournal" Width="1.5" PointX="69" PointY="374.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournal_tracking" Width="1.5" PointX="38.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournalCredit" Width="1.5" PointX="71.25" PointY="370" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournalCredit_tracking" Width="1.5" PointX="38.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournalDebit" Width="1.5" PointX="74.25" PointY="370" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRJournalDebit_tracking" Width="1.5" PointX="38.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LrRateHoldBy" Width="1.5" PointX="38.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRStatu" Width="1.5" PointX="55.5" PointY="387.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRStockLedger" Width="1.5" PointX="71.25" PointY="375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRStockLedger_tracking" Width="1.5" PointX="38.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRTollTaxRequest" Width="1.5" PointX="74.25" PointY="375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRTollTaxRequest_tracking" Width="1.5" PointX="38.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRTollTaxRequestStatu" Width="1.5" PointX="72" PointY="366.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRTotalTimeCount" Width="1.5" PointX="38.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRType" Width="1.5" PointX="55.5" PointY="395.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRVehicleStock" Width="1.5" PointX="38.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRVoucherLedger" Width="1.5" PointX="71.25" PointY="381.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRVoucherLedger_tracking" Width="1.5" PointX="38.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MaintainancePlan" Width="1.5" PointX="10.5" PointY="415.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Manufacture" Width="1.5" PointX="10.5" PointY="420.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Manufacture_tracking" Width="1.5" PointX="40.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Menu" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Menu_tracking" Width="1.5" PointX="40.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuAccessRight" Width="1.5" PointX="40.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuAccessRights_tracking" Width="1.5" PointX="40.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuInUserType" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuInUserType_tracking" Width="1.5" PointX="16.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ModeOfShipment" Width="1.5" PointX="0.75" PointY="390.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementInvoice" Width="1.5" PointX="32.25" PointY="369.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementInvoiceAdditionalDetail" Width="1.5" PointX="69" PointY="366.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementInvoiceDetail" Width="1.5" PointX="69" PointY="388.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementInvoiceReference" Width="1.5" PointX="34.5" PointY="403" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementLedger" Width="1.5" PointX="46.5" PointY="367.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementReferenceRegister" Width="1.5" PointX="27" PointY="323.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MultipleCoastalInvoice" Width="1.5" PointX="40.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.NegativeAdjLedger" Width="1.5" PointX="18.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.order_Delivery" Width="1.5" PointX="40.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderBillingData" Width="1.5" PointX="24.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderDetail" Width="1.5" PointX="40.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderDetailsHistory" Width="1.5" PointX="30.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderGetIn" Width="1.5" PointX="32.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderGetOut" Width="1.5" PointX="2.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderLocation" Width="1.5" PointX="4.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Orderservice" Width="1.5" PointX="20.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderStatu" Width="1.5" PointX="26.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderStatusTrack" Width="1.5" PointX="42.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderType" Width="1.5" PointX="42.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderUnloading" Width="1.5" PointX="42.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderUnloadingStatusTrack" Width="1.5" PointX="10.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OutsideRepair" Width="1.5" PointX="26.25" PointY="352.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OutsideRepair_tracking" Width="1.5" PointX="12.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OutsideRepairComplaint" Width="1.5" PointX="28.5" PointY="350" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OutsideRepairComplaints_tracking" Width="1.5" PointX="42.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Pagecorrelation" Width="1.5" PointX="42.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Party" Width="1.5" PointX="0.75" PointY="369" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Party_tracking" Width="1.5" PointX="42.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PartyCertification" Width="1.5" PointX="6" PointY="365.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PartyHistory" Width="1.5" PointX="42.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PartyMasterRate" Width="1.5" PointX="42.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PartyType" Width="1.5" PointX="44.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PayGroup" Width="1.5" PointX="21.75" PointY="316.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Paygroups_tracking" Width="1.5" PointX="44.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PayHead" Width="1.5" PointX="24" PointY="314" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PayHead_tracking" Width="1.5" PointX="6.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PayHeadWiseCommodity" Width="1.5" PointX="44.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Payment" Width="1.5" PointX="41.25" PointY="386.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentDetail" Width="1.5" PointX="32.25" PointY="359.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentFrom" Width="1.5" PointX="55.5" PointY="380.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentIntimation" Width="1.5" PointX="15" PointY="436.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentIntimationDetail" Width="1.5" PointX="17.25" PointY="394" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentIntimationStatu" Width="1.5" PointX="12.75" PointY="439.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentLedger" Width="1.5" PointX="46.5" PointY="373.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentReference" Width="1.5" PointX="49.5" PointY="376.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Permissionmaster" Width="1.5" PointX="44.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PersonalSetting" Width="1.5" PointX="44.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PortToPortRate" Width="1.5" PointX="44.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PublicHoliday" Width="1.5" PointX="20.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PUC" Width="1.5" PointX="20.25" PointY="364.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchasedItemDetail" Width="1.5" PointX="10.5" PointY="402.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchasedItemDetails_tracking" Width="1.5" PointX="22.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchasedItemStatusTrack" Width="1.5" PointX="54.75" PointY="364.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchasedItemStatusTrack_tracking" Width="1.5" PointX="24.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrder" Width="1.5" PointX="41.25" PointY="346.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrder_tracking" Width="1.5" PointX="44.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderDetail" Width="1.5" PointX="43.5" PointY="349.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderDetails_tracking" Width="1.5" PointX="26.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderGST" Width="1.5" PointX="43.5" PointY="355.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderLedger" Width="1.5" PointX="26.25" PointY="389.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderLedger_tracking" Width="1.5" PointX="44.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderReference" Width="1.5" PointX="43.5" PointY="360.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderReferences_tracking" Width="1.5" PointX="32.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderStatu" Width="1.5" PointX="39" PointY="351.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseReceivedNonAttributeItem" Width="1.5" PointX="57.75" PointY="366" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseReceivedNonAttributeItem_tracking" Width="1.5" PointX="44.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseReference" Width="1.5" PointX="32.25" PointY="353.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequest" Width="1.5" PointX="6" PointY="385.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequest_tracking" Width="1.5" PointX="38.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequestDetail" Width="1.5" PointX="8.25" PointY="399.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequestDetail_tracking" Width="1.5" PointX="40.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequestStatu" Width="1.5" PointX="3.75" PointY="396.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequisition" Width="1.5" PointX="44.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseRequisitionItemDetail" Width="1.5" PointX="14.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseReturn" Width="1.5" PointX="20.25" PointY="323.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseReturnDetail" Width="1.5" PointX="52.25" PointY="360.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucher" Width="1.5" PointX="32.25" PointY="397.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucherDetail" Width="1.5" PointX="52.5" PointY="388.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucherDetailHistory" Width="1.5" PointX="16.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucherGST" Width="1.5" PointX="54.75" PointY="391" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucherHistory" Width="1.5" PointX="46.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseVoucherLedger" Width="1.5" PointX="60.75" PointY="386.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RateGstDetail" Width="1.5" PointX="0.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RateMaster" Width="1.5" PointX="2.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RateMasterDetail" Width="1.5" PointX="46.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoice" Width="1.5" PointX="32.25" PointY="387" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoiceDetail" Width="1.5" PointX="46.5" PointY="396.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoiceGST" Width="1.5" PointX="48.75" PointY="397.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoiceLedger" Width="1.5" PointX="34.5" PointY="407.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoicePayment" Width="1.5" PointX="49.5" PointY="382.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RCMInvoiceReference" Width="1.5" PointX="46.5" PointY="363.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReceiptMultiLedger" Width="1.5" PointX="29.25" PointY="369.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReceivedPOItem" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Reciept" Width="1.5" PointX="44.25" PointY="371.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RecieptDetail" Width="1.5" PointX="28.5" PointY="358.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RecieptLedger" Width="1.5" PointX="46.5" PointY="379.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RecieptReference" Width="1.5" PointX="55.5" PointY="375.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RecieptSetup" Width="1.5" PointX="55.5" PointY="370.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceRegister" Width="1.5" PointX="9" PointY="386.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceRegister_tracking" Width="1.5" PointX="46.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceRegisterLog" Width="1.5" PointX="46.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceType" Width="1.5" PointX="21" PointY="408.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceType_tracking" Width="1.5" PointX="46.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Reminder" Width="1.5" PointX="46.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReplacedPurchasedItemDetail" Width="1.5" PointX="12.75" PointY="406" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReplacedPurchasedItemDetails_tracking" Width="1.5" PointX="46.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ResetPasswordhistory" Width="1.5" PointX="46.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RoleMenuAccessRight" Width="1.5" PointX="46.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RoleMenuAccessRights_tracking" Width="1.5" PointX="46.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RTOPermit" Width="1.5" PointX="20.25" PointY="368" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RTOTax" Width="1.5" PointX="20.25" PointY="372.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SalarySheet" Width="1.5" PointX="29" PointY="318.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SalarySheetDetail" Width="1.5" PointX="35.25" PointY="329.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SalarySheetLedger" Width="1.5" PointX="31.25" PointY="318.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.schema_info" Width="1.5" PointX="42.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.scope_config" Width="1.5" PointX="48.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.scope_info" Width="1.5" PointX="48.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ScrappedItemDetail" Width="1.5" PointX="33.75" PointY="347.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ScrappedItemDetails_tracking" Width="1.5" PointX="48.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SecuredLoan" Width="1.5" PointX="8.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SecuredLoanLedger" Width="1.5" PointX="10.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SecuredLoanScheduler" Width="1.5" PointX="48.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SendSm" Width="1.5" PointX="48.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Service" Width="1.5" PointX="9" PointY="325.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Setting" Width="1.5" PointX="9" PointY="317" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Settings_tracking" Width="1.5" PointX="18.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ShippingLineBrokerage" Width="1.5" PointX="12" PointY="365" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ShippingLIneCertification" Width="1.5" PointX="12" PointY="386.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SPErrorLog" Width="1.5" PointX="48.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StandByRateStructure" Width="1.5" PointX="48.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.State" Width="1.5" PointX="2.25" PointY="309.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.States_tracking" Width="1.5" PointX="48.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Station" Width="1.5" PointX="24" PointY="323.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Station_tracking" Width="1.5" PointX="48.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationContactDetail" Width="1.5" PointX="26.25" PointY="317.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationDistance" Width="1.5" PointX="26.25" PointY="331.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationDistance_tracking" Width="1.5" PointX="48.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationToStationDetail" Width="1.5" PointX="32.25" PointY="333.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationToStationDetail_tracking" Width="1.5" PointX="48.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationType" Width="1.5" PointX="21.75" PointY="327.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StockType" Width="1.5" PointX="12.75" PointY="436.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StuffingType" Width="1.5" PointX="0.75" PointY="393.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StuffingType_tracking" Width="1.5" PointX="4.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplimentaryInvoice" Width="1.5" PointX="35.25" PointY="371.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplimentaryInvoiceDetail" Width="1.5" PointX="66" PointY="390.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplimentaryInvoiceGST" Width="1.5" PointX="77.25" PointY="379.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplimentaryInvoiceLedger" Width="1.5" PointX="46.5" PointY="384.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplimentaryInvoiceReference" Width="1.5" PointX="49.5" PointY="371.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TarrifRateMaster" Width="1.5" PointX="20.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TDSPersonCategory" Width="1.5" PointX="15.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TDSSection" Width="1.5" PointX="12.75" PointY="431.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.tempLR" Width="1.5" PointX="22.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TermsConditions_OLD" Width="1.5" PointX="21" PointY="330.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransactionType" Width="1.5" PointX="42" PointY="338.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Transportation_OrderDetails" Width="1.5" PointX="24.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransportationConsignment" Width="1.5" PointX="18" PointY="374.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransportationConsignmentContainerMasterDetail" Width="1.5" PointX="44.25" PointY="367.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransportationConsignmentService" Width="1.5" PointX="44.25" PointY="385.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransporterChange" Width="1.5" PointX="15.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransporterChangeExpense" Width="1.5" PointX="18" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TranspoterRateMaster" Width="1.5" PointX="26.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TyrePosition" Width="1.5" PointX="27" PointY="346.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UnitType" Width="1.5" PointX="10.5" PointY="424.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UnitType_tracking" Width="1.5" PointX="32.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UploadSailedReport" Width="1.5" PointX="38.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserLevel" Width="1.5" PointX="50.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserLevel_tracking" Width="1.5" PointX="50.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserPermissiondetail" Width="1.5" PointX="50.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserRole" Width="1.5" PointX="12.75" PointY="181.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserRole_tracking" Width="1.5" PointX="50.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.User" Width="1.5" PointX="10.5" PointY="341.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Users_tracking" Width="1.5" PointX="12.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Usersession" Width="1.5" PointX="50.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserType" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.UserTypeBasedPermissionMaster" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ValidateReconcilation" Width="1.5" PointX="50.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Vehicle" Width="1.5" PointX="18" PointY="360.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Vehicle_tracking" Width="1.5" PointX="50.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleAccident" Width="1.5" PointX="20.25" PointY="376.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleBattery" Width="1.5" PointX="20.25" PointY="380.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleBattery_tracking" Width="1.5" PointX="50.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleBookingDetail" Width="1.5" PointX="46.5" PointY="357" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleBookingDetails_tracking" Width="1.5" PointX="50.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleCommercialType" Width="1.5" PointX="15.75" PointY="347.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleCommercialType_tracking" Width="1.5" PointX="50.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleComplaint" Width="1.5" PointX="40.5" PointY="343" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleComplaints_tracking" Width="1.5" PointX="40.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleExpense" Width="1.5" PointX="15" PointY="331.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleExpenseCredit" Width="1.5" PointX="20.25" PointY="398.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleExpenseDebit" Width="1.5" PointX="17.25" PointY="351.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleExpenseLedger" Width="1.5" PointX="29.25" PointY="399.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleExpenseVehicleDetail" Width="1.5" PointX="35.25" PointY="351.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleInspectionCheckPoint" Width="1.5" PointX="47.25" PointY="344.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleInspectionCheckPointCategory" Width="1.5" PointX="45" PointY="344.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleInspectionMode" Width="1.5" PointX="47.25" PointY="352.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleInsurance" Width="1.5" PointX="20.25" PointY="385.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleJob" Width="1.5" PointX="38.25" PointY="363.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleJob_tracking" Width="1.5" PointX="42.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleJobService" Width="1.5" PointX="23.25" PointY="360.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleJobService_tracking" Width="1.5" PointX="44.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleLoadDetail" Width="1.5" PointX="26.25" PointY="363.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleLoadDetails_tracking" Width="1.5" PointX="50.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleLoan_tracking" Width="1.5" PointX="50.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleMaintainancePlan" Width="1.5" PointX="26.25" PointY="359.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleParsingFitness" Width="1.5" PointX="20.25" PointY="404.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleRC" Width="1.5" PointX="52.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleRoadTax" Width="1.5" PointX="0.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleService" Width="1.5" PointX="8.25" PointY="416" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleSize" Width="1.5" PointX="15.75" PointY="343.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleStatu" Width="1.5" PointX="24" PointY="345.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleStatusTrack" Width="1.5" PointX="26.25" PointY="371.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleStatusTrack_tracking" Width="1.5" PointX="52.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleTransporter" Width="1.5" PointX="52.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleType" Width="1.5" PointX="15.75" PointY="339.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleType_tracking" Width="1.5" PointX="52.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleTyreNumber" Width="1.5" PointX="29.25" PointY="364.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleTyreNumber_tracking" Width="1.5" PointX="52.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleUnderService" Width="1.5" PointX="20.25" PointY="418.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleUnderService_tracking" Width="1.5" PointX="52.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleUnloadDetail" Width="1.5" PointX="20.25" PointY="422.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VendorCommission" Width="1.5" PointX="52.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VesselDetail" Width="1.5" PointX="52.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VesselMaster" Width="1.5" PointX="52.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VesselSchedule" Width="1.5" PointX="52.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VICheckPoint" Width="1.5" PointX="49.5" PointY="364.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VICheckPoints_tracking" Width="1.5" PointX="46.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VoucherType" Width="1.5" PointX="42" PointY="408.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VoucherType_tracking" Width="1.5" PointX="52.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Warehouse" Width="1.5" PointX="18" PointY="324.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Warehouse_tracking" Width="1.5" PointX="52.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XItemOpenBalAttriDetail" Width="1.5" PointX="54.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XItemOpenBalDetail" Width="1.5" PointX="2.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XItemOpenBalHeader" Width="1.5" PointX="54.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XPOSADJATTRDTL" Width="1.5" PointX="4.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XPOSADJDTL" Width="1.5" PointX="54.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XPOSADJHDR" Width="1.5" PointX="54.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XSTKIDEN" Width="1.5" PointX="14.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.changeLedger_21062021" Width="1.5" PointX="16.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CIRef13052022" Width="1.5" PointX="54.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Comodity_05122020" Width="1.5" PointX="54.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CompanyMaster" Width="1.5" PointX="54.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Consignment1" Width="1.5" PointX="26.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ConsignmentShippingBillDetails_20191311" Width="1.5" PointX="28.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CostalinvliceDetails20190506" Width="1.5" PointX="30.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteAgainstInvoiceHistory" Width="1.5" PointX="32.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteDetailsHistory" Width="1.5" PointX="54.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteGSTHistory" Width="1.5" PointX="54.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteHistory" Width="1.5" PointX="54.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CreditNoteLedgerHistory" Width="1.5" PointX="54.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CTO_DeliveryDetail" Width="1.5" PointX="10.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.CustomerVisitEntry" Width="1.5" PointX="40.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DeletePaymentDetail" Width="1.5" PointX="42.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.do_20191021" Width="1.5" PointX="48.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.DriverActivationDeactivationLog" Width="1.5" PointX="56.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.EmailMasterDetail" Width="1.5" PointX="18" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ForwarderFormDetail" Width="1.5" PointX="56.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Fuelslipvoucherledger150721" Width="1.5" PointX="56.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryItemStockLedger" Width="1.5" PointX="56.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InventoryPurchaseOrderitemDetail" Width="1.5" PointX="18.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.invoicedetails_roundoff_Cgstamount_02022021" Width="1.5" PointX="56.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.invoicedetails_roundoff_Igstamount_02022021" Width="1.5" PointX="20.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceLedger_roundoff_Igstamount_02022021" Width="1.5" PointX="56.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.InvoiceLedger_roundoff_Igstamount_02022021_new" Width="1.5" PointX="56.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LastYearDebitNote" Width="1.5" PointX="34.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LedgerEntriesHistory" Width="1.5" PointX="56.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LR_20190710" Width="1.5" PointX="56.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LR20190711" Width="1.5" PointX="12.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LRAdvanceDetail" Width="1.5" PointX="44.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.LrRateHoldBy_2021_03_17_duplicate" Width="1.5" PointX="50.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Mail" Width="1.5" PointX="58.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuHemji" Width="1.5" PointX="0.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MenuOld" Width="1.5" PointX="2.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MovementInvoiceDetail_24_06_2020" Width="1.5" PointX="58.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.MScConfig" Width="1.5" PointX="4.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderContainer" Width="1.5" PointX="58.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderDetails_before_allComplete_2021_03_24" Width="1.5" PointX="58.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.OrderReportColumn" Width="1.5" PointX="58.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PartyCategorization" Width="1.5" PointX="58.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentDetails_16_12_2019" Width="1.5" PointX="58.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentDetails_20191128" Width="1.5" PointX="58.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PaymentDetails_2020_02_03" Width="1.5" PointX="58.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.POHeaderItemDetail" Width="1.5" PointX="58.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PRtoPOReference" Width="1.5" PointX="6.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurchaseOrderHeader" Width="1.5" PointX="28.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.PurposeofCall" Width="1.5" PointX="52.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReceivedPO" Width="1.5" PointX="54.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReceivedPOItemAttribute" Width="1.5" PointX="60.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.RecievedLossItem" Width="1.5" PointX="60.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceRegisterDetail" Width="1.5" PointX="60.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReferenceRemmitance" Width="1.5" PointX="14.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReopenJournalVoucher_25112020" Width="1.5" PointX="60.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReopenJournalVoucherCredit_25112020" Width="1.5" PointX="60.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReopenJournalVoucherDebit_25112020" Width="1.5" PointX="60.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReopenJournalVoucherLedger_25112020" Width="1.5" PointX="60.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ReturnDeliveryItemDetail" Width="1.5" PointX="30.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SalaryBreakupDetail" Width="1.5" PointX="15" PointY="325.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.ScrappedItemRestock" Width="1.5" PointX="36" PointY="347.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.setting12072019" Width="1.5" PointX="32.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.spCreateOrModified_log" Width="1.5" PointX="60.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.StationToStationDetailApproval" Width="1.5" PointX="34.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.student" Width="1.5" PointX="60.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.SupplyTypeMaster" Width="1.5" PointX="60.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TblJobLockUnLockHistory" Width="1.5" PointX="60.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TDSChallanDetailEntry" Width="1.5" PointX="60.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TDSChallanHeaderEntry" Width="1.5" PointX="60.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TDSSectionwiserate" Width="1.5" PointX="18" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.temp123" Width="1.5" PointX="60.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TempFifo" Width="1.5" PointX="8.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.tempkandla" Width="1.5" PointX="20.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TermsCondition" Width="1.5" PointX="36.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.test2311" Width="1.5" PointX="44.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Tmp_Dest_Table" Width="1.5" PointX="62.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.Tmp_Source_Table" Width="1.5" PointX="62.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TranApprovalLog" Width="1.5" PointX="62.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.TransportationType" Width="1.5" PointX="62.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.users_20191021" Width="1.5" PointX="62.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleStatusTrack_04042020" Width="1.5" PointX="62.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.VehicleUnloadDetails_04042020" Width="1.5" PointX="22.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XAccOpBal" Width="1.5" PointX="17.25" PointY="531.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XFIFOLIFO" Width="1.5" PointX="62.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XGRNHeader" Width="1.5" PointX="62.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XGRNItemDtl" Width="1.5" PointX="62.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XGRNItemTaxDtl" Width="1.5" PointX="62.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XINVDOCREF" Width="1.5" PointX="62.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSPVTModel.XINVTRANDTL" Width="1.5" PointX="62.75" PointY="50.75" IsExpanded="true" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_AccountType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerGroup_AccountType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ATMCard_ATMCardType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ATMCard_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ATMCard_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ATMCard_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ATMCard_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_ATMCard" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_ATMCard" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BankDetails_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BankDetails_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ChequeBook_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_BankDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_BillingRequestStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingRequest_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingServices_BillingRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BillingServices_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Branch_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Branch_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Branch_State" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CashRequest_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Company_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNote_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainerReplacement_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Driver_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Factory_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelMarketRate_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStation_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Invoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceSetup_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.fk_Item_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Location_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Maintainanceplan_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementReferenceRegister_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucher_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReferenceRegister_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalarySheet_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Settings_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ShippingLineBrokerage_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Station_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TermsConditions_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Users_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpense_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Warehouse_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Ledger_BillingPartyLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Ledger_KKCLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Ledger_SBCessLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Ledger_ServiceTaxLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoice_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoiceLedger_BrokerageInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoiceLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoiceLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_BrokerageInvoiceLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Calibration_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__ContraLedger__CashRequest__64B7E415" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CashRequest_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CashRequest_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CashRequest_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CashRequest_Users2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Item_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrderDetails_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemScrappedOrderDetails_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderDetails_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PartyCertification_CertificationType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ShippingLIneCertification_CertificationType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ChequeBook_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ChequeBook_Users_CancelledBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ChequeBook_Users_IssuedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_ChequeBook" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_ChequeBook" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_ChequeBook" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_ChequePrefix" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_ChequePrefixes" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_City_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Company_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStation_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationContactDetail_City" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CoastalInvoiceParticulars_CoastalInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CoastalInvoiceReferences_CoastalInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CoastalInvoiceShipmentDetails_CoastalInvoiceShipmentDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CoastalInvoiceVoucherLedger_CoastalInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Company_CompanyOwnershipStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Company_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Company_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Country_PODCountryId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_EPCopyStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_JobStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Ledger_BillingPartyLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_ModeOfShipment_ModeOfShipmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Party_BillingParty" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Party_Forwarder" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Party_PartyId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Party_ShippinglineId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Station_CFSId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Station_POD" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Station_POL" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.Fk_Consignment_StuffingType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Unitype_GrossWeightUnitTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Unitype_NetWeightUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Unitype_UnitypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Consignment_Users_Executive" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentAREDetails_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommission_ConsignmentCommission" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommissionLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentContainerMasterDetail_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentDO_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentDOContainer_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentService_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentShippingBillDetails_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CosignmentBillOfEntryDetail_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CosignmentMBLNoDetail_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Consignment_ConsignmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipStockLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Consignment_ImportConsignmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_DeliveryUnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRConsignment_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRStockLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimationDetail_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoice_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceLedger_Consignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommission_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommissionLedger_ConsignmentCommission" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommissionLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentCommissionLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentContainerMasterDetail_ContainerSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentDO_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentDOContainer_DOContainer" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.Fk_Consignment_UnitType_GrossWeight" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.Fk_Consignment_UnitType_NetWeight" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.Fk_Consignment_UnitType_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_ConsignmentInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimationDetail_ConsignmentInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_ConsignmentInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Invoice_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucher_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoice_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Services_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleLoadDetails_ConsignmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_ExpenseReimbursementLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_IncomeReimbursementLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_Ledger_ExpenseLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_Ledger_IncomeLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ConsignmentTypeDetail_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainer_ContainerSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainerMasterDetail_ContainerSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetail_ContainerSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignmentContainerMasterDetail_ContainerSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VEHICLEBOOKINGDETAILS_ContainerSize_ContainerSizeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__ContraVoucherLedger__Contra__64B7E415" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Contra_TransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraReferences_Contra" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraLedger_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraReferences_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ContraVoucherLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CosignmentBillOfEntryDetail_MBL" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Factory_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStation_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_States_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationContactDetail_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Ledger2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Ledger3" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNote_Party1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteDetails_CreditNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteLedger_CreditNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteReference_CreditNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteSetup_CreditNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteDetails_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteDetails_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteGST_CreditNoteDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteReference_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteReference_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteSetup_InvoiceSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_CreditNoteSetup_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.fk_DashboardPartialView_DashboardRole" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.fk_Users_DashboardRole" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNote_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteDetails_DebitNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteReceipt_DebitNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteReferences_DebitNote" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteDetails_PayGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteDetails_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_DebitNoteDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DebitNoteReceipt_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_DOStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_IntimationLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Party_Forwader" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Party_Shipper" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Party_ShippingLineId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_ReturnCFS" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Station_PLAD" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Station_POD" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_StuffingType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DO_Users_DOIntimatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainer_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainerMasterDetail_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DoCuttOffTimeReplacement_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetail_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DoVesselReplacement_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleBookingDetails_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__DOLedger__DoBill__64B7E415" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Ledger_KKCLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Ledger_ServiceTaxLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Ledger_TDSLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBill_Station_CFS" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillDO_DOBill" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillDOContainer_DOBill" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillGST_DOBill" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillReferences_DOBill" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillReferences_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOBillReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainer_Station_CFS" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainerReplacement_DOContainer" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOContainerReplacement_Station_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetail_Station_BackStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetail_Station_FromStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetail_Station_PickupStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DOStationDetails_ToStation_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_DOStationDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ToFactory_Factory" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Driver_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Driver_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryAddtionalAmount_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryDetail_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobCard_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Ledger2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalary_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryAddtionalAmount_DriverSalary" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryDetail_DriverSalary" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryLedger_DriverSalary" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryReferences_DriverSalary" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryAddtionalAmount_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryAddtionalAmount_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryAddtionalAmount_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__DriverSal__Ledge__17D0A123" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_DriverSalaryReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__EmailMast__Email__1B17ED79" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Employee_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_EmployeeCurrentSalary_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalaryBreakupDetails_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalarySheetDetails_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_EmployeeCurrentSalary_SalarySheet" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceAdditionalDetail_ExemptInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceDetail_ExemptInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceLedger_ExemptInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceReferences_ExemptInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceAdditionalDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ExemptInvoiceDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Factory_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Factory_Station_NearStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Factory" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FireExtinguisher_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_CGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_IGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Ledger_KKCLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Ledger_SBCessLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Ledger_ServiceTaxLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoice_SGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_FreightInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceDetail_FreightInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceReferences_FreightInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightLedger_FreightInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_Ledger2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceAdditionalDetail_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightInvoiceDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightStatementDetails_FreightStatement" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FreightStatementLedger_FreightStatement" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelMarketRate_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelMarketRate_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipStockLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipStockLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipVoucherLedger_FuelSlipWithoutLR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_FromStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_ToStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_TransporterLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLR_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelSlipWithoutLRReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStation_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStation_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStationDetails_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_FuelStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReferenceRegister_FuelStationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_FuelStationDetails_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_FuelType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_UnitType_DispatchUnitTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ImportDelivery_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryItemRate_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_InventoryJobStatus1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_MaintainancePlan" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJob_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobDetails_InventoryJob" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobCard_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobCard_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobCard_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryJobDetails_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InventoryPurchaseOrder_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Invoice_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Invoice_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Invoice_Party_BillingParty" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceDetails_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceGST_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoicePayment_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceReference_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceDetails_InvoiceDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceDetails_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceGST_InvoiceDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_InvoiceDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceGST_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceGST_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceGST_Ledger2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoicePayment_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceReference_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceReference_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceSetup_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceSetup_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceSetup_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptSetup_InvoiceSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_InvoiceStatus_InvoiceStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_IssuedItemDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_IssuedItemDetails_ItemIssueOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_IssuedItemDetails_PurchaseReceivedNonAttributeItem1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_IssuedItemDetails_PurchaseRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.fk_Item_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Item_MaintainancePlan" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Item_Manufacture" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Item_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrderDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturnDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemScrappedOrderDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStock_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockLedger_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockTrack_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemVendor_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReturnDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReplacedPurchasedItemDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ScarppedItemRestock_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ScrappedItemDetails_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemDetails_ItemIssueDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueDetails_ItemIssue" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturn_ItemIssue" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturnDetails_ItemIssueDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueOrder_VehicleJob" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemScrappedOrderDetails_ItemIssueOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturn_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemIssueReturnDetails_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ScrappedItemDetails_ItemScrappedOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_ItemStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_ItemStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStock_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockLedger_PurchaseRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ItemStockTrack_StockType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.fk_ItemVendor_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_JobStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucher_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherCredit_JournalVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherDebit_JournalVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherLedger_JournalVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherCredit_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherCredit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherDebit_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherDebit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_JournalVoucherDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_JournalVoucherLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LeadFollowUpDetails_LeadDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__Ledger__FK_Ledge__4F976E07" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__Payment__AddAcco__38B27201" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__Payment__LessAcc__39A6963A" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__PaymentDe__Ledge__619F78FB" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__PaymentRe__Ledge__60AB54C2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__ReceiptMu__Ledge__31F065D9" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_LedgerGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_LedgerSecondaryGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Ledger_TDSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerID" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerMapping_Ledger_NewLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerMapping_Ledger_OldLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerReference_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_ATMLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Ledger_TransporterLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_PoolAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_ShipperLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommissionLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExpenses_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalCredit_Ledger_CreditAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalDebit_Ledger_DebitAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRStockLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_CGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_IGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Ledger_KKCLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Ledger_SBCessLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Ledger_ServiceTaxLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_SGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_CGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_IGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_SGSTLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_CreditAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_DebitAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Ledger_KKCLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Ledger_SBCessLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Ledger_ServiceTaxLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReferences_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucher_Ledger_BillingPartyLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_Ledger_ServiceTaxLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoice_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceReferences_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_DebitAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptReferences_CreditAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptSetup_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Ledger_KKCLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Ledger_SBCessLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Ledger_ServiceTaxLedgerId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceGST_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceGST_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceGST_Ledger2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceReferences_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransactionLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseCredit_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseDebit_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseLedger_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseVehicleDetail_Ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseVehicleDetail_Ledger1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerSecondaryGroup_LedgerGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LedgerHistory_TdsSectionId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Station_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Maintainanceplan_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementReferenceRegister_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucher_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoice_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReferenceRegister_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalarySheet_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TermsConditions_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Users_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpense_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Warehouse_location" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_LR_ToStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_LRStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_LRType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Party_Shipper" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Party_ShippingLineId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Party_Transporter" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Station_FromStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Station_PickupStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_UnitType_WeightEmptyUnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_UnitType_WeightFullUnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LR_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommission_LRCommission" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommissionLedger_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRConsignment_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRContainer_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRDetention_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExpenses_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournal_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRVoucherLedger_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceDetail_LR" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_LRCashRequestStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_LRExpenses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_Users_RequestedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCashRequest_Users_StatusChangedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommission_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommissionLedger_LRCommission" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRCommissionLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExpenses_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRStockLedger_LRExpenses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_LRExpenses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRVoucherLedger_LRExpenses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_Users_ApproverId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRExtraFuelRequest_Users_RequestTo" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuel_LRFuelSlip" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRStockLedger_LRFuel" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRVoucherLedger_LRFuel" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRFuelSlip_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournal_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalCredit_LRJournal" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalDebit_LRJournal" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRVoucherLedger_LRJournal" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalCredit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRJournalDebit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRStockLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_LRTollTaxRequestStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_Users_RequestedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRTollTaxRequest_Users_StatusChangedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_LRVoucherLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MaintainancePlan_VehicleService" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleMaintainancePlan_MaintainancePlan" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Manufacture" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Menu_MenuParent" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Menu_MenuSubParent" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MenuInUserType_MenuInUserType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_UserTypeBasedPermissionMaster_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MenuInUserType_UserType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoice_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_MovementInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceDetail_MovementInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceReferences_MovementInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementLedger_MovementInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceAdditionalDetail_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementInvoiceDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_MovementLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Party_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Users_Approver" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Users_JobCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepair_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_OutsideRepairComplaints_OutsideRepair" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PartyCertification_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReferenceRegister_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ShippinglineBrokerage_Party_ShippingLineId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ShippingLIneCertification_Party_ShippingLineId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoice_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Party1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_Party_Transporter" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Party_Transporter" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PayHead_PayGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimationDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceDetails_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseVehicleDetail_PayHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_TransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Payment_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentReferences_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransactionLedger_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__PaymentDe__Servi__62939D34" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__PaymentLe__Payme__6387C16D" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__PaymentRe__Payme__5FB73089" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentDetails_PurchaseVoucherDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_PaymentFrom" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentFrom_TransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_PaymentIntimationStatus_IntimationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_TransactionType_PaymentMode" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_Users_CompletedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_Users_RejectedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimation_Users_RequestTo" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentIntimationDetail_PaymentIntimation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransactionLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PaymentReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PUC_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemDetails_PurchaseRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReplacedPurchasedItemDetails_PurchasedItemDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_PurchasedItemStatusTrack" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_PurchaseOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_PurchaseRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchasedItemStatusTrack_PurchaseRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_PurchaseOrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_PurchaseRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrder_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderDetails_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderGST_PurchaseOrderGST" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderLedger_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderReferences_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderDetails_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReceivedNonAttributeItem_PurchaseOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseOrderLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReturnDetails_PurchaseOrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReceivedNonAttributeItem_PurchaseRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReferences_PurchaseVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_PurchaseRequestStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Users_RequestBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Users_RequestTo" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequest_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_PurchaseRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Users_CancelledBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Users_LastStatusChangedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Users_ReceivedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseRequestDetail_Users_ReturnedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReplacedPurchasedItemDetails_PurchaseRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReturn_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseReturnDetails_PurchaseReturn" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_PurchaseVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherLedger_PurchaseVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherDetail_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherGST_PurchaseVoucherDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherLedger_PurchaseVoucherDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_PurchaseVoucherLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceDetails_RCMInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceLedger_RCMInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoicePayment_RCMInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceReferences_RCMInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceDetails_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceDetails_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoiceGST_RCMInvoiceDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RCMInvoicePayment_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK__ReceiptMu__Recei__32E48A12" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReceivedPOItem_ReceivedPOItem" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_TransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Reciept_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptLedger_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptReferences_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptSetup_Reciept" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptDetails_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RecieptReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ReferenceRegister_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceReferences_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseCredit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseDebit_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RTOPermit_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_RTOTax_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalarySheetDetails_SalarySheet" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SalarySheetLedger_SalarySheet" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_ScarppedItemRestock_ScrappedItemDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceDetail_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignmentService_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationContactDetail_States" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Station_StationType1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationContactDetail_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationDistance_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationDistance_Station1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationToStationDetail_Station_BackStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationToStationDetail_Station_FromStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationToStationDetail_Station_ToStation" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Station1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleLoadDetails_Station" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationToStationDetail_VehicleSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_StationToStationDetail_VehicleType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceDetail_SupplimentaryInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceLedger_SupplimentaryInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceReferences_SupplimentaryInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceGST_SupplimentaryInvoiceDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_SupplimentaryInvoiceLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TDSSectionwiserate_TDSPersonCateGoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_TransportationConsignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignment_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignmentContainerMasterDetail_TransportationConsignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransportationConsignmentService_TransportationConsignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_TransporterChangeExpense_TransporterChange" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleTyreNumber_TyrePosition" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_UserRole_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_UserRole_UserType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Users_JobCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Users_SuperVisor" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleLoadDetails_Users_IssuedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_VehicleCommercialType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_VehicleSize" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_Vehicle_VehicleType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleAccident_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleBattery_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleBookingDetails_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseVehicleDetail_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleInsurance_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJob_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJobService_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleLoadDetails_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleMaintainancePlan_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleParsingFitness_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleStatusTrack_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleTyreNumber_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleUnderService_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleUnloadDetails_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleComplaints_VehicleJob" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseCredit_VehicleExpense" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseDebit_VehicleExpense" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseVehicleDetail_VehicleExpense" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleExpenseLedger_VoucherType" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleInspectionCheckPoint_VehicleInspectionCheckPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_VehicleInspectionCheckPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_VehicleInspectionCheckPointCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_VehicleInspectionMode" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VICheckPoints_VehicleJob" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleJobService_VehicleService" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSPVTModel.FK_VehicleStatusTrack_VehicleStatus" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
