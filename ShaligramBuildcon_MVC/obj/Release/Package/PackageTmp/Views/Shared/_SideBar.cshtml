@@ -1,0 +1,22 @@
+﻿
+@using ShaligramBuildcon_MVC.Helper
+
+<div class="navbar navbar-default" id="navbar-second">
+    <ul class="nav navbar-nav no-border visible-xs-block">
+        <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+    </ul>
+    <div class="navbar-collapse collapse" id="navbar-second-toggle">
+        @Html.GenerateMenu()
+
+    </div>
+</div>
+
+    @*<div class="layout-sidebar">
+    <div class="layout-sidebar-backdrop"></div>
+    <div class="layout-sidebar-body">
+        <nav id="sidenav" class="sidenav-collapse collapse">
+            @(Html.GenerateMenu())
+        </nav>
+
+    </div>
+</div>*@

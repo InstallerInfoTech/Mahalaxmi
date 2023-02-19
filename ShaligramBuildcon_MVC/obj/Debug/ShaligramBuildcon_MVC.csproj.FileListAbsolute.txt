@@ -1,0 +1,696 @@
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.rsp
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.rsp
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.AppContext.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Console.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Compression.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.AccessControl.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Claims.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.ValueTuple.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.rsp
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Kendo.Mvc.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Owin.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Cors.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Documents.SpreadsheetStreaming.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.Services.WebApi.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.ReportViewer.Mvc.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Web.Spreadsheet.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Core.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.Extensions.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\WebGrease.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.pdb
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.App.config
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.AssemblyReference.cache
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Properties.Resources.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport_Greens.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Arcade.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Greens.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.CommercialBookingForm.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt_Deposit.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.MaintainanceReceiptService.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.PaymentReceipt.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Receipt.resources
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.GenerateResource.cache
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll.licenses
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CoreCompileInputs.cache
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CopyComplete
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll
+C:\All Project\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.App.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.AssemblyReference.cache
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Properties.Resources.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport_Greens.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Arcade.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Greens.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.CommercialBookingForm.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt_Deposit.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.MaintainanceReceiptService.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.PaymentReceipt.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Receipt.resources
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.GenerateResource.cache
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll.licenses
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CoreCompileInputs.cache
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.rsp
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.rsp
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.AppContext.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Console.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Claims.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.rsp
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Kendo.Mvc.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Owin.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Cors.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Documents.SpreadsheetStreaming.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.Services.WebApi.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.ReportViewer.Mvc.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Web.Spreadsheet.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Core.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.Extensions.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\WebGrease.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.pdb
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll.config
+C:\Users\sit43\Desktop\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CopyComplete
+E:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.rsp
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.rsp
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Managed.Core.targets
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.AppContext.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Collections.Immutable.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Console.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Compression.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Reflection.Metadata.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.AccessControl.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Claims.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Principal.Windows.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.ValueTuple.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XmlDocument.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.rsp
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe
+E:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Kendo.Mvc.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Web.Infrastructure.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Owin.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Cors.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Documents.SpreadsheetStreaming.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.Services.WebApi.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.ReportViewer.Mvc.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Web.Spreadsheet.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Core.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.Extensions.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\WebGrease.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll.config
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.pdb
+E:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll.config
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.App.config
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.AssemblyReference.cache
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Properties.Resources.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport_Greens.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Arcade.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Greens.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.CommercialBookingForm.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt_Deposit.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.MaintainanceReceiptService.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.PaymentReceipt.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Receipt.resources
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.GenerateResource.cache
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll.licenses
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CoreCompileInputs.cache
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CopyComplete
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll
+E:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.rsp
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.rsp
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Managed.Core.targets
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.AppContext.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Collections.Immutable.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Console.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Compression.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Reflection.Metadata.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.AccessControl.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Claims.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Principal.Windows.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.ValueTuple.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XmlDocument.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.rsp
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe
+F:\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Kendo.Mvc.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Web.Infrastructure.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Owin.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Cors.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Documents.SpreadsheetStreaming.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.Services.WebApi.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.ReportViewer.Mvc.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Web.Spreadsheet.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Core.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.Extensions.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\WebGrease.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.pdb
+F:\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.App.config
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.AssemblyReference.cache
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Properties.Resources.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport_Greens.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Arcade.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Greens.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.CommercialBookingForm.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt_Deposit.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.MaintainanceReceiptService.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.PaymentReceipt.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Receipt.resources
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.GenerateResource.cache
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll.licenses
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CoreCompileInputs.cache
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CopyComplete
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll
+F:\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\ShaligramBuildcon_MVC.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.exe.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csc.rsp
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.exe.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\csi.rsp
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.Managed.Core.targets
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.AppContext.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Collections.Immutable.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Console.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Compression.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.IO.Pipes.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Reflection.Metadata.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.AccessControl.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Claims.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Security.Principal.Windows.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.ValueTuple.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XmlDocument.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.exe.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\vbc.rsp
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\roslyn\VBCSCompiler.exe.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Kendo.Mvc.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Web.Infrastructure.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Owin.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Cors.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Documents.SpreadsheetStreaming.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Reporting.Services.WebApi.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.ReportViewer.Mvc.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Web.Spreadsheet.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Core.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Telerik.Windows.Zip.Extensions.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\WebGrease.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Data.ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EntityFramework.SqlServer.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\EPPlus.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.Core.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.Owin.Security.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Extensions.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Formatting.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Net.Http.Primitives.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Helpers.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.Cors.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Http.WebHost.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Mvc.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Razor.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Deployment.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.WebPages.Razor.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\System.Web.Optimization.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Newtonsoft.Json.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Antlr3.Runtime.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.pdb
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\bin\Common.ShaligramBuildcon_MVC.dll.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.App.config
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.AssemblyReference.cache
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Properties.Resources.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport_Greens.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.ATSReport.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Arcade.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm_Greens.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.CommercialBookingForm.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.BookingForm.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt_Deposit.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Maintainance_Receipt.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.MaintainanceReceiptService.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.PaymentReceipt.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.Receipt.Receipt.resources
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.GenerateResource.cache
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll.licenses
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CoreCompileInputs.cache
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.csproj.CopyComplete
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.dll
+F:\BuildCon\BuildCon\ShaligramBuildcon_MVC\obj\Debug\ShaligramBuildcon_MVC.pdb

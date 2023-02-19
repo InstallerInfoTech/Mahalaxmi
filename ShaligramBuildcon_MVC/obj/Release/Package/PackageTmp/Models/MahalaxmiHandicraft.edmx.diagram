@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="233c25c1949d49fc9718e535946d273f" Name="Diagram1" ZoomLevel="89">
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Location" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Measurement_unit" Width="1.5" PointX="3.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Member" Width="1.5" PointX="6" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Memeber_Category" Width="1.5" PointX="3.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Payment" Width="1.5" PointX="10.5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Product" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Product_Category" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Product_RM_usage" Width="1.5" PointX="8.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Product_Subproduct_relation" Width="1.5" PointX="8.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Raw_Material" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Raw_material_supplier_relation" Width="1.5" PointX="11.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Rawmaterial_Category" Width="1.5" PointX="3.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Sub_Product" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Subproduct_RM_usage" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Supplier" Width="1.5" PointX="9" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Transaction" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Transaction_details" Width="1.5" PointX="13.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Transaction_History" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_Location_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Raw_Material_Location_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Raw_Material_Rawmaterial_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Member_member_Category_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Payment_Member_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_Member_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Payment_Trx_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_Category_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_RM_usage_Product_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_Subproduct_relation_Product_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_Product_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_RM_usage_Rawmaterial_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Product_Subproduct_relation_SubProduct_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Raw_Material_Category_id__Remove" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Raw_material_supplier_relation_Rawmaterial_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Subproduct_RM_usage_Rawmaterial_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_details_Rawmaterial_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Raw_material_supplier_relation_supplier_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Subproduct_RM_usage_Subproduct_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_details_subproduct_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_details_Trxdetails_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_History_Trx_id" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Mahalaxmi_HandicraftModel.Menu" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="Mahalaxmi_HandicraftModel.FK_Transaction_details_Trxdetails_id1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

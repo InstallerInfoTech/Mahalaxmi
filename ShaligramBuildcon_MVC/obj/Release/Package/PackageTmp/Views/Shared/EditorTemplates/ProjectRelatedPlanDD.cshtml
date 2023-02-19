@@ -1,0 +1,13 @@
+﻿@model object
+
+@(Html.Kendo().ComboBoxFor(m => m)
+          //.Value(Model.ProjectRelatedPlanId == 0 ? string.Empty : Model.ProjectRelatedPlanId.ToString())
+          .DataTextField("ProjectPlanName")
+          .DataValueField("ProjectPlanId")
+          .DataSource(source => source.Read(read => read.Action("GetProjectPlanList", "Common").Data("projectPlanRead")))
+          .Suggest(true)
+          .MinLength(0)
+          .Filter(FilterType.Contains)
+          .Events(e => e.Change("DisableFields"))
+          .Placeholder(CommonHelper.PleaseSelect))
+          @*.HtmlAttributes(new { @TabIndex = 4 }))*@

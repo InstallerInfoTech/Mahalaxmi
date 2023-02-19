@@ -1,0 +1,140 @@
+﻿@model ShaligramBuildcon_MVC.Models.Member
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="panel panel-white">
+    <div class="panel-heading">
+        <h5 class="panel-title">
+           Member
+        </h5>
+    </div>
+    <div class="panel-body">
+        @(Html.Kendo().Grid<ShaligramBuildcon_MVC.Models.Member>()
+                                    .Name("grid")
+                                    .Columns(columns =>
+                                    {
+                                        columns.Command(command => { command.Edit().Text(" ").HtmlAttributes(new { title = "Add/Edit Rawmaterial" }); command.Destroy().Text(" ").HtmlAttributes(new { title = "Delete Products" }); }).Width(120).Title("Action");
+                                        columns.Bound(m => m.Member_id).Width(200).HtmlAttributes(new { style = "text-transform:uppercase;" }).Visible(false);//Width(50);
+                                        columns.Bound(m => m.F_Name).Title("First Name");//.Width(50);
+                                        columns.Bound(m => m.L_Name).Title("Last Name");
+                                        columns.Bound(m => m.Contact_no).Title("Contact No.");
+                                        columns.Bound(m => m.Alternate_conatact_no).Title("Alternate Contact No.");
+                                        columns.Bound(m => m.Address).Title("Address");
+                                        columns.Bound(m => m.Aadhar).Title("Aadhar No.");
+                                        columns.Bound(m => m.Deposit_Amount).Title("Deposit Amount");
+                                        columns.ForeignKey(p => p.member_Category_id, (System.Collections.IEnumerable)ViewData["Memeber_Category"], "member_category_id", "Name").Title("Member Category");
+
+
+                                    })
+                                     .ToolBar(toolbar => toolbar.Template("<a id='btnAdd' class='k-button k-button-icontext k-grid-add' href='#'><span class='k-icon k-add'></span>+Add New Member</a>")
+                                    )
+            .Editable(editable => editable.Mode(GridEditMode.InLine).ConfirmDelete("Continue to delete this record?").DisplayDeleteConfirmation("Continue to delete this record?"))
+            .Excel(excel => excel
+            .AllPages(true)
+            .Filterable(true)
+            .FileName("Inquiry.xlsx")
+
+            .ProxyURL(Url.Action("Excel_Export_Save", "Inquiry"))
+            )
+            //.Editable(editable =>
+            //.Resizable(r => r.Columns(true))
+            .Pageable(x =>
+            {
+                x.Refresh(true);
+                x.PageSizes(CommonHelper.LargePageSizes);
+            })
+            .Editable(editable =>
+            {
+                editable.Mode(GridEditMode.InLine);
+                editable.DisplayDeleteConfirmation("Are you sure you want to delete this Category?");//"Are you sure you want to delete this Category?"
+
+            })
+            .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            .Sortable(sortable => sortable.AllowUnsort(false))
+            .Scrollable(s => s.Height("auto"))
+            .NoRecords()
+             
+            //.Events(grid => grid.DataBound("onDataBoundEdit"))
+            .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            .PageSize(CommonHelper.PazeSize)
+            .Events(events => events.Error("onError(\"InquiryGrid\")"))
+            .Model(model => model.Id(d => d.Member_id))
+            .Create(update => update.Action("KendoSave", "Member"))
+            .Read(read => read.Action("KendoRead", "Member"))
+            .Update(update => update.Action("KendoSave", "Member"))
+            .Destroy(destroy => destroy.Action("kendoDestroy", "Member")))
+
+            )
+
+
+    </div>
+
+
+
+   
+
+
+    @(Html.Kendo().Window()
+                          .Name("rawmaterials")
+                          .Draggable(true)
+                          .Width(870)
+                          .Height(520)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+
+</div>
+
+
+
+@(Html.Kendo().Window()
+                          .Name("rawmaterials")
+                          .Draggable(true)
+                          .Width(870)
+                          .Height(520)
+                          .Scrollable(true)
+                          .Modal(true)
+                          .Visible(false)
+)
+
+<script>
+    function GetPRMID(e) {
+
+        return {
+            PRMID: e.PRM_id
+            
+        }
+    }
+
+    function GetPSRID(e) {
+
+        return {
+            PRSID: e.PSR_id
+
+        }
+    }
+</script>
+@*<script>
+        function addrawmaterial(e)
+        {
+            debugger
+
+
+            var window = $("#rawmaterials").data("kendoWindow");
+            window.content("Add Raw Material");
+
+            window.refresh({
+                url: '@Url.Action("AddRawmaterial", "Product")',
+
+            });
+            window.center();
+            window.open();
+            window.title("Add Raw Material")
+        }
+    </script>*@

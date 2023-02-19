@@ -1,0 +1,9 @@
+﻿@model decimal?
+
+@(Html.Kendo().NumericTextBoxFor(m => m)
+              .Min(0)
+              .Spinners(false)
+              .Round(true)
+              .Events(e => e.Change("CalculateTotalCarpetArea"))
+          .HtmlAttributes(new { style = "width:100%"})
+)

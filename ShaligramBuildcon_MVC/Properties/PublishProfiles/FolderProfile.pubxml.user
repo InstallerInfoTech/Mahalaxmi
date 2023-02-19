@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish</_PublishTargetUrl>
+    <History>True|2023-02-15T16:37:07.6511750Z;True|2023-02-15T21:43:05.3436154+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 21:59:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 21:59:20</publishTime>
+    </File>
+    <File Include="bin/Common.ShaligramBuildcon_MVC.dll">
+      <publishTime>09/22/2022 17:39:21</publishTime>
+    </File>
+    <File Include="bin/Common.ShaligramBuildcon_MVC.dll.config">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Common.ShaligramBuildcon_MVC.pdb">
+      <publishTime>09/22/2022 17:39:21</publishTime>
+    </File>
+    <File Include="bin/Data.ShaligramBuildcon_MVC.dll">
+      <publishTime>09/26/2022 14:46:38</publishTime>
+    </File>
+    <File Include="bin/Data.ShaligramBuildcon_MVC.dll.config">
+      <publishTime>09/22/2022 14:46:13</publishTime>
+    </File>
+    <File Include="bin/Data.ShaligramBuildcon_MVC.pdb">
+      <publishTime>09/26/2022 14:46:38</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 15:02:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 15:02:26</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>06/16/2019 16:24:30</publishTime>
+    </File>
+    <File Include="bin/Kendo.Mvc.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>04/03/2019 06:00:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.pdb">
+      <publishTime>04/03/2019 12:49:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>04/03/2019 06:00:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.pdb">
+      <publishTime>04/03/2019 12:50:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/13/2014 21:41:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/13/2014 21:41:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/13/2014 21:41:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 17:18:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 15:14:54</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 17:49:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 19:08:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 19:08:24</publishTime>
+    </File>
+    <File Include="bin/ShaligramBuildcon_MVC.dll">
+      <publishTime>02/15/2023 21:43:03</publishTime>
+    </File>
+    <File Include="bin/ShaligramBuildcon_MVC.pdb">
+      <publishTime>02/15/2023 21:43:03</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Extensions.dll">
+      <publishTime>02/20/2015 01:40:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 18:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Primitives.dll">
+      <publishTime>02/20/2015 01:40:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>11/28/2018 18:28:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/11/2018 04:12:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 18:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/28/2018 18:31:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/28/2018 18:32:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/11/2018 04:08:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 20:56:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/11/2018 04:08:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/11/2018 04:12:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/11/2018 04:12:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/11/2018 04:12:40</publishTime>
+    </File>
+    <File Include="bin/Telerik.Documents.SpreadsheetStreaming.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.Services.WebApi.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.Mvc.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.Extensions.dll">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 19:27:34</publishTime>
+    </File>
+    <File Include="Content/css/bootbox.css">
+      <publishTime>09/08/2022 18:53:23</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>09/08/2022 18:53:23</publishTime>
+    </File>
+    <File Include="Content/css/colors.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/components.css">
+      <publishTime>09/08/2022 18:53:23</publishTime>
+    </File>
+    <File Include="Content/css/core.css">
+      <publishTime>09/22/2022 14:46:01</publishTime>
+    </File>
+    <File Include="Content/css/Error_style.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/examples.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/icomoon.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/pnotify.custom.min.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/styles.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/css/switch.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoond41d.eot">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoone627.eot">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoone627.svg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoone627.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoone627.woff">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/alert_Confirmation.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/alert_Error.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/alert_Information.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/alert_Notification.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/alert_Warning.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/bg.jpg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/clear.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/close.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/Duplicate.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/Email_Logo.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/favicon.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/ie-spacer.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/logo-inverse.svg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/logo-white-final.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/logo.svg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/logo_old.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/placeholder.jpg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/pop_bm.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/pop_lm.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/pop_rm.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/pop_tm.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/resize.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/small-logo.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/small_logo.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/spacer.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/img/top.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/cultures/kendo.culture.en-IN.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/cultures/kendo.culture.en-US.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/jszip.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/kendo.all.min.js">
+      <publishTime>09/07/2022 10:42:26</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/kendo.aspnetmvc.min.js">
+      <publishTime>09/07/2022 10:42:26</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/messages/kendo.messages.en-US.min.js">
+      <publishTime>09/07/2022 10:42:26</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/telerikReportViewer-12.1.18.620.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/js/telerikReportViewer.kendo-12.1.18.620.min.js">
+      <publishTime>09/07/2022 10:42:26</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSans-Bold.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSans-BoldOblique.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSans-ExtraLight.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSans.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSansMono-Bold.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSansMono-BoldOblique.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSansMono-Oblique.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSansMono.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSerif-Bold.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSerif-BoldItalic.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSerif-Italic.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/DejaVuSerif.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/DejaVu/LICENSE.txt">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/KendoUIGlyphs.eot">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/KendoUIGlyphs.svg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/KendoUIGlyphs.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/KendoUIGlyphs.woff">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/WebComponentsIcons.eot">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/WebComponentsIcons.svg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/WebComponentsIcons.ttf">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/fonts/glyphs/WebComponentsIcons.woff">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/kendo.common.min.css">
+      <publishTime>09/14/2022 12:29:20</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/kendo.custom.css">
+      <publishTime>09/12/2022 18:06:49</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/kendo.silver.min.css">
+      <publishTime>09/08/2022 14:51:28</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/kendoCustom.css">
+      <publishTime>09/08/2022 14:51:44</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/editor.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/imagebrowser.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/indeterminate.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/loading-image.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/loading.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/loading_2x.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/markers.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/markers_2x.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/slider-h.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/slider-v.gif">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/sprite.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/sprite_2x.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/sprite_kpi.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/Silver/sprite_kpi_2x.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/telerikReportViewer.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/brushed-metal.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots1.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots10.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots11.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots12.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots13.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots2.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots3.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots4.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots5.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots6.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots7.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots8.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/dots9.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/glass-lighter.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/glass.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/highlight.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/hsv-gradient.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/hue.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/leather1.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/leather2.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/noise.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe1.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe2.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe3.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe4.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe5.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/stripe6.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/transparency.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/kendo-ui/styles/textures/transtexture.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/ussal-notification/ussal-notification.css">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Content/ussal-notification/ussal-notification.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="favicon.png">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Models/MahalaxmiHandicraft.edmx.diagram">
+      <publishTime>01/15/2023 13:43:19</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/blockui.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/bootbox.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/Common.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/drilldown.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.preloader.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.js">
+      <publishTime>09/07/2022 10:43:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/jszip.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/nicescroll.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/pace.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/pnotify.custom.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/ripple.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/switchery.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/uniform.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Scripts/validate.min.js">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Template/EmailMember.html">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Template/ForgotPassword.html">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Template/telerikReportViewerTemplate.html">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Uploads/Logo/d8ac4273-b9fb-4330-a97b-2411679bf250_you-can-do-it.jpg">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Product/Index.cshtml">
+      <publishTime>02/12/2023 19:34:08</publishTime>
+    </File>
+    <File Include="Views/Product/_partialrawmaterial.cshtml">
+      <publishTime>01/10/2023 21:22:45</publishTime>
+    </File>
+    <File Include="Views/Purchaserequisition/Index.cshtml">
+      <publishTime>01/09/2023 22:53:12</publishTime>
+    </File>
+    <File Include="Views/Shared/ChangePassword.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/CalTotalNumericTextbox.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/CheckBox.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Date.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/DateTime.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Email.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/FollowUpDetails.cshtml">
+      <publishTime>08/27/2022 16:50:52</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/GridForeignKey.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/IntNumericTextBox.cshtml">
+      <publishTime>02/12/2023 19:30:36</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/IntNumericTextBoxWithOurDecimal.cshtml">
+      <publishTime>02/12/2023 19:30:12</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/NumericTextbox.cshtml">
+      <publishTime>02/12/2023 19:31:49</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Password.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/ProjectPlanTemplate.cshtml">
+      <publishTime>09/23/2022 12:14:58</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/ProjectRelatedPlanDD.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/ProjectUnitDetailsTemplate.cshtml">
+      <publishTime>09/08/2022 18:52:20</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/ProjectUnitDetailTemplate.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/PropertyTypeDD.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/readOnlyNumeric.cshtml">
+      <publishTime>02/12/2023 19:31:34</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/String.cshtml">
+      <publishTime>02/12/2023 19:29:16</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Switch.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/tblInquiryEdit.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/TextArea.cshtml">
+      <publishTime>02/12/2023 19:21:36</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Time.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_Footer.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_Header.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/22/2023 21:50:32</publishTime>
+    </File>
+    <File Include="Views/Shared/_Notification.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_SideBar.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Views/Subproduct/Index.cshtml">
+      <publishTime>02/15/2023 21:34:49</publishTime>
+    </File>
+    <File Include="Views/Transaction/Create.cshtml">
+      <publishTime>02/12/2023 18:24:33</publishTime>
+    </File>
+    <File Include="Views/Transaction/Index.cshtml">
+      <publishTime>02/12/2023 19:25:09</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>09/22/2022 14:46:13</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/09/2022 11:21:15</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/15/2023 22:07:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
